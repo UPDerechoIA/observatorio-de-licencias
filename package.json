@@ -1,0 +1,42 @@
+{
+  "name": "up-law-ailo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "UP-Law-AILO — Observatorio simple de licencias, EULA y condiciones legales de proveedores de IA.",
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "sources:verify": "tsx scripts/sources-verify.ts",
+    "ingest:provider": "tsx scripts/ingest.ts",
+    "ingest:all": "tsx scripts/ingest.ts --all",
+    "ingest:headless": "tsx scripts/ingest-headless.ts",
+    "ingest:manual": "tsx scripts/ingest-manual.ts",
+    "ingest:stealth": "tsx scripts/ingest-stealth.ts",
+    "parse:all": "tsx scripts/parse-all.ts",
+    "validate:data": "tsx scripts/validate-data.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "next": "^15.3.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "server-only": "^0.0.1",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.10",
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "playwright": "^1.60.0",
+    "playwright-extra": "^4.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "tailwindcss": "^4.1.10",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "vitest": "^2.1.9"
+  }
+}

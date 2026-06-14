@@ -1,0 +1,661 @@
+{
+  "id": "adobe-firefly-terms-of-use-2026-06-14",
+  "providerName": "Adobe",
+  "productName": "Firefly",
+  "productTier": "All",
+  "documentType": "Terms of Use",
+  "contractingMode": "all",
+  "appliesToModes": [
+    "free",
+    "paid_individual",
+    "enterprise"
+  ],
+  "sourceScope": "mixed",
+  "modeConfidence": "medium",
+  "modeRationale": "El documento parece general pero contiene secciones que diferencian modalidades (free, paid_individual, team, business, enterprise). Las diferencias deben revisarse cláusula por cláusula.",
+  "sourceUrl": "https://www.adobe.com/legal/terms.html",
+  "retrievedAt": "2026-06-14T17:50:36.232Z",
+  "rawTextPath": "data/extracted/adobe-firefly-terms-of-use-2026-06-14.txt",
+  "overall": {
+    "plainLanguageSummary": "El parser detectó posibles cláusulas en 19 de 22 categorías analizadas. El nivel de riesgo general estimado es \"high\". Este es un análisis preliminar y automático: la redacción puede no surgir con claridad del texto y requiere revisión legal humana.",
+    "legalSummary": "Sobre 22 categorías jurídicas relevadas, se identificaron pasajes vinculados en 19. La calificación de riesgo general (high) es preliminar y se apoya en coincidencias léxicas, no en interpretación jurídica. El alcance de cada cláusula no surge con claridad del texto analizado y requeriría revisión legal humana.",
+    "overallRiskLevel": "high"
+  },
+  "privacy": {
+    "posture": "strong",
+    "rationale": "Perfil preliminar (no es conclusión jurídica). El texto fuente parece indicar protecciones relevantes (p. ej. compromiso de no entrenamiento y/o DPA o confidencialidad). Requiere revisión legal humana. Señales: no_training_commitment, broad_training_use, enterprise_dpa, retention_controls, deletion_control, confidentiality_commitment, broad_license.",
+    "signals": [
+      "no_training_commitment",
+      "broad_training_use",
+      "enterprise_dpa",
+      "retention_controls",
+      "deletion_control",
+      "confidentiality_commitment",
+      "broad_license"
+    ],
+    "evidence": [
+      {
+        "quote": "We will not use your Local or Cloud Content to train generative AI models except for Content you choose to submit to the Adobe Stock marketplace, and this use is governed by the separate Adobe Stock Contributor Agreement.",
+        "locationHint": "compromiso de no entrenamiento"
+      },
+      {
+        "quote": "This license does not give us permission to train generative AI models with your or your customers’ content.",
+        "locationHint": "compromiso de no entrenamiento"
+      },
+      {
+        "quote": "We will not use these rights to train generative AI models on your Content and will not use the sublicense rights to have anyone else train generative AI models on your Content, except at your specific request (like you asking us to train a custom model on your Content).",
+        "locationHint": "compromiso de no entrenamiento"
+      },
+      {
+        "quote": "… to flag abusive behavior (such as spam or phishing). (F) Generative AI. We will not use your Local or Cloud Content to train generative AI models except for Content you choose to submit to the Adobe Stock marketplace, and this use is governed …",
+        "locationHint": "coincidencia: \"to train\" (~offset 15250)"
+      }
+    ]
+  },
+  "categories": {
+    "privacy": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a cómo se procesan los datos personales del usuario. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a el tratamiento de datos personales del usuario y sus finalidades. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… access and control over all Content in your personal account or personal profile (except as otherwise indicated in the Privacy Policy); and (d) all references to “you” in the Terms will mean you as an individual. If you receive Entitlements through a …",
+          "locationHint": "coincidencia: \"privacy policy\" (~offset 9031)"
+        },
+        {
+          "quote": "… use, share, or otherwise process information about you and your use of our Services and Software, please see our Privacy Policy ( http://www.adobe.com/go/privacy) . You have the option to manage information preferences here: …",
+          "locationHint": "coincidencia: \"privacy policy\" (~offset 11949)"
+        },
+        {
+          "quote": "… Cloud for teams or enterprise cloud storage HelpX: https://helpx.adobe.com/enterprise/kb/business-storage.html • Privacy Policy: https://www.adobe.com/privacy/policy.html • Adobe Privacy Choices: https://www.adobe.com/privacy/opt-out.html • …",
+          "locationHint": "coincidencia: \"privacy policy\" (~offset 74495)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: privacy policy.",
+      "appliesToModes": [
+        "team"
+      ],
+      "modeSpecificity": "mode_specific",
+      "modeEvidence": [
+        {
+          "quote": "… Cloud for teams or enterprise cloud storage HelpX: https://helpx.adobe.com/enterprise/kb/business-storage.html • Privacy Policy: https://www.adobe.com/privacy/policy.html • Adobe Privacy Choices: https://www.adobe.com/privacy/opt-out.html • …",
+          "locationHint": "coincidencia: \"privacy policy\" (~offset 74495)"
+        }
+      ]
+    },
+    "training_use": {
+      "status": "found",
+      "riskLevel": "high",
+      "plainLanguageSummary": "El documento parece referirse a si el proveedor podría usar tus conversaciones o archivos para entrenar sus modelos. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a el uso de inputs, outputs o archivos del usuario para entrenamiento o mejora de modelos. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… to flag abusive behavior (such as spam or phishing). (F) Generative AI. We will not use your Local or Cloud Content to train generative AI models except for Content you choose to submit to the Adobe Stock marketplace, and this use is governed …",
+          "locationHint": "coincidencia: \"to train\" (~offset 15250)"
+        },
+        {
+          "quote": "… or publish your content on Behance. Because it’s your content — not ours. This license does not give us permission to train generative AI models with your or your customers’ content. We don’t train generative AI models on your or your …",
+          "locationHint": "coincidencia: \"to train\" (~offset 33403)"
+        },
+        {
+          "quote": "… we do not have the right to, and will not, use your Content to market or promote Adobe. We will not use these rights to train generative AI models on your Content and will not use the sublicense rights to have anyone else train generative AI …",
+          "locationHint": "coincidencia: \"to train\" (~offset 36199)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: to train.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "input_ip": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a quién es dueño del contenido que ingresás (tus prompts y archivos). La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a la titularidad de los inputs aportados por el usuario. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… and Software for your use . Creative Cloud Customer Fonts are not considered Content, as defined in the Terms. You retain all rights to the unmodified Creative Cloud Customer Fonts. You acknowledge that enabling the display of any Creative …",
+          "locationHint": "coincidencia: \"you retain\" (~offset 27005)"
+        },
+        {
+          "quote": "… We do not claim any ownership rights to your Content. 4.3 Licenses to Your Content #E1E1E1 Section 4.3 means: You own your content. But in order to use our products and services, we need you to give us permission to use your content when …",
+          "locationHint": "coincidencia: \"you own your\" (~offset 32980)"
+        },
+        {
+          "quote": "… the Services and Software on your behalf, and subject to section 4.2 (Ownership) above which states that in all cases you own your Content, you grant us a non-exclusive, worldwide, royalty-free license to do the following with your Cloud Content: • …",
+          "locationHint": "coincidencia: \"you own your\" (~offset 34106)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: you retain, you own your.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "output_ip": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre quién es dueño de lo que genera la IA a partir de tus pedidos. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a la asignación de titularidad sobre los outputs generados por el servicio resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… of the Services or Software; (B) reverse engineer (including but not limited to monitoring or tracking the inputs and outputs flowing through a system or an application in order to recreate that system), decompile, disassemble, or otherwise …",
+          "locationHint": "coincidencia: \"output\" (~offset 69103)"
+        },
+        {
+          "quote": "… methods, and any other portion of such Service or Software; or (C) use the Services or Software, or any content, data, output, or other information received or derived from the Services or Software, to directly or indirectly create, train, test, …",
+          "locationHint": "coincidencia: \"output\" (~offset 69473)"
+        },
+        {
+          "quote": "… your Content. You should download any Content that you have stored in the Services before your license ends. 3.4 User-Generated Content #E1E1E1 Section 3.4 means: Users may upload and share their content using our products and we are not responsible …",
+          "locationHint": "coincidencia: \"generated content\" (~offset 21969)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: output, generated content.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "license_grant": {
+      "status": "found",
+      "riskLevel": "high",
+      "plainLanguageSummary": "El documento parece referirse a qué permisos le das al proveedor sobre tu contenido. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a la licencia conferida al proveedor sobre los contenidos del usuario. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… Adobe Intellectual Property #E1E1E1 Section 3.2 means: Adobe owns its products and services and gives you a license to use them. style xs-spacing, grid-width-12 We (and our licensors, as applicable) remain the sole owner of all right, …",
+          "locationHint": "coincidencia: \"license to use\" (~offset 20124)"
+        },
+        {
+          "quote": "… non-sublicensable (except if you are a Business, then sublicensable only to your Business Users), and non-transferable license to use the Content Files to create your end use (i.e., the derivative application or product authored by you) into which the …",
+          "locationHint": "coincidencia: \"license to use\" (~offset 23770)"
+        },
+        {
+          "quote": "… 4.2 (Ownership) above which states that in all cases you own your Content, you grant us a non-exclusive, worldwide, royalty-free license to do the following with your Cloud Content: • reproduce (for example, to create copies of your Cloud Content …",
+          "locationHint": "coincidencia: \"royalty-free\" (~offset 34169)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: license to use, royalty-free.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "data_retention": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a cuánto tiempo se conserva tu información. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a los plazos y condiciones de retención de datos del usuario. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… for your use may require us to use Adobe Technology, including our proprietary font-optimization technology, and that we retain all rights to such Adobe Technology. “ Adobe Technology ” means technology owned by us or licensed to us by a …",
+          "locationHint": "coincidencia: \"we retain\" (~offset 27303)"
+        },
+        {
+          "quote": "… stop making that Content publicly available within a reasonable amount of time. Some copies of your Content may be retained for a period of time as part of our routine backups, and we are not responsible for any use of Content that you have Shared …",
+          "locationHint": "coincidencia: \"retained for\" (~offset 39583)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: we retain, retained for.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "data_deletion": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a si y cómo podés pedir que borren tu información. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a los mecanismos de supresión o eliminación de datos del usuario. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… you cancel your subscription, we try to save it for some time in case you need it later, but we reserve the right to delete content. style xs-spacing, grid-width-12 We recommend that you back up your Content and Creative Cloud Customer …",
+          "locationHint": "coincidencia: \"right to delete\" (~offset 21020)"
+        },
+        {
+          "quote": "… of the termination or expiration of your license term. At the end of this 30-day transition period, we reserve the right to delete your Content. You should download any Content that you have stored in the Services before your license ends. 3.4 …",
+          "locationHint": "coincidencia: \"right to delete\" (~offset 21834)"
+        },
+        {
+          "quote": "… your Creative Cloud Customer Fonts from the Service. (D) Upon termination or closure of your account, we reserve the right to delete your Creative Cloud Customer Fonts. Some copies of your Creative Cloud Customer Fonts may be retained as part of our …",
+          "locationHint": "coincidencia: \"right to delete\" (~offset 28914)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: right to delete.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "confidentiality": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a si el proveedor se compromete a mantener tu información en reserva. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las obligaciones de confidencialidad aplicables al proveedor. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… grid-width-12 Certain elements of the Services and Software constitute our (or our licensors’) confidential information. Except as expressly permitted in the Terms, you must not (and must not allow third parties to): (A) modify, port, …",
+          "locationHint": "coincidencia: \"confidential information\" (~offset 68813)"
+        },
+        {
+          "quote": "… on our behalf (for example, we utilize trusted cloud infrastructure providers and content delivery networks subject to confidentiality and privacy restrictions to provide you with faster access to your Cloud Content). What Adobe Does Not Do We will not …",
+          "locationHint": "coincidencia: \"confidentiality\" (~offset 35826)"
+        },
+        {
+          "quote": "… rights to third parties acting on our behalf (for example, we may utilize trusted vendors and contractors subject to confidentiality and privacy restrictions to do Content Analytics on our behalf). We will not (and cannot) grant a sublicense to a …",
+          "locationHint": "coincidencia: \"confidentiality\" (~offset 37266)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: confidential information, confidentiality.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "security": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre qué medidas de seguridad dice tomar el proveedor. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a las medidas técnicas y organizativas de seguridad declaradas resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… plan limits and restrictions, including, but not limited to, the right to charge for overages. 5.2 Account Security You are responsible for taking reasonable steps to maintain the security and control of your Adobe Account. Adobe may …",
+          "locationHint": "coincidencia: \"security\" (~offset 41635)"
+        },
+        {
+          "quote": "… Adobe may require you to enable multi-factor authentication and provide a phone number or an alternate email for security purposes. Adobe assumes no responsibility for any loss that you may sustain due to a compromise of your account login …",
+          "locationHint": "coincidencia: \"security\" (~offset 41866)"
+        },
+        {
+          "quote": "… such as a password, email address, or telephone number. If you suspect that your Adobe Account or any of your security details have been compromised, please contact your account administrator or Adobe Customer Care …",
+          "locationHint": "coincidencia: \"security\" (~offset 42634)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: security.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "security_duty": {
+      "status": "not_found",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "No se encontró una cláusula clara sobre si el proveedor asume un compromiso concreto de seguridad en el texto analizado. La ausencia de coincidencias no garantiza que el tema no esté tratado.",
+      "legalSummary": "No surge del texto analizado una cláusula expresa sobre la existencia de un deber de seguridad exigible al proveedor. La ausencia de coincidencias léxicas no permite concluir su inexistencia.",
+      "evidence": [],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. No se hallaron coincidencias léxicas relevantes.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "warranties": {
+      "status": "found",
+      "riskLevel": "high",
+      "plainLanguageSummary": "El documento parece referirse a qué garantiza (o no garantiza) el proveedor sobre el servicio. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las garantías otorgadas y los disclaimers de garantía. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… no express or implied warranties shall apply to the Services and Software; all Services and Software are provided “as-is” with all defects, and no technical or other support is included. 3.8 NFR Version Adobe may also designate the …",
+          "locationHint": "coincidencia: \"as-is\" (~offset 25468)"
+        },
+        {
+          "quote": "… DISCLAIMERS OF WARRANTIES 9.1 Unless stated in the Product Specific Terms, the Services and Software are provided “AS-IS.” To the maximum extent permitted by law, Adobe, its affiliates, and third-party providers (“Covered Parties”) disclaim …",
+          "locationHint": "coincidencia: \"as-is\" (~offset 49771)"
+        },
+        {
+          "quote": "… (“Covered Parties”) disclaim all warranties, express or implied, including the implied warranties of non-infringement, merchantability, and fitness for a particular purpose. The Covered Parties make no commitments about the content within the Services. …",
+          "locationHint": "coincidencia: \"merchantability\" (~offset 49987)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: as-is, disclaim all warranties, merchantability.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "liability_limitation": {
+      "status": "found",
+      "riskLevel": "high",
+      "plainLanguageSummary": "El documento parece referirse a hasta dónde responde el proveedor si algo sale mal. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a el régimen de exclusión o limitación de responsabilidad. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… User Conduct • Fees and Payment • Your Warranty and Indemnification Obligations • DISCLAIMERS OF WARRANTIES • LIMITATION OF LIABILITY • Termination • Trade Sanctions and Export Control Compliance • Australian Consumer Law • Dispute Resolution, Class …",
+          "locationHint": "coincidencia: \"limitation of liability\" (~offset 1366)"
+        },
+        {
+          "quote": "… other than Adobe; or (C) the inclusion of your Content by third parties on other websites or in other media. 10. LIMITATION OF LIABILITY 10.1 Unless stated in the Product Specific Terms, in no event shall the Covered Parties be liable to you or anyone …",
+          "locationHint": "coincidencia: \"limitation of liability\" (~offset 51278)"
+        },
+        {
+          "quote": "… in any matter arising out of or related to the Terms. 10.3 These limitations and exclusions in this section 10 (Limitation of Liability) apply to the maximum extent permitted by law even if (A) a remedy does not fully compensate you for any losses or …",
+          "locationHint": "coincidencia: \"limitation of liability\" (~offset 52450)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: limitation of liability.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "indemnity": {
+      "status": "found",
+      "riskLevel": "high",
+      "plainLanguageSummary": "El documento parece referirse a si tenés que defender o pagar al proveedor ante reclamos de terceros. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las obligaciones de indemnidad a cargo del usuario. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… to use and Share your Content; and (B) the rights necessary to grant the licenses in the Terms. 8.2 Indemnification You will indemnify us and our subsidiaries, affiliates, officers, agents, employees, partners, and licensors from any claim(s), demand(s), …",
+          "locationHint": "coincidencia: \"you will indemnify\" (~offset 48954)"
+        },
+        {
+          "quote": "… Use of Services and Software • Your Content • Your Account • User Conduct • Fees and Payment • Your Warranty and Indemnification Obligations • DISCLAIMERS OF WARRANTIES • LIMITATION OF LIABILITY • Termination • Trade Sanctions and Export …",
+          "locationHint": "coincidencia: \"indemnification\" (~offset 1306)"
+        },
+        {
+          "quote": "… continue billing and charging your account for amounts owed with the information that we obtain. 8. Your Warranty and Indemnification Obligations 8.1 Warranty You must have: (A) all necessary licenses and permissions to use and Share your Content; and …",
+          "locationHint": "coincidencia: \"indemnification\" (~offset 48735)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: you will indemnify, indemnification.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "governing_law": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a qué ley rige el contrato. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a la ley aplicable al contrato. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… Inc., a United States company, and the Terms are governed by, and construed and interpreted in accordance with, the laws of the State of California, U.S.A., unless preempted by U.S. federal law, without regard to conflict of law rules. If you reside …",
+          "locationHint": "coincidencia: \"laws of the state\" (~offset 4108)"
+        },
+        {
+          "quote": "… license to Adobe’s apps and services. style xs-spacing, grid-width-12 Subject to your compliance with the Terms and applicable law, we hereby grant you a non-exclusive, limited, revocable right (as set forth herein) for you to install, access and use …",
+          "locationHint": "coincidencia: \"applicable law\" (~offset 19003)"
+        },
+        {
+          "quote": "… discretion, terminate that access without prior notice and without any liability to you, to the extent permitted under applicable law, for any reason, including to prevent abuse of the free, Complimentary Services, or trial access. After the free, …",
+          "locationHint": "coincidencia: \"applicable law\" (~offset 24988)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: laws of the state, applicable law.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "jurisdiction": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a qué tribunales resolverían un conflicto. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a la jurisdicción y el foro competente. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… whatsoever, regardless of cause, including losses and damages (A) resulting from loss of use, data, reputation, revenue, or profits; (B) based on any theory of liability, including breach of contract or warranty, negligence, or other …",
+          "locationHint": "coincidencia: \"venue\" (~offset 51629)"
+        },
+        {
+          "quote": "… the Terms. 18.2 Notice to Adobe You may send notices to us at the following address: Adobe Inc., 345 Park Avenue, San Jose, California, 95110-2704, USA, Attention: General Counsel. 18.3 Notice to You We may notify you by your …",
+          "locationHint": "coincidencia: \"venue\" (~offset 70556)"
+        },
+        {
+          "quote": "… about Adobe’s IP Takedown policies and practices here: https://www.adobe.com/legal/dmca.html . Adobe Inc.: 345 Park Avenue, San Jose, California 95110-2704, USA. Adobe Systems Software Ireland Limited: 4-6 Riverwalk, City West Business …",
+          "locationHint": "coincidencia: \"venue\" (~offset 73659)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: venue.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "arbitration": {
+      "status": "found",
+      "riskLevel": "high",
+      "plainLanguageSummary": "El documento parece referirse a si tenés que resolver disputas por arbitraje y si renunciás a demandas colectivas. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a el sometimiento a arbitraje y la renuncia a acciones colectivas. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… within 30 days of receipt, any resulting legal actions must be resolved through either small claims court or final and binding arbitration, including any dispute about whether arbitration is required for the dispute, subject to the exceptions set forth …",
+          "locationHint": "coincidencia: \"binding arbitration\" (~offset 59269)"
+        },
+        {
+          "quote": "… Trade Sanctions and Export Control Compliance • Australian Consumer Law • Dispute Resolution, Class Action Waiver, Arbitration Agreement • Audit Rights • Updates to Services and Software and Availability • No Modifications, Reverse Engineering, …",
+          "locationHint": "coincidencia: \"arbitration agreement\" (~offset 1525)"
+        },
+        {
+          "quote": "… again; and (2) paying the cost of having the services supplied again. 14. Dispute Resolution, Class Action Waiver, Arbitration Agreement Adobe Customer Care is available to address most concerns that you may have regarding Adobe’s Services and Software. …",
+          "locationHint": "coincidencia: \"arbitration agreement\" (~offset 57935)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: binding arbitration, arbitration agreement.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "unilateral_changes": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a si el proveedor puede cambiar las reglas cuando quiera. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las facultades de modificación unilateral de los términos. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… Updates to Services and Software and Availability 16.1 Updates to the Services and Software We may modify, update, or discontinue the Services and Software (including any portions or features), which modifications, updates or …",
+          "locationHint": "coincidencia: \"we may modify\" (~offset 66635)"
+        },
+        {
+          "quote": "… Updates to Terms #E1E1E1 Section 1.5 means: Sometimes change happens. We’ll notify you when there are important changes to these terms or to your subscription. style xs-spacing, grid-width-12 We may make changes to the Terms from time to time ranging …",
+          "locationHint": "coincidencia: \"changes to these terms\" (~offset 11156)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: we may modify, changes to these terms.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "plan_differences": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a si las reglas cambian según el plan que tengas (gratis, pago, empresa). La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las diferencias de régimen entre planes gratuitos, pagos y enterprise/business/team. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… (each, a “ Business ”) under one of Adobe’s business plans (such as Creative Cloud for Teams, Creative Cloud for Enterprise, or Document Cloud), then (A) you are a “ Business User ” of such Business; (B) your Adobe profile associated with such …",
+          "locationHint": "coincidencia: \"enterprise\" (~offset 7224)"
+        },
+        {
+          "quote": "… Personal content stored in Creative Cloud and Document Cloud for teams or enterprise cloud storage HelpX: https://helpx.adobe.com/enterprise/kb/business-storage.html • Privacy Policy: …",
+          "locationHint": "coincidencia: \"enterprise\" (~offset 74399)"
+        },
+        {
+          "quote": "… outside of EEA and UK Data Protection Terms for Cloud Services: https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/DPT-WW.pdf • Adobe software support guidelines: https://helpx.adobe.com/support/programs/support-periods.html • …",
+          "locationHint": "coincidencia: \"enterprise\" (~offset 74998)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: enterprise.",
+      "appliesToModes": [
+        "team",
+        "business",
+        "enterprise"
+      ],
+      "modeSpecificity": "mode_specific",
+      "modeEvidence": [
+        {
+          "quote": "… (each, a “ Business ”) under one of Adobe’s business plans (such as Creative Cloud for Teams, Creative Cloud for Enterprise, or Document Cloud), then (A) you are a “ Business User ” of such Business; (B) your Adobe profile associated with such …",
+          "locationHint": "coincidencia: \"enterprise\" (~offset 7224)"
+        },
+        {
+          "quote": "… Personal content stored in Creative Cloud and Document Cloud for teams or enterprise cloud storage HelpX: https://helpx.adobe.com/enterprise/kb/business-storage.html • Privacy Policy: …",
+          "locationHint": "coincidencia: \"enterprise\" (~offset 74399)"
+        }
+      ]
+    },
+    "minors": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a qué dice el documento sobre el uso por menores de edad. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a el tratamiento del uso del servicio por menores de edad. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… the terms. You must be 13 or older to register for an Adobe ID . Schools and their personnel may deploy Services to children under 13 consistent with the K-12 (Primary and Secondary) and Higher Education Additional Terms for Student Data ( …",
+          "locationHint": "coincidencia: \"children under\" (~offset 3346)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: children under.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "prohibited_content": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a qué usos del servicio están prohibidos. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las restricciones de uso y las categorías de contenido prohibido. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… Systems Pty Ltd. You may have additional rights under your local law. We do not seek to limit those rights where it is prohibited to do so by law. For purposes of the Terms, “ Adobe ,” “ us ,” “ we ,” and “ our ” mean either Adobe Inc., Adobe …",
+          "locationHint": "coincidencia: \"prohibited\" (~offset 5012)"
+        },
+        {
+          "quote": "… and Software, you agree to comply with all such laws, restrictions, and regulations, and you warrant that you are not prohibited from receiving the Services and Software by the laws of any jurisdiction. Additionally, you agree not to upload to or …",
+          "locationHint": "coincidencia: \"prohibited\" (~offset 56362)"
+        },
+        {
+          "quote": "… trade secrets, trademarks, or any other rights in respect to the items in the Services or Software. This means you may not use our trade names, trademarks, service marks or logos in connection with any product or service that is not ours, or …",
+          "locationHint": "coincidencia: \"you may not\" (~offset 20501)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: prohibited, you may not.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "commercial_use": {
+      "status": "found",
+      "riskLevel": "low",
+      "plainLanguageSummary": "El documento parece referirse a si podés usar el servicio con fines comerciales. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a la habilitación o restricción del uso comercial del servicio. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… stated when we provide the NFR Version. You must not use any materials you produce with the NFR Version for any commercial purposes 3.9 Adobe Talent (A) You may not post jobs that point to specific work contests or other opportunities that solicit …",
+          "locationHint": "coincidencia: \"commercial purposes\" (~offset 25886)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: commercial purposes.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "api_references": {
+      "status": "found",
+      "riskLevel": "low",
+      "plainLanguageSummary": "El documento parece referirse a si el documento menciona el uso de APIs y sus condiciones. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las condiciones aplicables al uso de APIs. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… to Terms) below. Product Specific Terms may also be referred to as Additional Terms. • Adobe Acrobat Services (DC APIs) • Adobe Acrobat Sign • Adobe ColdFusion • Adobe Collaboration Space • Adobe Developer • Adobe Express • Adobe …",
+          "locationHint": "coincidencia: \"api\" (~offset 6054)"
+        },
+        {
+          "quote": "… or similar data gathering and extraction methods in connection with the Services and Software, including data scraping for machine learning or other purposes; 6.19 artificially manipulate or disrupt the Services and Software (such as …",
+          "locationHint": "coincidencia: \"api\" (~offset 46796)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: api.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    }
+  },
+  "metadata": {
+    "createdAt": "2026-06-14T17:50:36.742Z",
+    "parserVersion": "0.2.0",
+    "isMock": false,
+    "reviewStatus": "unreviewed",
+    "retrievedAt": "2026-06-14T17:50:36.232Z",
+    "fetcherVersion": "0.1.0",
+    "contentHash": "sha256:d1f5c35c93f7d3f430260646bc3e61efe278af594ba7a8e61d87f5d6388acf82",
+    "sourceVerified": true,
+    "sourceStatus": "verified",
+    "extractionMethod": "html-to-text",
+    "canonicalUrl": "https://www.adobe.com/legal/terms.html",
+    "finalUrl": "https://www.adobe.com/legal/terms.html",
+    "fetchedPath": "data/fetched/adobe-firefly-terms-of-use-2026-06-14.html",
+    "extractedTextPath": "data/extracted/adobe-firefly-terms-of-use-2026-06-14.txt",
+    "extractedChars": 75922
+  }
+}

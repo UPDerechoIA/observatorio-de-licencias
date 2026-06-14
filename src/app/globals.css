@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/*
+ * Paleta y tipografía de estudio jurídico.
+ *
+ * Estrategia: en vez de tocar cientos de clases, redefinimos algunos tokens del
+ * tema de Tailwind v4 para reencauzar la paleta de forma cohesiva:
+ *   - el extremo oscuro de `slate` pasa a TINTA NAVAL (marca, títulos, botones);
+ *   - `sky` (enlaces/acentos) pasa a AZUL NAVAL sobrio;
+ *   - se agrega un acento BRONCE/ORO ("gold");
+ *   - fondo PERGAMINO (ivory) con tarjetas blancas.
+ * Los colores semánticos de riesgo/estado (rojo/ámbar/esmeralda) se conservan.
+ */
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-serif: var(--font-lora), Georgia, "Times New Roman", serif;
+
+  /* Tinta naval (extremo oscuro de slate) */
+  --color-slate-900: #15243c;
+  --color-slate-800: #1d3251;
+  --color-slate-700: #344357;
+
+  /* Azul naval para enlaces y acentos (sky) */
+  --color-sky-50: #eef3f8;
+  --color-sky-100: #e1ebf3;
+  --color-sky-700: #1f4e79;
+  --color-sky-900: #14375c;
+
+  /* Acento bronce / oro */
+  --color-gold-100: #f1e8d4;
+  --color-gold-300: #d9c089;
+  --color-gold-500: #9c7c43;
+  --color-gold-600: #836634;
+
+  --color-parchment: #f6f3ec;
+}
+
+:root {
+  --background: #f6f3ec;
+  --foreground: #1a2233;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* Títulos en serif editorial (criterio jurídico/editorial). */
+h1,
+h2,
+h3 {
+  font-family: var(--font-serif);
+  letter-spacing: -0.01em;
+}
+
+/* Tipografía monoespaciada para evidencia textual citada. */
+.evidence-quote {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}

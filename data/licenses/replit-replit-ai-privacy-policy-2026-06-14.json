@@ -1,0 +1,544 @@
+{
+  "id": "replit-replit-ai-privacy-policy-2026-06-14",
+  "providerName": "Replit",
+  "productName": "Replit AI",
+  "productTier": "All",
+  "documentType": "Privacy Policy",
+  "contractingMode": "all",
+  "appliesToModes": [
+    "free",
+    "paid_individual",
+    "team"
+  ],
+  "sourceScope": "general",
+  "modeConfidence": "high",
+  "modeRationale": "El documento aplica de forma general: no surge del texto una diferenciación clara por modalidad de contratación.",
+  "sourceUrl": "https://replit.com/site/privacy",
+  "retrievedAt": "2026-06-14T17:50:38.119Z",
+  "rawTextPath": "data/extracted/replit-replit-ai-privacy-policy-2026-06-14.txt",
+  "overall": {
+    "plainLanguageSummary": "El parser detectó posibles cláusulas en 9 de 22 categorías analizadas. El nivel de riesgo general estimado es \"medium\". Este es un análisis preliminar y automático: la redacción puede no surgir con claridad del texto y requiere revisión legal humana.",
+    "legalSummary": "Sobre 22 categorías jurídicas relevadas, se identificaron pasajes vinculados en 9. La calificación de riesgo general (medium) es preliminar y se apoya en coincidencias léxicas, no en interpretación jurídica. El alcance de cada cláusula no surge con claridad del texto analizado y requeriría revisión legal humana.",
+    "overallRiskLevel": "medium"
+  },
+  "privacy": {
+    "posture": "moderate",
+    "rationale": "Perfil preliminar (no es conclusión jurídica). Hay tratamiento de datos con algunas salvaguardas, pero no todas; perfil intermedio. Requiere revisión legal humana. Señales: enterprise_dpa, retention_controls, deletion_control.",
+    "signals": [
+      "enterprise_dpa",
+      "retention_controls",
+      "deletion_control"
+    ],
+    "evidence": []
+  },
+  "categories": {
+    "privacy": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a cómo se procesan los datos personales del usuario. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a el tratamiento de datos personales del usuario y sus finalidades. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "Replit Privacy Policy Last updated: 02/24/2025 to update URL links. Replit, Inc. and its affiliates (“Replit,” “we,” “our,” and/or “us”) …",
+          "locationHint": "coincidencia: \"privacy policy\" (~offset 7)"
+        },
+        {
+          "quote": "… “us”) value the privacy of individuals who use our website and related services (collectively, our “Services”). This privacy policy (the “Privacy Policy”) explains how we collect, use, and share information from or about you or your device as you use …",
+          "locationHint": "coincidencia: \"privacy policy\" (~offset 250)"
+        },
+        {
+          "quote": "… as you use the Services. By using our Services, you agree to the collection, use, disclosure, and procedures this Privacy Policy describes. If you are an entity customer located in the European Economic Area (“EEA”), Switzerland or the United …",
+          "locationHint": "coincidencia: \"privacy policy\" (~offset 487)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: privacy policy.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "team"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "training_use": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre si el proveedor podría usar tus conversaciones o archivos para entrenar sus modelos. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a el uso de inputs, outputs o archivos del usuario para entrenamiento o mejora de modelos resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… such as web beacons to track whether you open them to learn how to deliver a better customer experience and improve our Services. Careers. If you apply for a job with us, you may submit your contact information and your resume online. We will …",
+          "locationHint": "coincidencia: \"improve our services\" (~offset 2409)"
+        },
+        {
+          "quote": "… Analytical or Performance cookies. We also use cookies for analytics purposes in order to operate, maintain and improve our Services. We may use our own analytics cookies or use third party analytics providers such as Google Analytics to collect and …",
+          "locationHint": "coincidencia: \"improve our services\" (~offset 4318)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: improve our services.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "team"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "input_ip": {
+      "status": "not_found",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "No se encontró una cláusula clara sobre quién es dueño del contenido que ingresás (tus prompts y archivos) en el texto analizado. La ausencia de coincidencias no garantiza que el tema no esté tratado.",
+      "legalSummary": "No surge del texto analizado una cláusula expresa sobre la titularidad de los inputs aportados por el usuario. La ausencia de coincidencias léxicas no permite concluir su inexistencia.",
+      "evidence": [],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. No se hallaron coincidencias léxicas relevantes.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "team"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "output_ip": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre quién es dueño de lo que genera la IA a partir de tus pedidos. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a la asignación de titularidad sobre los outputs generados por el servicio resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… Affiliates • Service providers • Entities for legal compliance • Entities for business transactions User-generated content (e.g., code) • Provide the Services • Facilitate 3 rd -party connections • Personalization • Legal and compliance …",
+          "locationHint": "coincidencia: \"generated content\" (~offset 19789)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: generated content.",
+      "appliesToModes": [
+        "business"
+      ],
+      "modeSpecificity": "mode_specific",
+      "modeEvidence": [
+        {
+          "quote": "… Affiliates • Service providers • Entities for legal compliance • Entities for business transactions User-generated content (e.g., code) • Provide the Services • Facilitate 3 rd -party connections • Personalization • Legal and compliance …",
+          "locationHint": "coincidencia: \"generated content\" (~offset 19789)"
+        }
+      ]
+    },
+    "license_grant": {
+      "status": "not_found",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "No se encontró una cláusula clara sobre qué permisos le das al proveedor sobre tu contenido en el texto analizado. La ausencia de coincidencias no garantiza que el tema no esté tratado.",
+      "legalSummary": "No surge del texto analizado una cláusula expresa sobre la licencia conferida al proveedor sobre los contenidos del usuario. La ausencia de coincidencias léxicas no permite concluir su inexistencia.",
+      "evidence": [],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. No se hallaron coincidencias léxicas relevantes.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "team"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "data_retention": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a cuánto tiempo se conserva tu información. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a los plazos y condiciones de retención de datos del usuario. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… process it, unless we are required by law to keep this information for a longer period. When determining the specific retention period, we take into account various criteria, such as the type of service provided to you, the nature and length of our …",
+          "locationHint": "coincidencia: \"retention period\" (~offset 16370)"
+        },
+        {
+          "quote": "… such as the type of service provided to you, the nature and length of our relationship with you, and mandatory retention periods provided by applicable law and any statute of limitations. When you request to delete your account, we delete your …",
+          "locationHint": "coincidencia: \"retention period\" (~offset 16538)"
+        },
+        {
+          "quote": "… with the Services as discussed in this section. What are Cookies? Cookies are small files of letters and numbers that we store on your browser or the hard drive of your computer, or small graphic images placed on web pages or in emails. They can …",
+          "locationHint": "coincidencia: \"we store\" (~offset 3179)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: retention period, we store.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "team"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "data_deletion": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a si y cómo podés pedir que borren tu información. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a los mecanismos de supresión o eliminación de datos del usuario. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… periods provided by applicable law and any statute of limitations. When you request to delete your account, we delete your data within 30 days. Security We use a variety of technical, organizational, and physical safeguards designed to safeguard …",
+          "locationHint": "coincidencia: \"delete your data\" (~offset 16659)"
+        },
+        {
+          "quote": "… for collecting information, and the categories of third parties with which we share information. • The right to request deletion of the personal information that we have collected about you, subject to certain exemptions. • The right to opt out of …",
+          "locationHint": "coincidencia: \"request deletion\" (~offset 21375)"
+        },
+        {
+          "quote": "… for collecting information, and the categories of third parties with which we share information. • The right to request deletion of the personal information that we have collected about you, subject to certain exemptions. • The right to opt out of …",
+          "locationHint": "coincidencia: \"request deletion\" (~offset 23544)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: delete your data, request deletion.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "team"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "confidentiality": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre si el proveedor se compromete a mantener tu información en reserva. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a las obligaciones de confidencialidad aplicables al proveedor resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… and Choices Sharing Preferences. If you prefer to not have others see your code, you can upgrade to make that code private. If you import code from GitHub and your repository is public, it will remain public by default on Replit. If you wish …",
+          "locationHint": "coincidencia: \"private\" (~offset 13097)"
+        },
+        {
+          "quote": "… is public, it will remain public by default on Replit. If you wish to import code from GitHub and your repository is private, you can upgrade to ensure that your code will also remain private on Replit. Marketing Communications. You can …",
+          "locationHint": "coincidencia: \"private\" (~offset 13274)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: private.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "team"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "security": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a qué medidas de seguridad dice tomar el proveedor. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las medidas técnicas y organizativas de seguridad declaradas. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… account, we delete your data within 30 days. Security We use a variety of technical, organizational, and physical safeguards designed to safeguard the information we maintain. However, as our Services are hosted electronically, we can make no …",
+          "locationHint": "coincidencia: \"safeguards\" (~offset 16763)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: safeguards.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "team"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "security_duty": {
+      "status": "not_found",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "No se encontró una cláusula clara sobre si el proveedor asume un compromiso concreto de seguridad en el texto analizado. La ausencia de coincidencias no garantiza que el tema no esté tratado.",
+      "legalSummary": "No surge del texto analizado una cláusula expresa sobre la existencia de un deber de seguridad exigible al proveedor. La ausencia de coincidencias léxicas no permite concluir su inexistencia.",
+      "evidence": [],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. No se hallaron coincidencias léxicas relevantes.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "team"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "warranties": {
+      "status": "found",
+      "riskLevel": "high",
+      "plainLanguageSummary": "El documento parece referirse a qué garantiza (o no garantiza) el proveedor sobre el servicio. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las garantías otorgadas y los disclaimers de garantía. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… will take reasonable steps to obtain parental consent or delete the user’s personal information from our files as soon as is practicable. Please contact us at [email protected] if you believe that a user has provided us with representations in …",
+          "locationHint": "coincidencia: \"as is\" (~offset 17513)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: as is.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "team"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "liability_limitation": {
+      "status": "not_found",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "No se encontró una cláusula clara sobre hasta dónde responde el proveedor si algo sale mal en el texto analizado. La ausencia de coincidencias no garantiza que el tema no esté tratado.",
+      "legalSummary": "No surge del texto analizado una cláusula expresa sobre el régimen de exclusión o limitación de responsabilidad. La ausencia de coincidencias léxicas no permite concluir su inexistencia.",
+      "evidence": [],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. No se hallaron coincidencias léxicas relevantes.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "team"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "indemnity": {
+      "status": "not_found",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "No se encontró una cláusula clara sobre si tenés que defender o pagar al proveedor ante reclamos de terceros en el texto analizado. La ausencia de coincidencias no garantiza que el tema no esté tratado.",
+      "legalSummary": "No surge del texto analizado una cláusula expresa sobre las obligaciones de indemnidad a cargo del usuario. La ausencia de coincidencias léxicas no permite concluir su inexistencia.",
+      "evidence": [],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. No se hallaron coincidencias léxicas relevantes.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "team"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "governing_law": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a qué ley rige el contrato. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a la ley aplicable al contrato. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… For compliance purposes, including enforcing our Terms of Service or other legal rights, or as may be required by applicable laws and regulations or requested by any judicial process or governmental agency; and • For other purposes for which we …",
+          "locationHint": "coincidencia: \"applicable law\" (~offset 7540)"
+        },
+        {
+          "quote": "… If you publish such content, it is your responsibility to understand your legal obligations and to comply with all applicable laws, including: • Providing your users with appropriate notices of their privacy rights, which should incorporate this …",
+          "locationHint": "coincidencia: \"applicable law\" (~offset 8372)"
+        },
+        {
+          "quote": "… provided to you, the nature and length of our relationship with you, and mandatory retention periods provided by applicable law and any statute of limitations. When you request to delete your account, we delete your data within 30 …",
+          "locationHint": "coincidencia: \"applicable law\" (~offset 16568)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: applicable law.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "team"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "jurisdiction": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre qué tribunales resolverían un conflicto. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a la jurisdicción y el foro competente resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… learn that a child is under the age of 13 in the United States, or is under the applicable age requirement in another jurisdiction, we will take reasonable steps to obtain parental consent or delete the user’s personal information from our files as …",
+          "locationHint": "coincidencia: \"jurisdiction\" (~offset 17377)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: jurisdiction.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "team"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "arbitration": {
+      "status": "not_found",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "No se encontró una cláusula clara sobre si tenés que resolver disputas por arbitraje y si renunciás a demandas colectivas en el texto analizado. La ausencia de coincidencias no garantiza que el tema no esté tratado.",
+      "legalSummary": "No surge del texto analizado una cláusula expresa sobre el sometimiento a arbitraje y la renuncia a acciones colectivas. La ausencia de coincidencias léxicas no permite concluir su inexistencia.",
+      "evidence": [],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. No se hallaron coincidencias léxicas relevantes.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "team"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "unilateral_changes": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre si el proveedor puede cambiar las reglas cuando quiera. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a las facultades de modificación unilateral de los términos resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… your identity. Please note that there are exceptions and limitations to each of these rights, and that while any changes you make will be reflected in active user databases instantly or within a reasonable period of time, we may retain …",
+          "locationHint": "coincidencia: \"changes\" (~offset 15301)"
+        },
+        {
+          "quote": "… have questions about your privacy on the Services or this privacy policy, please contact us at [email protected] . Changes to this Privacy Policy We will post any adjustments to the Privacy Policy on this page, and the revised version will …",
+          "locationHint": "coincidencia: \"changes\" (~offset 34015)"
+        },
+        {
+          "quote": "Replit Privacy Policy Last updated: 02/24/2025 to update URL links. Replit, Inc. and its affiliates (“Replit,” “we,” “our,” and/or “us”) value the …",
+          "locationHint": "coincidencia: \"update\" (~offset 28)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: changes, update.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "team"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "plan_differences": {
+      "status": "not_found",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "No se encontró una cláusula clara sobre si las reglas cambian según el plan que tengas (gratis, pago, empresa) en el texto analizado. La ausencia de coincidencias no garantiza que el tema no esté tratado.",
+      "legalSummary": "No surge del texto analizado una cláusula expresa sobre las diferencias de régimen entre planes gratuitos, pagos y enterprise/business/team. La ausencia de coincidencias léxicas no permite concluir su inexistencia.",
+      "evidence": [],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. No se hallaron coincidencias léxicas relevantes.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "team"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "minors": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a qué dice el documento sobre el uso por menores de edad. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a el tratamiento del uso del servicio por menores de edad. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… and Students’ Privacy Our Services are directed to a general audience and are not directed to children under the age of 13. By agreeing to our Privacy Policy and Terms of Service, you represent that you are allowed to use our Services …",
+          "locationHint": "coincidencia: \"under the age of\" (~offset 17070)"
+        },
+        {
+          "quote": "… you are allowed to use our Services according to your country’s applicable age limits. If we learn that a child is under the age of 13 in the United States, or is under the applicable age requirement in another jurisdiction, we will take reasonable …",
+          "locationHint": "coincidencia: \"under the age of\" (~offset 17281)"
+        },
+        {
+          "quote": "… information that you collect. • If applicable, providing any required notices and obtaining any required verifiable parental consent under the Children’s Online Privacy Protection Act (COPPA) or similar laws. • Complying with your legal obligations to …",
+          "locationHint": "coincidencia: \"parental consent\" (~offset 8788)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: under the age of, children under, not directed to children, parental consent.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "team"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "prohibited_content": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a qué usos del servicio están prohibidos. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las restricciones de uso y las categorías de contenido prohibido. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… you or your devices from various sources, as described below. If you do not provide your information when requested, you may not be able to use some or all of our Services if that information is necessary to provide you with our Services or if we …",
+          "locationHint": "coincidencia: \"you may not\" (~offset 1014)"
+        },
+        {
+          "quote": "… anonymous usage setting. However, if you use your browser settings to block all Cookies (including essential Cookies) you may not be able to access all or parts of our Services, or some portions of the Services may not function properly. Your …",
+          "locationHint": "coincidencia: \"you may not\" (~offset 13895)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: you may not.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "team"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "commercial_use": {
+      "status": "found",
+      "riskLevel": "low",
+      "plainLanguageSummary": "El documento parece referirse a si podés usar el servicio con fines comerciales. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a la habilitación o restricción del uso comercial del servicio. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… to request details about the categories of personal information we collect, the categories of sources, the business or commercial purposes for collecting information, and the categories of third parties with which we share information. • The right to …",
+          "locationHint": "coincidencia: \"commercial purposes\" (~offset 21242)"
+        },
+        {
+          "quote": "… to request details about the categories of personal information we collect, the categories of sources, the business or commercial purposes for collecting information, and the categories of third parties with which we share information. • The right to …",
+          "locationHint": "coincidencia: \"commercial purposes\" (~offset 23411)"
+        },
+        {
+          "quote": "… to request details about the categories of personal information we collect, the categories of sources, the business or commercial purposes for collecting information, and the categories of third parties with which we share information. • The right to …",
+          "locationHint": "coincidencia: \"commercial purposes\" (~offset 25661)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: commercial purposes.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "team"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "api_references": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre si el documento menciona el uso de APIs y sus condiciones. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a las condiciones aplicables al uso de APIs resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… never publicly viewable or searchable, and students may not post content on publicly viewable forums. Third Party App Integrations. If you connect a third-party application to our Services, we may share information such as code with that third …",
+          "locationHint": "coincidencia: \"integration\" (~offset 11842)"
+        },
+        {
+          "quote": "… Personalization • Legal and compliance purposes • With consent • Affiliates • Service providers • Third-party app integrations • Entities for legal compliance • Entities for business transactions Payment information • Facilitate …",
+          "locationHint": "coincidencia: \"integration\" (~offset 18481)"
+        },
+        {
+          "quote": "… purposes • With consent • Affiliates • Service providers • Other users and individuals • Third-party app integrations • Entities for legal compliance • Entities for business transactions Third-party information • Provide the …",
+          "locationHint": "coincidencia: \"integration\" (~offset 20035)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: integration.",
+      "appliesToModes": [
+        "business"
+      ],
+      "modeSpecificity": "mode_specific",
+      "modeEvidence": [
+        {
+          "quote": "… Personalization • Legal and compliance purposes • With consent • Affiliates • Service providers • Third-party app integrations • Entities for legal compliance • Entities for business transactions Payment information • Facilitate …",
+          "locationHint": "coincidencia: \"integration\" (~offset 18481)"
+        },
+        {
+          "quote": "… purposes • With consent • Affiliates • Service providers • Other users and individuals • Third-party app integrations • Entities for legal compliance • Entities for business transactions Third-party information • Provide the …",
+          "locationHint": "coincidencia: \"integration\" (~offset 20035)"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "createdAt": "2026-06-14T17:50:38.547Z",
+    "parserVersion": "0.2.0",
+    "isMock": false,
+    "reviewStatus": "unreviewed",
+    "retrievedAt": "2026-06-14T17:50:38.119Z",
+    "fetcherVersion": "0.1.0",
+    "contentHash": "sha256:9bc5772c066b72b0138b5b94cde4bf3b2e8419b35e8169d45170f8907991ca2d",
+    "sourceVerified": true,
+    "sourceStatus": "verified",
+    "extractionMethod": "html-to-text",
+    "canonicalUrl": "https://replit.com/privacy-policy",
+    "finalUrl": "https://replit.com/privacy-policy",
+    "fetchedPath": "data/fetched/replit-replit-ai-privacy-policy-2026-06-14.html",
+    "extractedTextPath": "data/extracted/replit-replit-ai-privacy-policy-2026-06-14.txt",
+    "extractedChars": 34569
+  }
+}

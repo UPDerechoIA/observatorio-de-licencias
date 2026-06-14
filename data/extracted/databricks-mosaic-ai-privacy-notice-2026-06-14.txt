@@ -1,0 +1,194 @@
+Skip to main content
+
+Privacy Notice
+This Privacy Notice explains how Databricks, Inc. and its affiliates (“ Databricks ”, “ we ”, “ our ”, and “ us ”) collects, uses, discloses and otherwise processes your personal information (also known as personal data) in connection with the use of Databricks websites and applications, including software, that link to this Privacy Notice (collectively, the “Sites” and individually, “ Websites ” or “ Applications ”), our data processing platform products and services (the “Platform Services”) and in the usual course of business, such as in connection with our events, sales, and marketing activities (collectively, with Sites and Platform Services, “ Services ”). It also contains information about your choices and privacy rights.
+If you are a California resident, the California Consumer Privacy Act (“ CCPA ”) requires us to provide you with additional information regarding your rights with respect to your “personal information. This information is described in our Supplemental Privacy Notice to California Residents .
+
+Our Services
+We provide the Platform Services to our customers and users (collectively, “ Customers ”) under an agreement with them and solely for their benefit and the benefit of their personnel authorized to access and use the Platform Services (“ Authorized Users ”). Our processing of Authorized User data is governed by our agreement with the relevant Customer. This Privacy Notice does not apply to (i) the data that our Customers and their Authorized Users upload, submit or otherwise make available to the Platform Services and other data that we process on their behalf, as defined in our agreement with the Customer; (ii) any products, services, websites, or content that are offered by third parties or that have their own privacy notice; or (iii) personal information that we collect and process in connection with our recruitment activities, which is covered under our Applicant Privacy Notice .
+We recommend that you read this Privacy Notice in full to ensure that you are informed. However, if you only want to access a particular section of this Privacy Notice, you can click on the link below to go to that section.
+
+• Information We Collect About You
+
+• How We Use Your Information
+
+• How We Disclose Your Information
+
+• International Users and Transfers
+
+• Your Choices and Rights
+
+• Other Important Information
+
+• Changes to this Notice
+
+• How to Contact Us
+
+Information We Collect About You
+Information that we collect from or about you includes information you provide, information we collect automatically (e.g., as you use the Services), and information we receive from other sources.
+
+Information you provide
+When using our Services, we may collect certain information, such as:
+
+• Identifiers: We collect your name, email address, phone number, postal address and country to administer your account and provide our Services to you;
+
+• Professional/Employment-related information: We also collect information about your job title, role and company name;
+
+• Account information: If you create an account on the Services, we will collect your authentication information used to access the Services;
+
+• Customer service and other interaction information: We will collect information when you interact and communicate with us, for example, when you request information about our Platform Services, interact with our sales team or contact customer support, complete a survey, provide feedback or post comments, register for an event, or take part in marketing activities. We may keep a record of your communications with us and other information you disclose during the course of such communications (which may be stored as an audio file or a transcript);
+
+• Commercial information: We keep records of your history of past purchases and transactions with us;
+
+• Financial information: We collect information about your designated payment method(s), which may be collected by our third-party payment and billing service providers.
+
+Information posted in public forums
+Certain features of our Services make it possible for you to post content publicly or viewable by other users, such as through the Databricks Community or through other public forums. Any information you post openly in these ways will be available for viewing and use by other users of these Services, as well as Databricks, and potentially accessible through third-party search engines. Accordingly, please take care when using these features and do not provide personal information that you would not want made available in these ways.
+
+Information we collect automatically
+We use standard automated data collection tools, such as cookies, web beacons, tracking pixels, tags, and similar tools, to collect Internet and device activity information about how people use our Sites and interact with our emails.
+For example, when you visit our Sites we (or an authorized third party) may collect certain information from you or your device. This may include information about your computer or device (such as operating system, device identifier, browser language, and Internet Protocol (IP) address), and information about your activities on our Sites (such as how you came to our Sites, access times, the links you click on, browsing behavior, clicks and cursor movements, and other statistical information). We use this information to help us understand how you are using our Sites and how to better provide the Sites to you. We may also use web beacons and pixels in our emails. For example, we may place a pixel in our emails that notifies us when you click on a link in the email. We use these technologies to improve our communications and our overall Services. We may also use your IP address to derive your general location information.
+When you use our Platform Services or other Applications, we automatically collect certain information about how you are using those services (“Usage Data”). While most Usage Data is not personal information, it may include information about your account (such as User ID, email address, or Internet Protocol (IP) address) and information about your computer or device (such as browser type and operating system). It may also include information about your activities in connection with the Platform Services and Applications, such as the pages or features you access or use, the time spent on those pages or features, search terms entered, commands executed, information about the types and size of files analyzed via the Platform Services, and other statistical information relating to your use of the these services. We collect Usage Data to provide, support and operate the Services, for network and information security, to better understand how our Platform Services and Applications are used, and to improve our products and services more generally.
+We may also use the information we collect automatically (for example, IP address, and unique device identifiers) to identify the same unique person across Services to provide a more seamless and personalized experience to you.
+The types of data collection tools we use may change over time as technology evolves. You can learn more about our use of cookies and similar tools, as well as how to opt out of certain data collection, by visiting our Cookie Notice .
+
+Information we receive from other sources
+We may obtain information about you from third-party sources, including resellers, distributors, business partners, event sponsors, security and fraud detection services, social media platforms, and publicly available sources. Examples of information that we receive from third parties include marketing and sales information (such as name, email address, phone number and similar contact information), and purchase, support and other information about your interactions with our Sites and Platform Services. We may combine such information with the information we receive and collect from and about you in ways consistent with this Privacy Notice.
+
+How We Use Your Information
+We use your personal information to provide, maintain, improve and update our Services. Our purposes for collecting your personal information include:
+
+• To Provide the Services:
+• to provide, maintain, deliver and update the Services;
+
+• to create and maintain your Databricks account;
+
+• for billing, payment, or account management; for example, to identify your account and correctly identify your usage of our products and services;
+
+• to register and provide you with training and certification programs;
+
+• to provide you with customer service and support;
+
+• Sales and Marketing
+• for sales phone calls for training and coaching purposes, quality assurance and administration (in accordance with applicable laws), including to analyze sales calls using analytics tools to gain better insights into our interactions with customers;
+
+• to tailor and send you newsletters, emails and other content to promote our products and services (you can always unsubscribe from our marketing emails by clicking here ) and to allow third-party partners (like our event sponsors) to send you marketing communications about their services, in accordance with your preferences and applicable law;
+
+• To Communicate with You
+• to send you notifications about the Services, including technical notices, updates, security alerts, administrative messages and invoices;
+
+• to respond to your questions, comments, and requests, including to keep in contact with you regarding the products and services you use;
+
+• to contact you to conduct surveys, receive your feedback, conduct audits, and for market research purposes;
+
+• Online Advertising
+• for online advertising purposes; for example, to display and measure advertising on third-party websites;
+
+• Personalization and Service Improvement
+• to personalize your experience when using our Services;
+
+• to measure your use of and improve Services, and to develop new products and services;
+
+• to generate and analyze statistical information about how our Sites and Platform Services are used in the aggregate;
+
+• Legal and Security Purposes
+• to investigate security issues, prevent fraud, or combat the illegal or controlled uses of our products and services, including within our learning and certification programs;
+
+• to comply with our obligations under applicable law, legal process, or government regulation;
+
+• With Your Consent
+• We will also use your information for other purposes, where you have given consent for such uses.
+
+To engage in these uses of your information, we may use tools such as large language models and other forms of artificial intelligence in accordance with applicable law.
+De-Identified/Anonymized Information. We may de-identify or anonymize information we collect so the information cannot reasonably identify you or your device, or we may collect information that is already in de-identified or anonymized form. Except as otherwise prohibited by applicable law, our use and disclosure of de-identified and anonymized information is not subject to any restrictions under this Privacy Notice, and we may use and disclose it to others for any purpose, without limitation.
+
+How We Disclose Your Information
+We may disclose your personal information to third parties as follows:
+
+• Affiliates: to our affiliates and subsidiaries for the purposes described in this Privacy Notice;
+
+• Service Providers: to our service providers who assist us in providing the Services, such as billing, payment processing, customer support, sales and marketing, and data analysis, subject to appropriate contractual prohibitions on their use of your information. We also disclose information to service providers who assist us with detecting and preventing fraud, security threats or other illegal or malicious behavior, for example, Kount who provides fraud detection services where your personal information is processed by Kount in accordance with its Privacy Notice available at kount.com/legal/privacy-policy ;
+
+• Third-Party Partners and Sponsors: to third-party business partners, such as resellers, distributors, and/or referral partners, who are involved in providing content, products or services to our prospects or Customers. We may also engage with third-party partners who are working with us to organize or sponsor an event to which you have registered to enable them to contact you about the event or their services (but only where we have a lawful basis to do so, such as your consent where required by applicable law);
+
+• Online Advertising Partners: to online advertising providers that tailor online ads to your interests based on information they collect about your online activity over time and across different services (known as targeting online advertising);
+
+• Sponsoring Organizations: to the organization that is sponsoring a training or certification program that you take through the Services (e.g., your employer), for example to notify them of your registration and course status;
+
+• For legal purposes: when authorized by law or we deem necessary in good faith to comply with legal process; when required to protect and defend the rights or property of Databricks or our Customers, including the security of our Sites, products and services (including the Platform Services); or when necessary to protect the personal safety, property or other rights of the public, Databricks or our Customers;
+
+• With your consent: when you instruct us to do so or where you have consented to the disclosure of your information with third parties; or
+
+• Business Transactions: we may engage in transactions with other companies involving the sale of assets or parts of our business. We may disclose your information as part of, or in contemplation of, such transactions. If a portion of or all of our assets are transferred to a third party in connection with such transactions, your information may be among the transferred assets, including in the course of activities leading up to such transactions (e.g., transaction diligence).
+
+International Users and Transfers
+Databricks may transfer your personal information to countries other than your country of residence. In particular, we may transfer your personal information to the United States and other countries where our affiliates, business partners and services providers are located. These countries may have different data protection laws to the country where you reside.
+Wherever we process your personal information, we take appropriate steps to ensure it is protected in accordance with this Privacy Notice and applicable data protection laws. The safeguards we use include implementing the European Commission’s Standard Contractual Clauses for transfers of personal information from the EEA or Switzerland between us and our business partners and service providers, and equivalent measures for transfers of personal information from the United Kingdom and other global jurisdictions with similar transfer requirements. Databricks also offers our Customers the ability to enter into a data processing addendum (DPA) that contains standard contractual clauses, for transfers between us and our Customers. We also make use of supplementary measures to ensure your information is adequately protected.
+Data Privacy Framework Notice
+Databricks complies with the EU-U.S. Data Privacy Framework (EU-U.S. DPF), the UK Extension to the EU-U.S. DPF, and the Swiss-U.S. Data Privacy Framework (Swiss-U.S. DPF) as set forth by the U.S. Department of Commerce. Databricks has certified to the U.S. Department of Commerce that it adheres to the EU-U.S. Data Privacy Framework Principles (EU-U.S. DPF Principles) with regard to the processing of personal data received from the European Union in reliance on the EU-U.S. DPF and from the United Kingdom (and Gibraltar) in reliance on the UK Extension to the EU-U.S. DPF. Databricks has certified to the U.S. Department of Commerce that it adheres to the Swiss-U.S. Data Privacy Framework Principles (Swiss-U.S. DPF Principles) with regard to the processing of personal data received from Switzerland in reliance on the Swiss-U.S. DPF. If there is any conflict between the terms in this privacy policy and the EU-U.S. DPF Principles and/or the Swiss-U.S. DPF Principles, the Principles shall govern. The following Databricks entities are covered by the DPF certification: Databricks, Inc., Neon, LLC. To learn more about the Data Privacy Framework (DPF) program, and to view our certification, please visit https://www.dataprivacyframework.gov/. To learn more, visit our Data Privacy Framework Notice here .
+Information for EU, UK, and Swiss Users
+If you are located in the European Economic Area, United Kingdom or Switzerland, the controller of your personal information is Databricks, Inc., 160 Spear Street, Suite 1300, San Francisco, CA 94105, United States.
+We only collect your personal information if we have a legal basis for doing so. The legal basis that we rely on depends on the personal information concerned and the specific context in which we collect it. Generally, we collect and process your personal information where:
+
+• We need it to enter into or perform a contract with you, such as to provide you with the Platform Services, respond to your request, or provide you with customer support;
+
+• We need to process your personal information to comply with a legal obligation (such as to comply with applicable legal, tax and accounting requirements) or to protect the vital interests of you or other individuals;
+
+• You give us your consent, such as to receive certain marketing communications; or
+
+• Where we have a legitimate interest, such as to respond to your requests and inquiries, to ensure the security of the Services, to detect and prevent fraud, to maintain, customize and improve the Services, to promote Databricks and our Services, and to defend our interests and rights.
+
+You have a right to lodge a complaint with your local data protection authority regarding our data processing activities.
+
+Your Choices and Rights
+We offer you choices regarding the collection, use and disclosure of your personal information and we will respect the choices you make in accordance with applicable law. Please note that if you decide not to provide us with certain personal information, you may not be able to access certain features of the Sites or use the Platform Services.
+Account information
+If you want to correct, update or delete your account information, please log on to your Databricks account and update your profile.
+Opt out of marketing
+We may periodically send you marketing communications that promote our products and the Services consistent with your choices. You may opt out from receiving such communications, either by following the unsubscribe instructions in the communication you receive or by clicking here . Please note that it may take us some time to process your request in accordance with applicable law, and that we may still send you important service-related communications regarding our products or services, such as communications about your subscription or account, service announcements or security information.
+Your privacy rights
+Depending upon your place of residence, you may have rights in relation to your personal information. For example, residents of certain U.S. states and residents of the EU, UK, and Switzerland can exercise the following rights, depending on the laws of your jurisdiction:
+
+• Access to, or a copy of, your information (where feasible, in a portable, machine-readable form)
+
+• Confirmation that we are processing your information
+
+• Correction or amendment of your information
+
+• Deletion of your information
+
+• Transfer of your information to a third party, where technically feasible
+
+• Restriction or objection to certain uses of your information (e.g., opt out of marketing communications)
+
+• The withdrawal of consent to processing your information for certain purposes that were originally based on your consent
+
+• Opt out of the processing of your personal information for profiling in furtherance of decisions that produce legal or similarly significant effects, if applicable
+
+If you (or an authorized agent acting on your behalf) wish to exercise any of your rights under applicable data protection laws, submit a request online by completing the request form here or by calling +1 833 338 0670, our toll-free hotline. We will respond to requests that we receive in accordance with applicable laws. Databricks may take certain steps to verify your request using information available to us, such as your email address or other information associated with your Databricks account, and if needed we may ask you to provide additional information for the purposes of verifying your request. Any information you provide to us for verification purposes will only be used to process and maintain a record of your request.
+If you have made a request to access, delete, or correct your personal information and we deny your request, depending on your place of residence you may have the ability to appeal our denial. You can exercise this right by contacting us at the contact details provided at the bottom of this Privacy Notice. If an appeal right is applicable to you, we will let you know in our response to you.
+As described above, we may also process personal information that has been submitted by a Customer to our Platform Services. If your personal information has been submitted to the Platform Services by or on behalf of a Databricks Customer and you wish to exercise your privacy rights, please direct your request to the relevant Customer.
+Notice of Right to Opt Out of Data "Sales" and "Targeted Adverting"
+If you are a U.S. resident and depending on the state in which you live, you may have the right to opt out of the "sale" of your personal information or the disclosure of your personal information for purposes of online targeted advertising (our online advertising activities are explained further in our Cookie Notice ). We do not "sell" personal information in the traditional sense of exchanging information for monetary payment. However, because the definitions of “sale” and “targeted advertising" under applicable law may include the disclosure of your information (which includes your Identifiers and Internet and device activity) to certain types of advertising and marketing partners, we provide the right to opt out of these activities. You may opt out of these activities based on cookies and similar online identifiers by visiting our “Your Privacy Choices“ link on our website footer or by enabling a browser-based opt-out signal, which we will also comply with where legally required. You may opt out of these activities based on other identifiers (such as your email address) by clicking here to submit a request.
+
+Other Important Information
+Notice to California Residents
+If you are a California resident, for detailed information about our practices under California law, please click here .
+Notice to Authorized Users
+Our Platform Services are intended to be used by organizations. Where the Platform Services are made available to you through an organization (e.g., your employer), that organization is the administrator of the Platform Services and responsible for the accounts and/or services over which it has control. For example, administrators can access and change information in your account or restrict and terminate your access to the Platform Services. We are not responsible for the privacy or security practices of an administrator's organization, which may be different from the practices reflected in this Privacy Notice. Please contact your organization or refer to your organization's policies for more information.
+Data Retention
+Databricks retains the personal information described in this Privacy Notice for as long as you use our Services, as may be required by law (for example, to comply with applicable legal tax or accounting requirements), as necessary for other legitimate business or commercial purposes described in this Privacy Notice (for example, to resolve disputes or enforce our agreements), or as otherwise communicated to you.
+Security
+We are committed to protecting your information. We use a variety of technical, physical, and organizational security measures designed to protect against unauthorized access, alteration, disclosure, or destruction of information. However, no security measures are perfect or impenetrable. As such, we cannot guarantee the security of your information.
+Third-Party Services
+Our Services may contain links to third-party websites, applications, services, or social networks (including co-branded websites or products that are maintained by one of our business partners). We may also make available certain features that allow you to sign into our Sites using third-party login credentials (such as LinkedIn, Facebook, Twitter and Google+) or access third-party services from our Platform Services (such as Github). Any information that you choose to submit to third-party services is not covered by this Privacy Notice. We encourage you to read the terms of use and privacy notices of use of such third-party services before disclosing your information with them to understand how your information may be collected and used.
+Children's Data
+The Sites and Platform Services are not directed to children under 18 years of age and Databricks does not knowingly collect personal information from children under 18. If we learn that we have collected any personal information from children under an age for which consent or other legal obligations are required, we will take steps to delete such information. If you are aware that a child has submitted us such information, please contact us using the details provided below.
+
+Changes to this Notice
+Databricks may change this Privacy Notice from time to time. We will post any changes on this page and, if we make material changes, provide a more prominent notice (for example, by adding a statement to the website landing page, providing notice through the Platform Services login screen, or by emailing you). You can see the date on which the latest version of this Privacy Notice was posted below. If you disagree with any changes to this Privacy Notice, you should stop using the Services and deactivate your Databricks account.
+
+How to Contact Us
+Please contact us at privacy@databricks.com if you have any questions about our privacy practices or this Privacy Notice. You can also write to us at Databricks Inc., 160 Spear Street, Suite 1300, San Francisco, CA 94105 Attn: Privacy.
+If you interact with Databricks through or on behalf of your organization, then your personal information may also be subject to your organization’s privacy practices and you should direct any questions to that organization.
+Last updated: January 9, 2026

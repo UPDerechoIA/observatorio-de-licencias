@@ -1,0 +1,538 @@
+{
+  "id": "aws-bedrock-privacy-notice-2026-06-14",
+  "providerName": "Amazon Web Services",
+  "productName": "AWS Bedrock",
+  "productTier": "All",
+  "documentType": "Privacy Policy",
+  "contractingMode": "all",
+  "appliesToModes": [
+    "api",
+    "paid_individual",
+    "enterprise"
+  ],
+  "sourceScope": "general",
+  "modeConfidence": "high",
+  "modeRationale": "El documento aplica de forma general: no surge del texto una diferenciación clara por modalidad de contratación.",
+  "sourceUrl": "https://aws.amazon.com/privacy/",
+  "retrievedAt": "2026-06-14T17:50:33.283Z",
+  "rawTextPath": "data/extracted/aws-bedrock-privacy-notice-2026-06-14.txt",
+  "overall": {
+    "plainLanguageSummary": "El parser detectó posibles cláusulas en 11 de 22 categorías analizadas. El nivel de riesgo general estimado es \"medium\". Este es un análisis preliminar y automático: la redacción puede no surgir con claridad del texto y requiere revisión legal humana.",
+    "legalSummary": "Sobre 22 categorías jurídicas relevadas, se identificaron pasajes vinculados en 11. La calificación de riesgo general (medium) es preliminar y se apoya en coincidencias léxicas, no en interpretación jurídica. El alcance de cada cláusula no surge con claridad del texto analizado y requeriría revisión legal humana.",
+    "overallRiskLevel": "medium"
+  },
+  "privacy": {
+    "posture": "moderate",
+    "rationale": "Perfil preliminar (no es conclusión jurídica). Hay tratamiento de datos con algunas salvaguardas, pero no todas; perfil intermedio. Requiere revisión legal humana. Señales: retention_controls, deletion_control.",
+    "signals": [
+      "retention_controls",
+      "deletion_control"
+    ],
+    "evidence": []
+  },
+  "categories": {
+    "privacy": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a cómo se procesan los datos personales del usuario. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a el tratamiento de datos personales del usuario y sus finalidades. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… Peru S.R.L., located at Av. Jorge Basadre 349 San Isidro, Lima (“AWS Peru”), AWS Peru is the data controller and the personal data bank holder of the following data banks: customers, prospective customers, and vendors. Personal Information. …",
+          "locationHint": "coincidencia: \"personal data\" (~offset 28583)"
+        },
+        {
+          "quote": "… object to the processing of personal information; and • exercise any other rights afforded by the Peruvian Personal Data Protection Regulations. If you wish to do any of these things and you are an AWS Peru customer, please contact us …",
+          "locationHint": "coincidencia: \"personal data\" (~offset 29778)"
+        },
+        {
+          "quote": "… Parties. We may share your personal information as described in this Privacy Notice and as permitted by the Peruvian Personal Data Protection Regulations, including to Amazon Web Services Inc., located at 410 Terry Avenue North, Seattle, WA …",
+          "locationHint": "coincidencia: \"personal data\" (~offset 30388)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: personal data.",
+      "appliesToModes": [
+        "api",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "training_use": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre si el proveedor podría usar tus conversaciones o archivos para entrenar sus modelos. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a el uso de inputs, outputs o archivos del usuario para entrenamiento o mejora de modelos resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… assistance (including advertising and event management), conducting customer relationship management, and providing training. These third-party service providers have access to personal information needed to perform their functions, but may not …",
+          "locationHint": "coincidencia: \"training\" (~offset 5635)"
+        },
+        {
+          "quote": "… or other information about your interactions with products and services offered by us, our affiliates (such as AWS training courses), or third parties (such as products offered through the AWS Marketplace) in relation to AWS Offerings; • …",
+          "locationHint": "coincidencia: \"training\" (~offset 52154)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: training.",
+      "appliesToModes": [
+        "api",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "input_ip": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a quién es dueño del contenido que ingresás (tus prompts y archivos). La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a la titularidad de los inputs aportados por el usuario. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… from third-party providers through the AWS Marketplace (or other similar venues operated or provided by us); • offer your content, products, or services on or through AWS Offerings or the AWS Marketplace (or other similar venues operated or provided …",
+          "locationHint": "coincidencia: \"your content\" (~offset 48693)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: your content.",
+      "appliesToModes": [
+        "api",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "output_ip": {
+      "status": "not_found",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "No se encontró una cláusula clara sobre quién es dueño de lo que genera la IA a partir de tus pedidos en el texto analizado. La ausencia de coincidencias no garantiza que el tema no esté tratado.",
+      "legalSummary": "No surge del texto analizado una cláusula expresa sobre la asignación de titularidad sobre los outputs generados por el servicio. La ausencia de coincidencias léxicas no permite concluir su inexistencia.",
+      "evidence": [],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. No se hallaron coincidencias léxicas relevantes.",
+      "appliesToModes": [
+        "api",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "license_grant": {
+      "status": "not_found",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "No se encontró una cláusula clara sobre qué permisos le das al proveedor sobre tu contenido en el texto analizado. La ausencia de coincidencias no garantiza que el tema no esté tratado.",
+      "legalSummary": "No surge del texto analizado una cláusula expresa sobre la licencia conferida al proveedor sobre los contenidos del usuario. La ausencia de coincidencias léxicas no permite concluir su inexistencia.",
+      "evidence": [],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. No se hallaron coincidencias léxicas relevantes.",
+      "appliesToModes": [
+        "api",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "data_retention": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a cuánto tiempo se conserva tu información. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a los plazos y condiciones de retención de datos del usuario. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… as may be required by law (including for tax and accounting purposes), or as otherwise communicated to you. How long we retain specific personal information varies depending on the purpose for its use, and we will delete your personal information …",
+          "locationHint": "coincidencia: \"we retain\" (~offset 12159)"
+        },
+        {
+          "quote": "… law and legal obligations, including to respond to lawful requests and orders; or • with your consent. Information We Retain After Your Account is Closed. • After account closure, we may need to keep certain information for an additional …",
+          "locationHint": "coincidencia: \"we retain\" (~offset 20297)"
+        },
+        {
+          "quote": "… the Framework Act on National Taxes of Republic of Korea or other laws), or as otherwise communicated to you. How long we retain specific personal information varies depending on the purpose for its use, and we will delete your personal information …",
+          "locationHint": "coincidencia: \"we retain\" (~offset 37058)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: we retain.",
+      "appliesToModes": [
+        "api",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "data_deletion": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a si y cómo podés pedir que borren tu información. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a los mecanismos de supresión o eliminación de datos del usuario. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… communicated to you. How long we retain specific personal information varies depending on the purpose for its use, and we will delete your personal information in accordance with applicable law. Contacts, Notices, and Revisions If you have any …",
+          "locationHint": "coincidencia: \"we will delete\" (~offset 12248)"
+        },
+        {
+          "quote": "… communicated to you. How long we retain specific personal information varies depending on the purpose for its use, and we will delete your personal information in accordance with applicable law. Contact Information of Department Handling Complaints …",
+          "locationHint": "coincidencia: \"we will delete\" (~offset 37147)"
+        },
+        {
+          "quote": "… and information about how it is processed; • request that inaccurate personal information is corrected; • request deletion of personal information that is no longer necessary for the purposes underlying the processing, processed based on …",
+          "locationHint": "coincidencia: \"request deletion\" (~offset 15668)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: we will delete, request deletion.",
+      "appliesToModes": [
+        "api",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "confidentiality": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre si el proveedor se compromete a mantener tu información en reserva. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a las obligaciones de confidencialidad aplicables al proveedor resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… and applicable data protection law. • India For any prospective or current customers of Amazon Web Services India Private Limited (formerly known as Amazon Internet Services Private Limited), our mailing address is: Amazon Web Services India …",
+          "locationHint": "coincidencia: \"private\" (~offset 23978)"
+        },
+        {
+          "quote": "… (formerly known as Amazon Internet Services Private Limited), our mailing address is: Amazon Web Services India Private Limited, Block E, 14th Floor, Unit Nos. 1401 to 1421, International Trade Tower, Nehru Place, New Delhi, Delhi 110019, …",
+          "locationHint": "coincidencia: \"private\" (~offset 24106)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: private.",
+      "appliesToModes": [
+        "api",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "security": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a qué medidas de seguridad dice tomar el proveedor. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las medidas técnicas y organizativas de seguridad declaradas. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… of products on AWS Marketplace and sponsors of AWS events, we require the recipients to adopt personal information security measures to protect your personal information. Learn more about the countries where third parties may be located, and the …",
+          "locationHint": "coincidencia: \"security measures\" (~offset 25757)"
+        },
+        {
+          "quote": "… Data Security Standard (PCI DSS) when handling credit card data. • We maintain physical, electronic, and procedural safeguards in connection with the collection, storage, and disclosure of personal information. Our security procedures mean that …",
+          "locationHint": "coincidencia: \"safeguards\" (~offset 8195)"
+        },
+        {
+          "quote": "… account) as described in this Privacy Notice. When deleting personal information, AWS will take standard commercially reasonable measures to make the personal information practically irrecoverable or irreproducible. The specific manner of deletion will …",
+          "locationHint": "coincidencia: \"reasonable measures\" (~offset 36024)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: security measures, safeguards, reasonable measures.",
+      "appliesToModes": [
+        "api",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "security_duty": {
+      "status": "not_found",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "No se encontró una cláusula clara sobre si el proveedor asume un compromiso concreto de seguridad en el texto analizado. La ausencia de coincidencias no garantiza que el tema no esté tratado.",
+      "legalSummary": "No surge del texto analizado una cláusula expresa sobre la existencia de un deber de seguridad exigible al proveedor. La ausencia de coincidencias léxicas no permite concluir su inexistencia.",
+      "evidence": [],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. No se hallaron coincidencias léxicas relevantes.",
+      "appliesToModes": [
+        "api",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "warranties": {
+      "status": "not_found",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "No se encontró una cláusula clara sobre qué garantiza (o no garantiza) el proveedor sobre el servicio en el texto analizado. La ausencia de coincidencias no garantiza que el tema no esté tratado.",
+      "legalSummary": "No surge del texto analizado una cláusula expresa sobre las garantías otorgadas y los disclaimers de garantía. La ausencia de coincidencias léxicas no permite concluir su inexistencia.",
+      "evidence": [],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. No se hallaron coincidencias léxicas relevantes.",
+      "appliesToModes": [
+        "api",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "liability_limitation": {
+      "status": "not_found",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "No se encontró una cláusula clara sobre hasta dónde responde el proveedor si algo sale mal en el texto analizado. La ausencia de coincidencias no garantiza que el tema no esté tratado.",
+      "legalSummary": "No surge del texto analizado una cláusula expresa sobre el régimen de exclusión o limitación de responsabilidad. La ausencia de coincidencias léxicas no permite concluir su inexistencia.",
+      "evidence": [],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. No se hallaron coincidencias léxicas relevantes.",
+      "appliesToModes": [
+        "api",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "indemnity": {
+      "status": "not_found",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "No se encontró una cláusula clara sobre si tenés que defender o pagar al proveedor ante reclamos de terceros en el texto analizado. La ausencia de coincidencias no garantiza que el tema no esté tratado.",
+      "legalSummary": "No surge del texto analizado una cláusula expresa sobre las obligaciones de indemnidad a cargo del usuario. La ausencia de coincidencias léxicas no permite concluir su inexistencia.",
+      "evidence": [],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. No se hallaron coincidencias léxicas relevantes.",
+      "appliesToModes": [
+        "api",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "governing_law": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a qué ley rige el contrato. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a la ley aplicable al contrato. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… varies depending on the purpose for its use, and we will delete your personal information in accordance with applicable law. Contacts, Notices, and Revisions If you have any concerns about privacy at AWS, please contact us with a thorough …",
+          "locationHint": "coincidencia: \"applicable law\" (~offset 12308)"
+        },
+        {
+          "quote": "… obligations, including to respond to lawful requests and orders; or • with your consent. Your Rights . Subject to applicable law, you have the right to: • ask whether we hold personal information about you and request copies of such personal …",
+          "locationHint": "coincidencia: \"applicable law\" (~offset 15419)"
+        },
+        {
+          "quote": "… with the terms of this Privacy Notice and applicable data protection law. • Canada Your Rights. Subject to applicable law, you have the right to: • ask whether we hold personal information about you and request copies of such personal …",
+          "locationHint": "coincidencia: \"applicable law\" (~offset 17313)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: applicable law.",
+      "appliesToModes": [
+        "api",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "jurisdiction": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a qué tribunales resolverían un conflicto. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a la jurisdicción y el foro competente. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… or current customers of Amazon Web Services, Inc., our mailing address is: Amazon Web Services, Inc., 410 Terry Avenue North, Seattle, WA 98109-5210, ATTN: AWS Legal Contact details for specific jurisdictions including the European …",
+          "locationHint": "coincidencia: \"venue\" (~offset 12633)"
+        },
+        {
+          "quote": "… Information. When Amazon Web Services EMEA SARL is the provider of an AWS Offering, Amazon Web Services EMEA SARL, 38 Avenue John F. Kennedy, L-1855, Luxembourg, is the data controller of personal information collected or processed through the …",
+          "locationHint": "coincidencia: \"venue\" (~offset 19461)"
+        },
+        {
+          "quote": "… by the Peruvian Personal Data Protection Regulations, including to Amazon Web Services Inc., located at 410 Terry Avenue North, Seattle, WA 98109-5210, United States of America, for the purposes of providing services and engaging in …",
+          "locationHint": "coincidencia: \"venue\" (~offset 30487)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: venue.",
+      "appliesToModes": [
+        "api",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "arbitration": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre si tenés que resolver disputas por arbitraje y si renunciás a demandas colectivas. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a el sometimiento a arbitraje y la renuncia a acciones colectivas resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… retain records of communications with you, as well as relevant logs (for example, a log of your account closure) for dispute resolution purposes. We may further keep records for preventing fraud and ensuring security, for example in case of misuse of our …",
+          "locationHint": "coincidencia: \"dispute resolution\" (~offset 20912)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: dispute resolution.",
+      "appliesToModes": [
+        "api",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "unilateral_changes": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre si el proveedor puede cambiar las reglas cuando quiera. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a las facultades de modificación unilateral de los términos resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… to your organization’s privacy practices, and you should direct privacy inquiries to your organization. Our business changes constantly, and our Privacy Notice may also change. You should check our website frequently to see recent changes. You …",
+          "locationHint": "coincidencia: \"changes\" (~offset 13114)"
+        },
+        {
+          "quote": "… Colorado Privacy Act or the Oregon Privacy Act. New Jersey Notice of Material Change Disclosure. If we make material changes to our Privacy Notice, we will provide affected customers with advance notice of the change, such as by email, on our …",
+          "locationHint": "coincidencia: \"changes\" (~offset 47906)"
+        },
+        {
+          "quote": "Skip to main content Privacy Notice Last Updated: May 18, 2026 View the prior version of this Privacy Notice. This Privacy Notice describes how we collect and use …",
+          "locationHint": "coincidencia: \"update\" (~offset 43)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: changes, update.",
+      "appliesToModes": [
+        "api",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "plan_differences": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre si las reglas cambian según el plan que tengas (gratis, pago, empresa). No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a las diferencias de régimen entre planes gratuitos, pagos y enterprise/business/team resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… to provide and deliver AWS Offerings and process transactions related to AWS Offerings, including registrations, subscriptions, purchases, and payments. • Measure, Support, and Improve AWS Offerings: We use your personal information to measure …",
+          "locationHint": "coincidencia: \"subscription\" (~offset 2531)"
+        },
+        {
+          "quote": "… and content from sellers using the AWS Marketplace and we provide those sellers information to facilitate your subscription, purchases, or support. • Third-Party Service Providers: We employ other companies and individuals to perform …",
+          "locationHint": "coincidencia: \"subscription\" (~offset 5197)"
+        },
+        {
+          "quote": "… including your name, email address, physical address, phone number, and other similar contact information; • subscription, purchase, support, or other information about your interactions with products and services offered by us, our …",
+          "locationHint": "coincidencia: \"subscription\" (~offset 52006)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: subscription.",
+      "appliesToModes": [
+        "api",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "minors": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a qué dice el documento sobre el uso por menores de edad. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a el tratamiento del uso del servicio por menores de edad. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… . • South Korea AWS does not knowingly collect personal information from children under the age of 14 without the consent of the child's parent or guardian. How We Share Personal Information AWS may share personal …",
+          "locationHint": "coincidencia: \"under the age of\" (~offset 33571)"
+        },
+        {
+          "quote": "… via cookies and similar technologies. AWS does not knowingly share personal information about consumers who are under the age of 18. Your Data Rights . You may have certain data rights under state privacy laws, including to request information …",
+          "locationHint": "coincidencia: \"under the age of\" (~offset 44559)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: under the age of, children under.",
+      "appliesToModes": [
+        "api",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "prohibited_content": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a qué usos del servicio están prohibidos. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las restricciones de uso y las categorías de contenido prohibido. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… of direct marketing other than direct marketing by means of unsolicited electronic communications from AWS which is prohibited unless you give consent to receive such direct marketing; • object, at any time (at which point we will cease …",
+          "locationHint": "coincidencia: \"prohibited\" (~offset 32138)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: prohibited.",
+      "appliesToModes": [
+        "api",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "commercial_use": {
+      "status": "found",
+      "riskLevel": "low",
+      "plainLanguageSummary": "El documento parece referirse a si podés usar el servicio con fines comerciales. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a la habilitación o restricción del uso comercial del servicio. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… parties. Learn more about the personal information we collect . We collect this information for the business and commercial purposes described in the “How We Use Personal Information” section above. Categories of personal information disclosed for a …",
+          "locationHint": "coincidencia: \"commercial purposes\" (~offset 40814)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: commercial purposes.",
+      "appliesToModes": [
+        "api",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "api_references": {
+      "status": "found",
+      "riskLevel": "low",
+      "plainLanguageSummary": "El documento parece referirse a si el documento menciona el uso de APIs y sus condiciones. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las condiciones aplicables al uso de APIs. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… offering usage, occurrences of technical errors, diagnostic reports, your settings preferences, backup information, API calls, and other logs; • the full Uniform Resource Locators (URL) clickstream to, through, and from our website …",
+          "locationHint": "coincidencia: \"api\" (~offset 51286)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: api.",
+      "appliesToModes": [
+        "api",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    }
+  },
+  "metadata": {
+    "createdAt": "2026-06-14T17:50:34.564Z",
+    "parserVersion": "0.2.0",
+    "isMock": false,
+    "reviewStatus": "unreviewed",
+    "retrievedAt": "2026-06-14T17:50:33.283Z",
+    "fetcherVersion": "0.1.0",
+    "contentHash": "sha256:2cb4e6d3cd9e4bfc21cda6bea04d2d31c21a029af99544514e72ef5e2db14bd8",
+    "sourceVerified": true,
+    "sourceStatus": "verified",
+    "extractionMethod": "html-to-text",
+    "canonicalUrl": "https://aws.amazon.com/privacy/",
+    "finalUrl": "https://aws.amazon.com/privacy/",
+    "fetchedPath": "data/fetched/aws-bedrock-privacy-notice-2026-06-14.html",
+    "extractedTextPath": "data/extracted/aws-bedrock-privacy-notice-2026-06-14.txt",
+    "extractedChars": 53424
+  }
+}

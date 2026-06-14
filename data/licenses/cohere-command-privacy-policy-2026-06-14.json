@@ -1,0 +1,606 @@
+{
+  "id": "cohere-command-privacy-policy-2026-06-14",
+  "providerName": "Cohere",
+  "productName": "Command / API",
+  "productTier": "All",
+  "documentType": "Privacy Policy",
+  "contractingMode": "all",
+  "appliesToModes": [
+    "free",
+    "paid_individual",
+    "enterprise"
+  ],
+  "sourceScope": "general",
+  "modeConfidence": "high",
+  "modeRationale": "El documento aplica de forma general: no surge del texto una diferenciación clara por modalidad de contratación.",
+  "sourceUrl": "https://cohere.com/privacy",
+  "retrievedAt": "2026-06-14T17:50:24.593Z",
+  "rawTextPath": "data/extracted/cohere-command-privacy-policy-2026-06-14.txt",
+  "overall": {
+    "plainLanguageSummary": "El parser detectó posibles cláusulas en 8 de 22 categorías analizadas. El nivel de riesgo general estimado es \"medium\". Este es un análisis preliminar y automático: la redacción puede no surgir con claridad del texto y requiere revisión legal humana.",
+    "legalSummary": "Sobre 22 categorías jurídicas relevadas, se identificaron pasajes vinculados en 8. La calificación de riesgo general (medium) es preliminar y se apoya en coincidencias léxicas, no en interpretación jurídica. El alcance de cada cláusula no surge con claridad del texto analizado y requeriría revisión legal humana.",
+    "overallRiskLevel": "medium"
+  },
+  "privacy": {
+    "posture": "strong",
+    "rationale": "Perfil preliminar (no es conclusión jurídica). El texto fuente parece indicar protecciones relevantes (p. ej. compromiso de no entrenamiento y/o DPA o confidencialidad). Requiere revisión legal humana. Señales: no_training_commitment, broad_training_use, enterprise_dpa, retention_controls, unclear_deletion.",
+    "signals": [
+      "no_training_commitment",
+      "broad_training_use",
+      "enterprise_dpa",
+      "retention_controls",
+      "unclear_deletion"
+    ],
+    "evidence": [
+      {
+        "quote": "The data remains within the enterprise customer’s or the third-party cloud provider’s controlled environment and is never accessible to or used by Cohere (for example, we do not train our models on it).",
+        "locationHint": "compromiso de no entrenamiento"
+      },
+      {
+        "quote": "… cloud provider’s controlled environment and is never accessible to or used by Cohere (for example, we do not train our models on it). • To Customer Data: This Policy does not apply to Customer Data (i.e. inputs and outputs) associated with the …",
+        "locationHint": "coincidencia: \"train our models\" (~offset 4593)"
+      }
+    ]
+  },
+  "categories": {
+    "privacy": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a cómo se procesan los datos personales del usuario. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a el tratamiento de datos personales del usuario y sus finalidades. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "North Mini Code. Cohere's first model for developers. Learn more Last Updated: May 1, 2026 Cohere Privacy Policy Cohere Inc. (“ Cohere ”) values and respects your privacy. This privacy policy (this “ Policy ”) explains how and why …",
+          "locationHint": "coincidencia: \"privacy policy\" (~offset 100)"
+        },
+        {
+          "quote": "… in the CCPA) or disclosed to particular categories of third parties, similar to the detail provided above in this Privacy Policy. To request to exercise any of these rights and receive the fastest response, please send an email to …",
+          "locationHint": "coincidencia: \"privacy policy\" (~offset 31800)"
+        },
+        {
+          "quote": "… significant effects. However, we do not engage in such activities based on the personal information covered by this Privacy Policy. If you are an agent making a request on behalf of a consumer, we reserve the right to take steps to verify that you …",
+          "locationHint": "coincidencia: \"privacy policy\" (~offset 33137)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: privacy policy.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "training_use": {
+      "status": "found",
+      "riskLevel": "high",
+      "plainLanguageSummary": "El documento parece referirse a si el proveedor podría usar tus conversaciones o archivos para entrenar sus modelos. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a el uso de inputs, outputs o archivos del usuario para entrenamiento o mejora de modelos. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… cloud provider’s controlled environment and is never accessible to or used by Cohere (for example, we do not train our models on it). • To Customer Data: This Policy does not apply to Customer Data (i.e. inputs and outputs) associated with the …",
+          "locationHint": "coincidencia: \"train our models\" (~offset 4593)"
+        },
+        {
+          "quote": "… and manage billing to your company. You should only provide your corporate payment information. 2.3. Research and Model Improvement For Trial Users and Researchers (i.e. users interacting with Cohere Products on research-specific platforms like …",
+          "locationHint": "coincidencia: \"model improvement\" (~offset 6125)"
+        },
+        {
+          "quote": "… fulfill our contractual obligations to you under our Terms of Use or commercial agreement. Section 2.3 (Research and Model Improvement): Analyzing usage patterns and using Trial or Research User Inputs/Outputs to improve the performance and safety of our …",
+          "locationHint": "coincidencia: \"model improvement\" (~offset 36056)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: train our models, model improvement.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "input_ip": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre quién es dueño del contenido que ingresás (tus prompts y archivos). No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a la titularidad de los inputs aportados por el usuario resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… example, we do not train our models on it). • To Customer Data: This Policy does not apply to Customer Data (i.e. inputs and outputs) associated with the use of Cohere Products by Enterprise Users under an enterprise agreement. Cohere’s …",
+          "locationHint": "coincidencia: \"input\" (~offset 4689)"
+        },
+        {
+          "quote": "… we collect content you submit to the Cohere Products, and outputs generated by the Cohere Products. We may use this input and output data to conduct research and development. This includes analyzing usage trends and using inputs/outputs to …",
+          "locationHint": "coincidencia: \"input\" (~offset 6476)"
+        },
+        {
+          "quote": "… safety of Cohere Products. This should not include personal information. Please do not submit personal information in inputs to the Cohere Products when accessing them on a research platform or as a Trial User. These trial and research …",
+          "locationHint": "coincidencia: \"input\" (~offset 6747)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: input.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "output_ip": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre quién es dueño de lo que genera la IA a partir de tus pedidos. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a la asignación de titularidad sobre los outputs generados por el servicio resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… we do not train our models on it). • To Customer Data: This Policy does not apply to Customer Data (i.e. inputs and outputs) associated with the use of Cohere Products by Enterprise Users under an enterprise agreement. Cohere’s use of …",
+          "locationHint": "coincidencia: \"output\" (~offset 4700)"
+        },
+        {
+          "quote": "… users demoing Cohere Products under a free trial account), we collect content you submit to the Cohere Products, and outputs generated by the Cohere Products. We may use this input and output data to conduct research and development. This …",
+          "locationHint": "coincidencia: \"output\" (~offset 6418)"
+        },
+        {
+          "quote": "… this input and output data to conduct research and development. This includes analyzing usage trends and using inputs/outputs to improve the performance and safety of Cohere Products. This should not include personal information. Please do not …",
+          "locationHint": "coincidencia: \"output\" (~offset 6589)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: output.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "license_grant": {
+      "status": "not_found",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "No se encontró una cláusula clara sobre qué permisos le das al proveedor sobre tu contenido en el texto analizado. La ausencia de coincidencias no garantiza que el tema no esté tratado.",
+      "legalSummary": "No surge del texto analizado una cláusula expresa sobre la licencia conferida al proveedor sobre los contenidos del usuario. La ausencia de coincidencias léxicas no permite concluir su inexistencia.",
+      "evidence": [],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. No se hallaron coincidencias léxicas relevantes.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "data_retention": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a cuánto tiempo se conserva tu información. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a los plazos y condiciones de retención de datos del usuario. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… of “selling” and “sharing”, you will still need to use the Cookie settings to adjust your preferences. California Data Retention Practices It is our policy not to retain California personal information after we determine it is no longer necessary …",
+          "locationHint": "coincidencia: \"data retention\" (~offset 30359)"
+        },
+        {
+          "quote": "… different purposes and in different contexts, and because rules differ by jurisdiction, there is not typically a fixed retention period that will always apply to a particular category of personal information. Retention will depend on the context and …",
+          "locationHint": "coincidencia: \"retention period\" (~offset 15527)"
+        },
+        {
+          "quote": "… below. • A framework for the retention and destruction of personal information consistent with applicable laws. We retain personal information only for as long as necessary to fulfill the purposes for which it was collected, to meet business …",
+          "locationHint": "coincidencia: \"we retain\" (~offset 15100)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: data retention, retention period, we retain.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "data_deletion": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre si y cómo podés pedir que borren tu información. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a los mecanismos de supresión o eliminación de datos del usuario resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… on your location, and subject to certain limitations, you may have the right to access, update, correct, or delete your personal information in our control, or the right to obtain a copy of your personal information or to receive …",
+          "locationHint": "coincidencia: \"delete\" (~offset 16591)"
+        },
+        {
+          "quote": "… of our Website). See Cookies and Interest-Based Advertising below for details. • Platform Account Deletion: You can delete your account at any time by selecting “Your Profile” in the Platform, navigating to the “Danger Zone” tab, and clicking …",
+          "locationHint": "coincidencia: \"delete\" (~offset 17887)"
+        },
+        {
+          "quote": "… account at any time by selecting “Your Profile” in the Platform, navigating to the “Danger Zone” tab, and clicking on “Delete my Account”. Other requests can be made by emailing privacy@cohere.com . We may request certain personal information …",
+          "locationHint": "coincidencia: \"delete\" (~offset 18018)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: delete.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "confidentiality": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre si el proveedor se compromete a mantener tu información en reserva. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a las obligaciones de confidencialidad aplicables al proveedor resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… This helps us summarize inquiries, draft responses, and resolve issues faster. Please do not include sensitive, confidential, or personal information in your support tickets. 2.8. Apply for a Job If you apply for a job with us, we may collect …",
+          "locationHint": "coincidencia: \"confidential\" (~offset 10835)"
+        },
+        {
+          "quote": "… that is powered by Cohere Products, review the privacy notice provided by the company offering the application. • To Private and Third Party Deployments : Cohere does not have access to data processed in connection with the use of Cohere models …",
+          "locationHint": "coincidencia: \"private\" (~offset 4172)"
+        },
+        {
+          "quote": "… Deployments : Cohere does not have access to data processed in connection with the use of Cohere models or products in Private Deployments or Deployments on Third-Party Managed AI services (e.g. on AWS, Azure, or GCP). The data remains within the …",
+          "locationHint": "coincidencia: \"private\" (~offset 4315)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: confidential, private.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "security": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a qué medidas de seguridad dice tomar el proveedor. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las medidas técnicas y organizativas de seguridad declaradas. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… Products, or in the process of developing its models, such transfers are subject to and protected by appropriate security measures in accordance with Canadian privacy laws. We also ensure our sub-processors are subject to appropriate transfer …",
+          "locationHint": "coincidencia: \"security measures\" (~offset 43855)"
+        },
+        {
+          "quote": "… Who This Policy Applies To • Collection and Use of Personal Information • Disclosure of Personal Information • Safeguards, Retention and Privacy Governance • Your Rights and Choices • International Transfers • Updates to This Policy • …",
+          "locationHint": "coincidencia: \"safeguards\" (~offset 1636)"
+        },
+        {
+          "quote": "… involving all or part of Cohere or as part of a corporate reorganization or other change in corporate control. 4. Safeguards, Retention, and Privacy Governance We have implemented policies and practices that govern our treatment of personal …",
+          "locationHint": "coincidencia: \"safeguards\" (~offset 14217)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: security measures, safeguards.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "security_duty": {
+      "status": "not_found",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "No se encontró una cláusula clara sobre si el proveedor asume un compromiso concreto de seguridad en el texto analizado. La ausencia de coincidencias no garantiza que el tema no esté tratado.",
+      "legalSummary": "No surge del texto analizado una cláusula expresa sobre la existencia de un deber de seguridad exigible al proveedor. La ausencia de coincidencias léxicas no permite concluir su inexistencia.",
+      "evidence": [],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. No se hallaron coincidencias léxicas relevantes.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "warranties": {
+      "status": "not_found",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "No se encontró una cláusula clara sobre qué garantiza (o no garantiza) el proveedor sobre el servicio en el texto analizado. La ausencia de coincidencias no garantiza que el tema no esté tratado.",
+      "legalSummary": "No surge del texto analizado una cláusula expresa sobre las garantías otorgadas y los disclaimers de garantía. La ausencia de coincidencias léxicas no permite concluir su inexistencia.",
+      "evidence": [],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. No se hallaron coincidencias léxicas relevantes.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "liability_limitation": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre hasta dónde responde el proveedor si algo sale mal. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a el régimen de exclusión o limitación de responsabilidad resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… in operating, securing, and improving our business and AI technologies, including enhancing the performance, reliability, and safety of our AI models. Section 2.4 (Marketing): Sending communications to existing customers or prospects; book …",
+          "locationHint": "coincidencia: \"liability\" (~offset 36484)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: liability.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "indemnity": {
+      "status": "not_found",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "No se encontró una cláusula clara sobre si tenés que defender o pagar al proveedor ante reclamos de terceros en el texto analizado. La ausencia de coincidencias no garantiza que el tema no esté tratado.",
+      "legalSummary": "No surge del texto analizado una cláusula expresa sobre las obligaciones de indemnidad a cargo del usuario. La ausencia de coincidencias léxicas no permite concluir su inexistencia.",
+      "evidence": [],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. No se hallaron coincidencias léxicas relevantes.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "governing_law": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a qué ley rige el contrato. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a la ley aplicable al contrato. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… See Rights and Choices below. • A framework for the retention and destruction of personal information consistent with applicable laws. We retain personal information only for as long as necessary to fulfill the purposes for which it was collected, to …",
+          "locationHint": "coincidencia: \"applicable law\" (~offset 15082)"
+        },
+        {
+          "quote": "… purposes for which it was collected, to meet business or legal requirements, and as otherwise permitted or required by applicable law, including litigation holds. We may collect and use the same category of personal information for different purposes …",
+          "locationHint": "coincidencia: \"applicable law\" (~offset 15295)"
+        },
+        {
+          "quote": "… from Cohere affiliates, partners or service providers in other countries working on our behalf in accordance with applicable law. Examples of countries we transfer personal information to include, but are not limited to, Canada, the United States, …",
+          "locationHint": "coincidencia: \"applicable law\" (~offset 19278)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: applicable law.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "jurisdiction": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre qué tribunales resolverían un conflicto. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a la jurisdicción y el foro competente resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… International Transfers • Updates to This Policy • Contact Us • Cookies and Interest-Based Advertising • Jurisdiction-Specific Addenda 1. Who This Policy Applies To This depends on who you are. To make this Policy easier to understand, …",
+          "locationHint": "coincidencia: \"jurisdiction\" (~offset 1820)"
+        },
+        {
+          "quote": "… support and management. Our vendors and service providers may be located in the U.S., Canada, or other foreign jurisdictions. Please refer to International Transfers to learn more. Users of the Platform or Cohere APIs can also consult our list …",
+          "locationHint": "coincidencia: \"jurisdiction\" (~offset 13174)"
+        },
+        {
+          "quote": "… same category of personal information for different purposes and in different contexts, and because rules differ by jurisdiction, there is not typically a fixed retention period that will always apply to a particular category of personal …",
+          "locationHint": "coincidencia: \"jurisdiction\" (~offset 15482)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: jurisdiction.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "arbitration": {
+      "status": "not_found",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "No se encontró una cláusula clara sobre si tenés que resolver disputas por arbitraje y si renunciás a demandas colectivas en el texto analizado. La ausencia de coincidencias no garantiza que el tema no esté tratado.",
+      "legalSummary": "No surge del texto analizado una cláusula expresa sobre el sometimiento a arbitraje y la renuncia a acciones colectivas. La ausencia de coincidencias léxicas no permite concluir su inexistencia.",
+      "evidence": [],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. No se hallaron coincidencias léxicas relevantes.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "unilateral_changes": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre si el proveedor puede cambiar las reglas cuando quiera. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a las facultades de modificación unilateral de los términos resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… Policy from time to time. We encourage you to periodically review this page to ensure that you are familiar with those changes. We will indicate at the top of this policy when it was most recently updated. Previous Version . 8. Contact Us If …",
+          "locationHint": "coincidencia: \"changes\" (~offset 20036)"
+        },
+        {
+          "quote": "North Mini Code. Cohere's first model for developers. Learn more Last Updated: May 1, 2026 Cohere Privacy Policy Cohere Inc. (“ Cohere ”) values and respects your privacy. This privacy policy …",
+          "locationHint": "coincidencia: \"update\" (~offset 71)"
+        },
+        {
+          "quote": "… Information • Safeguards, Retention and Privacy Governance • Your Rights and Choices • International Transfers • Updates to This Policy • Contact Us • Cookies and Interest-Based Advertising • Jurisdiction-Specific Addenda 1. Who This …",
+          "locationHint": "coincidencia: \"update\" (~offset 1738)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: changes, update.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "plan_differences": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a si las reglas cambian según el plan que tengas (gratis, pago, empresa). La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las diferencias de régimen entre planes gratuitos, pagos y enterprise/business/team. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… when it comes to your personal information. We may provide different notices for specific contexts. For example: • Enterprise customers should consult our Enterprise Data Commitments for information about data handling associated with the …",
+          "locationHint": "coincidencia: \"enterprise\" (~offset 917)"
+        },
+        {
+          "quote": "… should consult our Enterprise Data Commitments for information about data handling associated with the Cohere’s enterprise products and SaaS platform. • If you want more information about how Cohere trains its models and whether personal …",
+          "locationHint": "coincidencia: \"enterprise\" (~offset 1050)"
+        },
+        {
+          "quote": "… a free trial account to test out our Platform under our standard Terms of Use with no payment method on file. • Enterprise Users: Individuals (such as employees or contractors) who use Cohere Products on the Platform using a paid account with …",
+          "locationHint": "coincidencia: \"enterprise\" (~offset 2751)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: enterprise.",
+      "appliesToModes": [
+        "enterprise"
+      ],
+      "modeSpecificity": "mode_specific",
+      "modeEvidence": [
+        {
+          "quote": "… when it comes to your personal information. We may provide different notices for specific contexts. For example: • Enterprise customers should consult our Enterprise Data Commitments for information about data handling associated with the …",
+          "locationHint": "coincidencia: \"enterprise\" (~offset 917)"
+        }
+      ]
+    },
+    "minors": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre qué dice el documento sobre el uso por menores de edad. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a el tratamiento del uso del servicio por menores de edad resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… customers that are powered in whole or in part by Cohere Products. Cohere Products are not intended to be used by minors (children) and are not for personal or household use. We do not knowingly collect personal information from …",
+          "locationHint": "coincidencia: \"minor\" (~offset 3223)"
+        },
+        {
+          "quote": "… in connection with the use of Cohere models or products in Private Deployments or Deployments on Third-Party Managed AI services (e.g. on AWS, Azure, or GCP). The data remains within the enterprise customer’s or the third-party cloud …",
+          "locationHint": "coincidencia: \"age\" (~offset 4368)"
+        },
+        {
+          "quote": "… personal information for Cohere’s own purposes: 2.1. Visit our Website or Use the Platform We collect device and usage information automatically when you visit our Website or use the Platform. This includes IP addresses, page requests, …",
+          "locationHint": "coincidencia: \"age\" (~offset 5225)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: minor, child, children, age.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "prohibited_content": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a qué usos del servicio están prohibidos. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las restricciones de uso y las categorías de contenido prohibido. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… is not permission for any user to disclose their login credentials to an agent or any third party. Such disclosure is prohibited and is not required for an agent to make requests under this Notice. For security and legal reasons, however, Cohere …",
+          "locationHint": "coincidencia: \"prohibited\" (~offset 33939)"
+        },
+        {
+          "quote": "… cookies or to not accept certain cookies. However, if you decide not to accept cookies from our Website/Platform, you may not be able to take advantage of all of the Website/Platform features. To adjust your preferences or exercise control over …",
+          "locationHint": "coincidencia: \"you may not\" (~offset 21492)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: prohibited, you may not.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "commercial_use": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre si podés usar el servicio con fines comerciales. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a la habilitación o restricción del uso comercial del servicio resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… using a paid account with a credit card on file, or are accessing the Platform via their employer under a paid commercial agreement or enterprise trial agreement. • End Users: End users of applications created or made available by Cohere’s …",
+          "locationHint": "coincidencia: \"commercial\" (~offset 2967)"
+        },
+        {
+          "quote": "… include personal information in inputs to Cohere Products, consider moving to an enterprise tier and entering into a commercial agreement and DPA with Cohere. If you are conducting a research project that involves personal information, contact …",
+          "locationHint": "coincidencia: \"commercial\" (~offset 7217)"
+        },
+        {
+          "quote": "… Information (e.g. credit card and invoice details - these typically relate to companies and not individuals) • Commercial information (such as your transaction history) • Login information (such as your account name and password) • Device …",
+          "locationHint": "coincidencia: \"commercial\" (~offset 27591)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: commercial.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "api_references": {
+      "status": "found",
+      "riskLevel": "low",
+      "plainLanguageSummary": "El documento parece referirse a si el documento menciona el uso de APIs y sus condiciones. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las condiciones aplicables al uso de APIs. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… as well as in certain cases use of our hosted AI models and products (“ Cohere Products ”) available via the Cohere API SaaS Platform (“ Platform ”) or via a third-party platform that integrates Cohere Products using the Cohere API.This …",
+          "locationHint": "coincidencia: \"api\" (~offset 634)"
+        },
+        {
+          "quote": "… with our marketing content, or sign up for events/newsletters. • Researchers : Individuals who interact with a Cohere API via third-party research platforms like HuggingFace, LM Arena or other providers, or who participate or apply to …",
+          "locationHint": "coincidencia: \"api\" (~offset 2352)"
+        },
+        {
+          "quote": "… & Proposal Details: For grant and research applications, we collect details about your proposed research, expected API usage volume, budget/funding status, and specific models or products you intend to study. • Community & Social …",
+          "locationHint": "coincidencia: \"api\" (~offset 9156)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: api.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    }
+  },
+  "metadata": {
+    "createdAt": "2026-06-14T17:50:24.765Z",
+    "parserVersion": "0.2.0",
+    "isMock": false,
+    "reviewStatus": "unreviewed",
+    "retrievedAt": "2026-06-14T17:50:24.593Z",
+    "fetcherVersion": "0.1.0",
+    "contentHash": "sha256:1fbb1da27e4c2070dfe1a2f6d9ecf9a8b64690857d920fe89cf221dcb0d3b9a2",
+    "sourceVerified": true,
+    "sourceStatus": "verified",
+    "extractionMethod": "html-to-text",
+    "canonicalUrl": "https://cohere.com/privacy",
+    "finalUrl": "https://cohere.com/privacy",
+    "fetchedPath": "data/fetched/cohere-command-privacy-policy-2026-06-14.html",
+    "extractedTextPath": "data/extracted/cohere-command-privacy-policy-2026-06-14.txt",
+    "extractedChars": 44517
+  }
+}

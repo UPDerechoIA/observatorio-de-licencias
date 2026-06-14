@@ -1,0 +1,550 @@
+{
+  "id": "midjourney-midjourney-terms-of-service-2026-06-14",
+  "providerName": "Midjourney",
+  "productName": "Midjourney",
+  "productTier": "All",
+  "documentType": "Terms of Service",
+  "contractingMode": "all",
+  "appliesToModes": [
+    "free",
+    "paid_individual"
+  ],
+  "sourceScope": "general",
+  "modeConfidence": "high",
+  "modeRationale": "El documento aplica de forma general: no surge del texto una diferenciación clara por modalidad de contratación.",
+  "sourceUrl": "https://docs.midjourney.com/docs/terms-of-service",
+  "retrievedAt": "2026-06-14T20:56:27.855Z",
+  "rawTextPath": "data/extracted/midjourney-midjourney-terms-of-service-2026-06-14.txt",
+  "overall": {
+    "plainLanguageSummary": "El parser detectó posibles cláusulas en 12 de 22 categorías analizadas. El nivel de riesgo general estimado es \"high\". Este es un análisis preliminar y automático: la redacción puede no surgir con claridad del texto y requiere revisión legal humana.",
+    "legalSummary": "Sobre 22 categorías jurídicas relevadas, se identificaron pasajes vinculados en 12. La calificación de riesgo general (high) es preliminar y se apoya en coincidencias léxicas, no en interpretación jurídica. El alcance de cada cláusula no surge con claridad del texto analizado y requeriría revisión legal humana.",
+    "overallRiskLevel": "high"
+  },
+  "privacy": {
+    "posture": "weak",
+    "rationale": "Perfil preliminar (no es conclusión jurídica). La redacción sugiere usos amplios de datos y/o controles poco claros de retención o eliminación. Requiere revisión legal humana. Señales: unclear_deletion, broad_license.",
+    "signals": [
+      "unclear_deletion",
+      "broad_license"
+    ],
+    "evidence": []
+  },
+  "categories": {
+    "privacy": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a cómo se procesan los datos personales del usuario. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a el tratamiento de datos personales del usuario y sus finalidades. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… enter into the Service (the “Inputs”), your use of the Services, and other important topics like arbitration. Our privacy policy outlines how we handle your data here . Please carefully read these Terms, along with our privacy policy, and all other …",
+          "locationHint": "coincidencia: \"privacy policy\" (~offset 754)"
+        },
+        {
+          "quote": "… outputs, and text prompts that You enter, or sample images or other content that You upload to the Service. Our privacy policy can be found here . 4. Content Rights Your Rights and Obligations You own all Assets You create with the Services to …",
+          "locationHint": "coincidencia: \"privacy policy\" (~offset 5009)"
+        },
+        {
+          "quote": "… of the Assets for the Customer. 3. Your Information By using the Services, You may provide Midjourney with personal information like Your email address, user name, billing information, favorites, outputs, and text prompts that You enter, or sample …",
+          "locationHint": "coincidencia: \"personal information\" (~offset 4808)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: privacy policy, personal information.",
+      "appliesToModes": [
+        "free",
+        "paid_individual"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "training_use": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre si el proveedor podría usar tus conversaciones o archivos para entrenar sus modelos. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a el uso de inputs, outputs o archivos del usuario para entrenamiento o mejora de modelos resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… after the cause of action accrues. Otherwise, such cause of action is permanently barred. 11. Image Editor and Video Model Midjourney’s Image Editor tool (“Editor”) and the Video Model (\"Video\") are provided as part of the Services and are …",
+          "locationHint": "coincidencia: \"model\" (~offset 16917)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: model.",
+      "appliesToModes": [
+        "free",
+        "paid_individual"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "input_ip": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a quién es dueño del contenido que ingresás (tus prompts y archivos). La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a la titularidad de los inputs aportados por el usuario. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… reason. Remixing and Stealth Mode Please note: Midjourney is an open community which allows others to use and remix Your Content whenever they are posted in a public setting. By default, Your Content is publicly viewable and remixable. As described …",
+          "locationHint": "coincidencia: \"your content\" (~offset 6914)"
+        },
+        {
+          "quote": "… sharing. It’s OK to share Your creations outside of the Midjourney community but please consider how others might view Your content. • Banhammer. Any violations of these rules may lead to bans from our services. We are not a democracy. Behave …",
+          "locationHint": "coincidencia: \"your content\" (~offset 15523)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: your content.",
+      "appliesToModes": [
+        "free",
+        "paid_individual"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "output_ip": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre quién es dueño de lo que genera la IA a partir de tus pedidos. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a la asignación de titularidad sobre los outputs generados por el servicio resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… may provide Midjourney with personal information like Your email address, user name, billing information, favorites, outputs, and text prompts that You enter, or sample images or other content that You upload to the Service. Our privacy policy …",
+          "locationHint": "coincidencia: \"output\" (~offset 4897)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: output.",
+      "appliesToModes": [
+        "free",
+        "paid_individual"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "license_grant": {
+      "status": "found",
+      "riskLevel": "high",
+      "plainLanguageSummary": "El documento parece referirse a qué permisos le das al proveedor sobre tu contenido. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a la licencia conferida al proveedor sobre los contenidos del usuario. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… to Midjourney, its affiliates, successors, and assigns a perpetual, worldwide, non-exclusive, sublicensable no-charge, royalty-free, irrevocable copyright license to reproduce, prepare derivative works of, publicly display, publicly perform, …",
+          "locationHint": "coincidencia: \"royalty-free\" (~offset 6473)"
+        },
+        {
+          "quote": "… applicable law, You grant to Midjourney a perpetual, irrevocable, exclusive, worldwide, sublicensable, transferable, royalty-free, and fully paid-up license to host, store, adapt, monetize, reproduce, copy, modify, prepare derivative works of, …",
+          "locationHint": "coincidencia: \"royalty-free\" (~offset 20688)"
+        },
+        {
+          "quote": "… all necessary rights and permissions to provide the Content. Rights You give to Midjourney By using the Services, You grant to Midjourney, its affiliates, successors, and assigns a perpetual, worldwide, non-exclusive, sublicensable no-charge, …",
+          "locationHint": "coincidencia: \"you grant\" (~offset 6344)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: royalty-free, you grant.",
+      "appliesToModes": [
+        "free",
+        "paid_individual"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "data_retention": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre cuánto tiempo se conserva tu información. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a los plazos y condiciones de retención de datos del usuario resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… Our designated agent to receive counter notices is the same as the agent shown above. • The DMCA allows us to restore the removed content within 10-14 business days unless the complaining party initiates a court action against you during …",
+          "locationHint": "coincidencia: \"store\" (~offset 11111)"
+        },
+        {
+          "quote": "… by this Section 12 will not violate any applicable law or contractual obligation. Midjourney may use, host, store, publicly display, create derivative works of, copy, adapt, modify, reject, remove, or stop use of any Translations at …",
+          "locationHint": "coincidencia: \"store\" (~offset 19817)"
+        },
+        {
+          "quote": "… irrevocable, exclusive, worldwide, sublicensable, transferable, royalty-free, and fully paid-up license to host, store, adapt, monetize, reproduce, copy, modify, prepare derivative works of, publicly display, publicly perform, and …",
+          "locationHint": "coincidencia: \"store\" (~offset 20737)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: store.",
+      "appliesToModes": [
+        "free",
+        "paid_individual"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "data_deletion": {
+      "status": "not_found",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "No se encontró una cláusula clara sobre si y cómo podés pedir que borren tu información en el texto analizado. La ausencia de coincidencias no garantiza que el tema no esté tratado.",
+      "legalSummary": "No surge del texto analizado una cláusula expresa sobre los mecanismos de supresión o eliminación de datos del usuario. La ausencia de coincidencias léxicas no permite concluir su inexistencia.",
+      "evidence": [],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. No se hallaron coincidencias léxicas relevantes.",
+      "appliesToModes": [
+        "free",
+        "paid_individual"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "confidentiality": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre si el proveedor se compromete a mantener tu información en reserva. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a las obligaciones de confidencialidad aplicables al proveedor resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… mislead recipients of the Assets about their nature or source. • Respect others’ rights. Do not upload others’ private information. • Be careful about sharing. It’s OK to share Your creations outside of the Midjourney community but …",
+          "locationHint": "coincidencia: \"private\" (~offset 15363)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: private.",
+      "appliesToModes": [
+        "free",
+        "paid_individual"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "security": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre qué medidas de seguridad dice tomar el proveedor. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a las medidas técnicas y organizativas de seguridad declaradas resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… or counterclaim, except that either party may apply to any competent court for injunctive relief necessary to protect its rights pending resolution of the arbitration. The arbitrator may order equitable or injunctive relief consistent …",
+          "locationHint": "coincidencia: \"protect\" (~offset 12561)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: protect.",
+      "appliesToModes": [
+        "free",
+        "paid_individual"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "security_duty": {
+      "status": "not_found",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "No se encontró una cláusula clara sobre si el proveedor asume un compromiso concreto de seguridad en el texto analizado. La ausencia de coincidencias no garantiza que el tema no esté tratado.",
+      "legalSummary": "No surge del texto analizado una cláusula expresa sobre la existencia de un deber de seguridad exigible al proveedor. La ausencia de coincidencias léxicas no permite concluir su inexistencia.",
+      "evidence": [],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. No se hallaron coincidencias léxicas relevantes.",
+      "appliesToModes": [
+        "free",
+        "paid_individual"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "warranties": {
+      "status": "found",
+      "riskLevel": "high",
+      "plainLanguageSummary": "El documento parece referirse a qué garantiza (o no garantiza) el proveedor sobre el servicio. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las garantías otorgadas y los disclaimers de garantía. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… any harm caused by Your dependency on the Service. Both the Services and the Assets are provided to Customer on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any …",
+          "locationHint": "coincidencia: \"as is\" (~offset 2179)"
+        },
+        {
+          "quote": "… respectfully or lose Your rights to use the Service. 10. Limitation of Liability and Indemnity We provide the service as is, and we make no promises or guarantees about it. You understand and agree that we will not be liable to You or any …",
+          "locationHint": "coincidencia: \"as is\" (~offset 15767)"
+        },
+        {
+          "quote": "… either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE. You are solely responsible for determining the appropriateness of using or …",
+          "locationHint": "coincidencia: \"merchantability\" (~offset 2354)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: as is, merchantability.",
+      "appliesToModes": [
+        "free",
+        "paid_individual"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "liability_limitation": {
+      "status": "found",
+      "riskLevel": "high",
+      "plainLanguageSummary": "El documento parece referirse a hasta dónde responde el proveedor si algo sale mal. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a el régimen de exclusión o limitación de responsabilidad. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… to bans from our services. We are not a democracy. Behave respectfully or lose Your rights to use the Service. 10. Limitation of Liability and Indemnity We provide the service as is, and we make no promises or guarantees about it. You understand and agree …",
+          "locationHint": "coincidencia: \"limitation of liability\" (~offset 15706)"
+        },
+        {
+          "quote": "… uptime or reliability. Please do not create any dependencies on any attributes of the Services or the Assets. We will not be liable to You or Your downstream customers for any harm caused by Your dependency on the Service. Both the Services and the …",
+          "locationHint": "coincidencia: \"not be liable\" (~offset 2009)"
+        },
+        {
+          "quote": "… provide the service as is, and we make no promises or guarantees about it. You understand and agree that we will not be liable to You or any third party for any loss of profits, use, goodwill, or data, or for any incidental, indirect, special, …",
+          "locationHint": "coincidencia: \"not be liable\" (~offset 15860)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: limitation of liability, not be liable.",
+      "appliesToModes": [
+        "free",
+        "paid_individual"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "indemnity": {
+      "status": "found",
+      "riskLevel": "high",
+      "plainLanguageSummary": "El documento parece referirse a si tenés que defender o pagar al proveedor ante reclamos de terceros. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las obligaciones de indemnidad a cargo del usuario. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… harm someone else or get into a dispute with someone else, we will not be involved. To the extent permitted by law, you will indemnify and hold us harmless, our affiliates, and our personnel, from and against any costs, losses, liabilities, and expenses …",
+          "locationHint": "coincidencia: \"you will indemnify\" (~offset 16384)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: you will indemnify, hold us harmless.",
+      "appliesToModes": [
+        "free",
+        "paid_individual"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "governing_law": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a qué ley rige el contrato. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a la ley aplicable al contrato. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… liable for damages (including costs and attorney’s; fees) under Section 512(f) of the DMCA. 6. Dispute Resolution and Governing Law In the event a dispute, controversy, or claim arises out of or relating to these Terms (“Dispute”), the Dispute will be …",
+          "locationHint": "coincidencia: \"governing law\" (~offset 11582)"
+        },
+        {
+          "quote": "… that a reasonable person would expect to survive this agreement, will. Particularly the IP and privacy stuff. • Governing Law. This Agreement shall be governed by the laws of the State of California, USA, without reference to conflict of law …",
+          "locationHint": "coincidencia: \"governing law\" (~offset 21781)"
+        },
+        {
+          "quote": "… Rights and Obligations You own all Assets You create with the Services to the fullest extent possible under applicable law. There are some exceptions: • Your ownership is subject to any obligations imposed by this Agreement and the rights of …",
+          "locationHint": "coincidencia: \"applicable law\" (~offset 5177)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: governing law, governed by the laws, laws of the state, applicable law.",
+      "appliesToModes": [
+        "free",
+        "paid_individual"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "jurisdiction": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a qué tribunales resolverían un conflicto. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a la jurisdicción y el foro competente. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… of any third-parties. • If you are a company or any employee of a company with more than $1,000,000 USD a year in revenue, you must be subscribed to a “Pro” or “Mega” plan to own Your Assets. • If you upscale the images of others, these …",
+          "locationHint": "coincidencia: \"venue\" (~offset 5426)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: venue.",
+      "appliesToModes": [
+        "free",
+        "paid_individual"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "arbitration": {
+      "status": "found",
+      "riskLevel": "high",
+      "plainLanguageSummary": "El documento parece referirse a si tenés que resolver disputas por arbitraje y si renunciás a demandas colectivas. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a el sometimiento a arbitraje y la renuncia a acciones colectivas. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… a dispute, controversy, or claim arises out of or relating to these Terms (“Dispute”), the Dispute will be resolved by binding arbitration rather than in court. The parties will first try in good faith to settle any Dispute within 30 days after the Dispute …",
+          "locationHint": "coincidencia: \"binding arbitration\" (~offset 11728)"
+        },
+        {
+          "quote": "… within 30 days after the Dispute arises. If the Dispute is not resolved within 30 days, it shall be resolved by binding arbitration by the American Arbitration Association’s International Centre for Dispute Resolution in accordance with its Expedited …",
+          "locationHint": "coincidencia: \"binding arbitration\" (~offset 11945)"
+        },
+        {
+          "quote": "… laws of the State of California, USA, without reference to conflict of law rules. All disputes will be governed by the arbitration agreement above.",
+          "locationHint": "coincidencia: \"arbitration agreement\" (~offset 21955)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: binding arbitration, arbitration agreement.",
+      "appliesToModes": [
+        "free",
+        "paid_individual"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "unilateral_changes": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre si el proveedor puede cambiar las reglas cuando quiera. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a las facultades de modificación unilateral de los términos resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… solely with respect to payment processing. You are free to cancel Your plan at any time. We reserve the right to modify or discontinue any aspect of the Service, including pricing and features, at any time. We also reserve the right to …",
+          "locationHint": "coincidencia: \"modify\" (~offset 13679)"
+        },
+        {
+          "quote": "… or contractual obligation. Midjourney may use, host, store, publicly display, create derivative works of, copy, adapt, modify, reject, remove, or stop use of any Translations at any time and for any reason, and may suspend or terminate Your …",
+          "locationHint": "coincidencia: \"modify\" (~offset 19883)"
+        },
+        {
+          "quote": "… sublicensable, transferable, royalty-free, and fully paid-up license to host, store, adapt, monetize, reproduce, copy, modify, prepare derivative works of, publicly display, publicly perform, and distribute the Translations for any purpose. This …",
+          "locationHint": "coincidencia: \"modify\" (~offset 20778)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: modify.",
+      "appliesToModes": [
+        "free",
+        "paid_individual"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "plan_differences": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre si las reglas cambian según el plan que tengas (gratis, pago, empresa). No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a las diferencias de régimen entre planes gratuitos, pagos y enterprise/business/team resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… Terms, along with our privacy policy, and all other documents referenced in these Terms, including the Subscription Plans page and the Community Guidelines below. Together with the Terms, these documents form a single binding agreement …",
+          "locationHint": "coincidencia: \"plan\" (~offset 953)"
+        },
+        {
+          "quote": "… any employee of a company with more than $1,000,000 USD a year in revenue, you must be subscribed to a “Pro” or “Mega” plan to own Your Assets. • If you upscale the images of others, these images remain owned by the original creators. Please …",
+          "locationHint": "coincidencia: \"plan\" (~offset 5477)"
+        },
+        {
+          "quote": "… final decision regarding the Dispute. 7. Unlimited Service and Rate Limiting If You purchase an unlimited plan, we will try to reasonably offer You unlimited access to the Services. However, we reserve the right to rate limit You …",
+          "locationHint": "coincidencia: \"plan\" (~offset 13145)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: plan.",
+      "appliesToModes": [
+        "free",
+        "paid_individual"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "minors": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a qué dice el documento sobre el uso por menores de edad. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a el tratamiento del uso del servicio por menores de edad. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… Age Requirements By accessing the Services, You confirm that You are at least 13 years old and meet the minimum age of digital consent in Your country. If You are old enough to access the Services in Your country, but not old enough to …",
+          "locationHint": "coincidencia: \"minimum age\" (~offset 3943)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: minimum age, 13 years.",
+      "appliesToModes": [
+        "free",
+        "paid_individual"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "prohibited_content": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a qué usos del servicio están prohibidos. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las restricciones de uso y las categorías de contenido prohibido. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… Services. Midjourney reserves the right to suspend or ban Your access to the Services at any time, and for any reason. You may not access or use the Services for purposes of developing or offering competitive products or services. You may not reverse …",
+          "locationHint": "coincidencia: \"you may not\" (~offset 2676)"
+        },
+        {
+          "quote": "… of developing or offering competitive products or services. You may not reverse engineer the Services or the Assets. You may not use automated tools to access, interact with, or generate Assets through the Services. You may not resell or …",
+          "locationHint": "coincidencia: \"you may not\" (~offset 2845)"
+        },
+        {
+          "quote": "… Only one user may use the Services per registered account. Each user of the Services may only have one account. You may not use the Service to try to violate the intellectual property rights of others, including copyright, patent, or trademark …",
+          "locationHint": "coincidencia: \"you may not\" (~offset 3130)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: you may not.",
+      "appliesToModes": [
+        "free",
+        "paid_individual"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "commercial_use": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre si podés usar el servicio con fines comerciales. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a la habilitación o restricción del uso comercial del servicio resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… by the American Arbitration Association’s International Centre for Dispute Resolution in accordance with its Expedited Commercial Rules in force as of the date of this Agreement (\"Rules\"). The parties will mutually select one arbitrator. The …",
+          "locationHint": "coincidencia: \"commercial\" (~offset 12084)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: commercial.",
+      "appliesToModes": [
+        "free",
+        "paid_individual"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "api_references": {
+      "status": "found",
+      "riskLevel": "low",
+      "plainLanguageSummary": "El documento parece referirse a si el documento menciona el uso de APIs y sus condiciones. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las condiciones aplicables al uso de APIs. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… fees and expenses, regardless of the arbitrator’s final decision regarding the Dispute. 7. Unlimited Service and Rate Limiting If You purchase an unlimited plan, we will try to reasonably offer You unlimited access to the Services. However, we …",
+          "locationHint": "coincidencia: \"rate limit\" (~offset 13102)"
+        },
+        {
+          "quote": "… unlimited plan, we will try to reasonably offer You unlimited access to the Services. However, we reserve the right to rate limit You to prevent quality decay or interruptions to other customers. 8. Payment and Billing We may invoice You for Your …",
+          "locationHint": "coincidencia: \"rate limit\" (~offset 13254)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: rate limit.",
+      "appliesToModes": [
+        "free",
+        "paid_individual"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    }
+  },
+  "metadata": {
+    "createdAt": "2026-06-14T20:56:30.737Z",
+    "parserVersion": "0.2.0",
+    "isMock": false,
+    "reviewStatus": "unreviewed",
+    "retrievedAt": "2026-06-14T20:56:27.855Z",
+    "fetcherVersion": "stealth-0.1.0",
+    "contentHash": "sha256:36d37bb93f63e622cf2b3d6201577f39c82ec0522f02dda36f88209c2cc8519e",
+    "sourceVerified": true,
+    "sourceStatus": "verified",
+    "extractionMethod": "headless-render",
+    "canonicalUrl": "https://docs.midjourney.com/hc/en-us/articles/32083055291277-Terms-of-Service",
+    "finalUrl": "https://docs.midjourney.com/hc/en-us/articles/32083055291277-Terms-of-Service",
+    "fetchedPath": "data/fetched/midjourney-midjourney-terms-of-service-2026-06-14.html",
+    "extractedTextPath": "data/extracted/midjourney-midjourney-terms-of-service-2026-06-14.txt",
+    "extractedChars": 21983,
+    "providerId": "midjourney",
+    "productId": "midjourney",
+    "documentId": "terms-of-service"
+  }
+}

@@ -1,0 +1,1295 @@
+{
+  "version": "0.1.0",
+  "providers": [
+    {
+      "providerId": "openai",
+      "providerName": "OpenAI",
+      "officialDomains": [
+        "openai.com"
+      ],
+      "products": [
+        {
+          "productId": "chatgpt",
+          "productName": "ChatGPT",
+          "tiers": [
+            "Free",
+            "Plus",
+            "Pro",
+            "Team",
+            "Enterprise"
+          ],
+          "documents": [
+            {
+              "documentId": "terms-of-use",
+              "documentType": "Terms of Use",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "team",
+                "enterprise"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://openai.com/policies/terms-of-use/",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T20:57:03.479Z",
+              "httpStatus": 200,
+              "finalUrl": "https://openai.com/policies/terms-of-use/",
+              "notes": "Obtenido con navegador stealth (evasión autorizada); contenido del dominio oficial."
+            },
+            {
+              "documentId": "privacy-policy",
+              "documentType": "Privacy Policy",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "team",
+                "enterprise"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://openai.com/policies/privacy-policy/",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T20:55:05.517Z",
+              "httpStatus": 200,
+              "finalUrl": "https://openai.com/policies/privacy-policy/",
+              "notes": "Obtenido con navegador stealth (evasión autorizada); contenido del dominio oficial."
+            },
+            {
+              "documentId": "usage-policies",
+              "documentType": "Usage Policy",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "team",
+                "enterprise"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://openai.com/policies/usage-policies/",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T20:55:06.560Z",
+              "httpStatus": 200,
+              "finalUrl": "https://openai.com/policies/usage-policies/",
+              "notes": "Obtenido con navegador stealth (evasión autorizada); contenido del dominio oficial."
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "needsManualSourceReview": true,
+        "notes": ""
+      }
+    },
+    {
+      "providerId": "anthropic",
+      "providerName": "Anthropic",
+      "officialDomains": [
+        "anthropic.com"
+      ],
+      "products": [
+        {
+          "productId": "claude",
+          "productName": "Claude",
+          "tiers": [
+            "Free",
+            "Pro",
+            "Team",
+            "Enterprise",
+            "API"
+          ],
+          "documents": [
+            {
+              "documentId": "consumer-terms",
+              "documentType": "Terms of Service",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "team"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://www.anthropic.com/legal/consumer-terms",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T19:38:35.353Z",
+              "httpStatus": 200,
+              "finalUrl": "https://www.anthropic.com/legal/consumer-terms",
+              "notes": "URL candidata; verificar con sources:verify"
+            },
+            {
+              "documentId": "privacy-policy",
+              "documentType": "Privacy Policy",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "team",
+                "enterprise",
+                "api"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://www.anthropic.com/legal/privacy",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T19:38:38.127Z",
+              "httpStatus": 200,
+              "finalUrl": "https://www.anthropic.com/legal/privacy",
+              "notes": "URL candidata; verificar con sources:verify"
+            },
+            {
+              "documentId": "aup",
+              "documentType": "Acceptable Use Policy",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "team",
+                "enterprise",
+                "api"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://www.anthropic.com/legal/aup",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T19:38:39.316Z",
+              "httpStatus": 200,
+              "finalUrl": "https://www.anthropic.com/legal/aup",
+              "notes": "URL candidata; verificar con sources:verify"
+            },
+            {
+              "documentId": "commercial-terms",
+              "documentType": "Commercial Terms",
+              "contractingMode": "business",
+              "appliesToModes": [
+                "business",
+                "enterprise",
+                "api"
+              ],
+              "sourceScope": "mode_specific",
+              "sourceUrl": "https://www.anthropic.com/legal/commercial-terms",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T19:38:42.640Z",
+              "httpStatus": 200,
+              "finalUrl": "https://www.anthropic.com/legal/commercial-terms",
+              "notes": "Términos comerciales (business/enterprise/API); URL candidata a verificar."
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "needsManualSourceReview": true,
+        "notes": ""
+      }
+    },
+    {
+      "providerId": "google",
+      "providerName": "Google",
+      "officialDomains": [
+        "google.com",
+        "policies.google.com"
+      ],
+      "products": [
+        {
+          "productId": "gemini",
+          "productName": "Gemini",
+          "tiers": [
+            "Free",
+            "Advanced",
+            "Workspace"
+          ],
+          "documents": [
+            {
+              "documentId": "terms-of-service",
+              "documentType": "Terms of Service",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://policies.google.com/terms",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T17:50:15.967Z",
+              "httpStatus": 200,
+              "finalUrl": "https://policies.google.com/terms",
+              "notes": "URL candidata; verificar con sources:verify"
+            },
+            {
+              "documentId": "privacy-policy",
+              "documentType": "Privacy Policy",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://policies.google.com/privacy",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T17:50:16.650Z",
+              "httpStatus": 200,
+              "finalUrl": "https://policies.google.com/privacy",
+              "notes": "URL candidata; verificar con sources:verify"
+            },
+            {
+              "documentId": "genai-use-policy",
+              "documentType": "Usage Policy",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://policies.google.com/terms/generative-ai/use-policy",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T17:50:17.075Z",
+              "httpStatus": 200,
+              "finalUrl": "https://policies.google.com/terms/generative-ai/use-policy",
+              "notes": "URL candidata; verificar con sources:verify"
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "needsManualSourceReview": true,
+        "notes": ""
+      }
+    },
+    {
+      "providerId": "microsoft",
+      "providerName": "Microsoft",
+      "officialDomains": [
+        "microsoft.com"
+      ],
+      "products": [
+        {
+          "productId": "copilot",
+          "productName": "Copilot",
+          "tiers": [
+            "Free",
+            "Pro",
+            "Microsoft 365",
+            "Enterprise"
+          ],
+          "documents": [
+            {
+              "documentId": "services-agreement",
+              "documentType": "Service Terms",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "enterprise"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://www.microsoft.com/en-us/servicesagreement",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T17:50:18.017Z",
+              "httpStatus": 200,
+              "finalUrl": "https://www.microsoft.com/en-us/servicesagreement",
+              "notes": "URL candidata; verificar con sources:verify"
+            },
+            {
+              "documentId": "privacy-statement",
+              "documentType": "Privacy Policy",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "enterprise"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://privacy.microsoft.com/en-us/privacystatement",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T17:50:19.870Z",
+              "httpStatus": 200,
+              "finalUrl": "https://www.microsoft.com/en-us/privacy/privacystatement",
+              "notes": "URL candidata; verificar con sources:verify"
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "needsManualSourceReview": true,
+        "notes": ""
+      }
+    },
+    {
+      "providerId": "meta",
+      "providerName": "Meta",
+      "officialDomains": [
+        "meta.com",
+        "llama.com",
+        "facebook.com"
+      ],
+      "products": [
+        {
+          "productId": "meta-ai",
+          "productName": "Meta AI / Llama",
+          "tiers": [
+            "Consumer",
+            "Llama (open weights)"
+          ],
+          "documents": [
+            {
+              "documentId": "llama-license",
+              "documentType": "Copyright / IP Policy",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "open_source"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://www.llama.com/llama3_1/license/",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T17:50:22.261Z",
+              "httpStatus": 200,
+              "finalUrl": "https://www.llama.com/llama3_1/license/",
+              "notes": "Licencia de la comunidad Llama; URL candidata sin verificar"
+            },
+            {
+              "documentId": "privacy-policy",
+              "documentType": "Privacy Policy",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "open_source"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": null,
+              "sourceStatus": "needs_manual_review",
+              "lastCheckedAt": "2026-06-14T17:47:10.852Z",
+              "httpStatus": null,
+              "finalUrl": null,
+              "notes": "No se ubicó con certeza una URL oficial de la política de privacidad de Meta AI"
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "needsManualSourceReview": true,
+        "notes": "Términos de Meta AI dispersos entre dominios; requiere revisión manual"
+      }
+    },
+    {
+      "providerId": "mistral",
+      "providerName": "Mistral AI",
+      "officialDomains": [
+        "mistral.ai"
+      ],
+      "products": [
+        {
+          "productId": "le-chat",
+          "productName": "Le Chat / La Plateforme",
+          "tiers": [
+            "Free",
+            "Pro",
+            "API"
+          ],
+          "documents": [
+            {
+              "documentId": "terms-of-use",
+              "documentType": "Terms of Use",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "api"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://mistral.ai/terms",
+              "sourceStatus": "needs_manual_review",
+              "lastCheckedAt": "2026-06-14T17:59:35.405Z",
+              "httpStatus": 200,
+              "finalUrl": "https://legal.mistral.ai/terms",
+              "notes": "https://mistral.ai/terms es una página índice de documentos legales, no el documento en sí; ubicar la URL del documento específico"
+            },
+            {
+              "documentId": "privacy-policy",
+              "documentType": "Privacy Policy",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "api"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": null,
+              "sourceStatus": "needs_manual_review",
+              "lastCheckedAt": "2026-06-14T17:59:35.589Z",
+              "httpStatus": null,
+              "finalUrl": null,
+              "notes": "El #anchor resolvía a la página índice (mismo contenido que terms); requiere URL del documento real"
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "needsManualSourceReview": true,
+        "notes": ""
+      }
+    },
+    {
+      "providerId": "xai",
+      "providerName": "xAI",
+      "officialDomains": [
+        "x.ai"
+      ],
+      "products": [
+        {
+          "productId": "grok",
+          "productName": "Grok",
+          "tiers": [
+            "Free",
+            "Premium",
+            "API"
+          ],
+          "documents": [
+            {
+              "documentId": "terms-of-service",
+              "documentType": "Terms of Service",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "api"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://x.ai/legal/terms-of-service",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T17:50:23.903Z",
+              "httpStatus": 200,
+              "finalUrl": "https://x.ai/legal/terms-of-service",
+              "notes": "URL candidata; verificar con sources:verify"
+            },
+            {
+              "documentId": "privacy-policy",
+              "documentType": "Privacy Policy",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "api"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://x.ai/legal/privacy-policy",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T17:50:24.167Z",
+              "httpStatus": 200,
+              "finalUrl": "https://x.ai/legal/privacy-policy",
+              "notes": "URL candidata; verificar con sources:verify"
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "needsManualSourceReview": true,
+        "notes": ""
+      }
+    },
+    {
+      "providerId": "perplexity",
+      "providerName": "Perplexity",
+      "officialDomains": [
+        "perplexity.ai"
+      ],
+      "products": [
+        {
+          "productId": "perplexity-ai",
+          "productName": "Perplexity AI",
+          "tiers": [
+            "Free",
+            "Pro",
+            "Enterprise"
+          ],
+          "documents": [
+            {
+              "documentId": "terms-of-service",
+              "documentType": "Terms of Service",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "enterprise"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://www.perplexity.ai/hub/legal/terms-of-service",
+              "sourceStatus": "failed_fetch",
+              "lastCheckedAt": "2026-06-14T21:01:14.876Z",
+              "httpStatus": 403,
+              "finalUrl": "https://www.perplexity.ai/hub/legal/terms-of-service",
+              "notes": "Cloudflare con re-verificación persistente: ni GET, ni headless, ni stealth lo superan. Requiere captura manual (ingest:manual)."
+            },
+            {
+              "documentId": "privacy-policy",
+              "documentType": "Privacy Policy",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "enterprise"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://www.perplexity.ai/hub/legal/privacy-policy",
+              "sourceStatus": "failed_fetch",
+              "lastCheckedAt": "2026-06-14T21:02:35.591Z",
+              "httpStatus": 403,
+              "finalUrl": "https://www.perplexity.ai/hub/legal/privacy-policy",
+              "notes": "Cloudflare con re-verificación persistente: ni GET, ni headless, ni stealth lo superan. Requiere captura manual (ingest:manual)."
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "needsManualSourceReview": true,
+        "notes": ""
+      }
+    },
+    {
+      "providerId": "cohere",
+      "providerName": "Cohere",
+      "officialDomains": [
+        "cohere.com"
+      ],
+      "products": [
+        {
+          "productId": "command",
+          "productName": "Command / API",
+          "tiers": [
+            "Trial",
+            "Production",
+            "Enterprise"
+          ],
+          "documents": [
+            {
+              "documentId": "terms-of-use",
+              "documentType": "Terms of Use",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "enterprise"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://cohere.com/terms-of-use",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T17:50:24.593Z",
+              "httpStatus": 200,
+              "finalUrl": "https://cohere.com/terms-of-use",
+              "notes": "URL candidata; verificar con sources:verify"
+            },
+            {
+              "documentId": "privacy-policy",
+              "documentType": "Privacy Policy",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "enterprise"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://cohere.com/privacy",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T17:50:24.765Z",
+              "httpStatus": 200,
+              "finalUrl": "https://cohere.com/privacy",
+              "notes": "URL candidata; verificar con sources:verify"
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "needsManualSourceReview": true,
+        "notes": ""
+      }
+    },
+    {
+      "providerId": "stability",
+      "providerName": "Stability AI",
+      "officialDomains": [
+        "stability.ai"
+      ],
+      "products": [
+        {
+          "productId": "stable-diffusion",
+          "productName": "Stable Diffusion / API",
+          "tiers": [
+            "Free",
+            "Membership",
+            "API"
+          ],
+          "documents": [
+            {
+              "documentId": "terms-of-use",
+              "documentType": "Terms of Use",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "api"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://stability.ai/terms-of-use",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T17:50:25.614Z",
+              "httpStatus": 200,
+              "finalUrl": "https://stability.ai/terms-of-use",
+              "notes": "URL candidata; verificar con sources:verify"
+            },
+            {
+              "documentId": "privacy-policy",
+              "documentType": "Privacy Policy",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "api"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://stability.ai/privacy-policy",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T17:50:25.871Z",
+              "httpStatus": 200,
+              "finalUrl": "https://stability.ai/privacy-policy",
+              "notes": "URL candidata; verificar con sources:verify"
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "needsManualSourceReview": true,
+        "notes": ""
+      }
+    },
+    {
+      "providerId": "midjourney",
+      "providerName": "Midjourney",
+      "officialDomains": [
+        "midjourney.com"
+      ],
+      "products": [
+        {
+          "productId": "midjourney",
+          "productName": "Midjourney",
+          "tiers": [
+            "Basic",
+            "Standard",
+            "Pro",
+            "Mega"
+          ],
+          "documents": [
+            {
+              "documentId": "terms-of-service",
+              "documentType": "Terms of Service",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://docs.midjourney.com/docs/terms-of-service",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T20:56:30.737Z",
+              "httpStatus": 200,
+              "finalUrl": "https://docs.midjourney.com/hc/en-us/articles/32083055291277-Terms-of-Service",
+              "notes": "Obtenido con navegador stealth (evasión autorizada); contenido del dominio oficial."
+            },
+            {
+              "documentId": "privacy-policy",
+              "documentType": "Privacy Policy",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://docs.midjourney.com/docs/privacy-policy",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T20:56:32.314Z",
+              "httpStatus": 200,
+              "finalUrl": "https://docs.midjourney.com/hc/en-us/articles/32083472637453-Privacy-Policy",
+              "notes": "Obtenido con navegador stealth (evasión autorizada); contenido del dominio oficial."
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "needsManualSourceReview": true,
+        "notes": ""
+      }
+    },
+    {
+      "providerId": "runway",
+      "providerName": "Runway",
+      "officialDomains": [
+        "runwayml.com"
+      ],
+      "products": [
+        {
+          "productId": "runway",
+          "productName": "Runway",
+          "tiers": [
+            "Free",
+            "Standard",
+            "Pro",
+            "Unlimited",
+            "Enterprise"
+          ],
+          "documents": [
+            {
+              "documentId": "terms-of-use",
+              "documentType": "Terms of Use",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "enterprise"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://runwayml.com/terms-of-use",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T17:50:26.248Z",
+              "httpStatus": 200,
+              "finalUrl": "https://runwayml.com/terms-of-use",
+              "notes": "URL candidata; verificar con sources:verify"
+            },
+            {
+              "documentId": "privacy-policy",
+              "documentType": "Privacy Policy",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "enterprise"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://runwayml.com/privacy-policy",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T17:50:26.372Z",
+              "httpStatus": 200,
+              "finalUrl": "https://runwayml.com/privacy-policy",
+              "notes": "URL candidata; verificar con sources:verify"
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "needsManualSourceReview": true,
+        "notes": ""
+      }
+    },
+    {
+      "providerId": "elevenlabs",
+      "providerName": "ElevenLabs",
+      "officialDomains": [
+        "elevenlabs.io"
+      ],
+      "products": [
+        {
+          "productId": "elevenlabs",
+          "productName": "ElevenLabs",
+          "tiers": [
+            "Free",
+            "Starter",
+            "Creator",
+            "Pro",
+            "Enterprise"
+          ],
+          "documents": [
+            {
+              "documentId": "terms-of-service",
+              "documentType": "Terms of Service",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "enterprise"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://elevenlabs.io/terms-of-use",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T17:50:26.997Z",
+              "httpStatus": 200,
+              "finalUrl": "https://elevenlabs.io/terms-of-use",
+              "notes": "URL candidata; verificar con sources:verify"
+            },
+            {
+              "documentId": "privacy-policy",
+              "documentType": "Privacy Policy",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "enterprise"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://elevenlabs.io/privacy-policy",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T17:50:27.280Z",
+              "httpStatus": 200,
+              "finalUrl": "https://elevenlabs.io/privacy-policy",
+              "notes": "URL candidata; verificar con sources:verify"
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "needsManualSourceReview": true,
+        "notes": ""
+      }
+    },
+    {
+      "providerId": "huggingface",
+      "providerName": "Hugging Face",
+      "officialDomains": [
+        "huggingface.co"
+      ],
+      "products": [
+        {
+          "productId": "hub",
+          "productName": "Hugging Face Hub",
+          "tiers": [
+            "Free",
+            "Pro",
+            "Enterprise"
+          ],
+          "documents": [
+            {
+              "documentId": "terms-of-service",
+              "documentType": "Terms of Service",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "enterprise"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://huggingface.co/terms-of-service",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T17:50:27.815Z",
+              "httpStatus": 200,
+              "finalUrl": "https://huggingface.co/terms-of-service",
+              "notes": "URL candidata; verificar con sources:verify"
+            },
+            {
+              "documentId": "privacy-policy",
+              "documentType": "Privacy Policy",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "enterprise"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://huggingface.co/privacy",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T17:50:28.067Z",
+              "httpStatus": 200,
+              "finalUrl": "https://huggingface.co/privacy",
+              "notes": "URL candidata; verificar con sources:verify"
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "needsManualSourceReview": true,
+        "notes": ""
+      }
+    },
+    {
+      "providerId": "aws",
+      "providerName": "Amazon Web Services",
+      "officialDomains": [
+        "aws.amazon.com",
+        "amazon.com"
+      ],
+      "products": [
+        {
+          "productId": "bedrock",
+          "productName": "AWS Bedrock",
+          "tiers": [
+            "On-Demand",
+            "Provisioned",
+            "Enterprise"
+          ],
+          "documents": [
+            {
+              "documentId": "service-terms",
+              "documentType": "Service Terms",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "api",
+                "paid_individual",
+                "enterprise"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://aws.amazon.com/service-terms/",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T17:50:33.283Z",
+              "httpStatus": 200,
+              "finalUrl": "https://aws.amazon.com/service-terms/",
+              "notes": "URL candidata; verificar con sources:verify"
+            },
+            {
+              "documentId": "privacy-notice",
+              "documentType": "Privacy Policy",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "api",
+                "paid_individual",
+                "enterprise"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://aws.amazon.com/privacy/",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T17:50:34.566Z",
+              "httpStatus": 200,
+              "finalUrl": "https://aws.amazon.com/privacy/",
+              "notes": "URL candidata; verificar con sources:verify"
+            },
+            {
+              "documentId": "aup",
+              "documentType": "Acceptable Use Policy",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "api",
+                "paid_individual",
+                "enterprise"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://aws.amazon.com/aup/",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T17:50:35.556Z",
+              "httpStatus": 200,
+              "finalUrl": "https://aws.amazon.com/aup/",
+              "notes": "URL candidata; verificar con sources:verify"
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "needsManualSourceReview": true,
+        "notes": ""
+      }
+    },
+    {
+      "providerId": "ibm",
+      "providerName": "IBM",
+      "officialDomains": [
+        "ibm.com"
+      ],
+      "products": [
+        {
+          "productId": "watsonx",
+          "productName": "watsonx",
+          "tiers": [
+            "Essentials",
+            "Standard",
+            "Enterprise"
+          ],
+          "documents": [
+            {
+              "documentId": "privacy-statement",
+              "documentType": "Privacy Policy",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "enterprise"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://www.ibm.com/us-en/privacy",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T17:50:36.232Z",
+              "httpStatus": 200,
+              "finalUrl": "https://www.ibm.com/us-en/privacy",
+              "notes": "URL candidata; verificar con sources:verify"
+            },
+            {
+              "documentId": "terms",
+              "documentType": "Terms of Use",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "enterprise"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": null,
+              "sourceStatus": "needs_manual_review",
+              "lastCheckedAt": "2026-06-14T17:47:10.852Z",
+              "httpStatus": null,
+              "finalUrl": null,
+              "notes": "Términos de watsonx en acuerdos de cliente (CSA); no se ubicó una URL pública única"
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "needsManualSourceReview": true,
+        "notes": ""
+      }
+    },
+    {
+      "providerId": "adobe",
+      "providerName": "Adobe",
+      "officialDomains": [
+        "adobe.com"
+      ],
+      "products": [
+        {
+          "productId": "firefly",
+          "productName": "Firefly",
+          "tiers": [
+            "Free",
+            "Premium",
+            "Creative Cloud",
+            "Enterprise"
+          ],
+          "documents": [
+            {
+              "documentId": "terms-of-use",
+              "documentType": "Terms of Use",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "enterprise"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://www.adobe.com/legal/terms.html",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T17:50:36.745Z",
+              "httpStatus": 200,
+              "finalUrl": "https://www.adobe.com/legal/terms.html",
+              "notes": "URL candidata; verificar con sources:verify"
+            },
+            {
+              "documentId": "privacy-policy",
+              "documentType": "Privacy Policy",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "enterprise"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://www.adobe.com/privacy/policy.html",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T17:50:36.929Z",
+              "httpStatus": 200,
+              "finalUrl": "https://www.adobe.com/privacy/policy.html",
+              "notes": "URL candidata; verificar con sources:verify"
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "needsManualSourceReview": true,
+        "notes": ""
+      }
+    },
+    {
+      "providerId": "github",
+      "providerName": "GitHub",
+      "officialDomains": [
+        "github.com"
+      ],
+      "products": [
+        {
+          "productId": "copilot",
+          "productName": "GitHub Copilot",
+          "tiers": [
+            "Free",
+            "Individual",
+            "Business",
+            "Enterprise"
+          ],
+          "documents": [
+            {
+              "documentId": "terms-of-service",
+              "documentType": "Terms of Service",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "business",
+                "enterprise"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T17:50:37.288Z",
+              "httpStatus": 200,
+              "finalUrl": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+              "notes": "URL candidata; verificar con sources:verify"
+            },
+            {
+              "documentId": "privacy-statement",
+              "documentType": "Privacy Policy",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "business",
+                "enterprise"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T17:50:37.399Z",
+              "httpStatus": 200,
+              "finalUrl": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+              "notes": "URL candidata; verificar con sources:verify"
+            },
+            {
+              "documentId": "copilot-product-terms",
+              "documentType": "Product-specific terms",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "business",
+                "enterprise"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://github.com/customer-terms/github-copilot-product-specific-terms",
+              "sourceStatus": "unsupported_format",
+              "lastCheckedAt": "2026-06-14T17:48:38.819Z",
+              "httpStatus": 200,
+              "finalUrl": "https://github.com/customer-terms/github-copilot-product-specific-terms",
+              "notes": "URL candidata; verificar con sources:verify"
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "needsManualSourceReview": true,
+        "notes": ""
+      }
+    },
+    {
+      "providerId": "replit",
+      "providerName": "Replit",
+      "officialDomains": [
+        "replit.com"
+      ],
+      "products": [
+        {
+          "productId": "replit-ai",
+          "productName": "Replit AI",
+          "tiers": [
+            "Starter",
+            "Core",
+            "Teams"
+          ],
+          "documents": [
+            {
+              "documentId": "terms-of-service",
+              "documentType": "Terms of Service",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "team"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://replit.com/site/terms",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T17:50:38.119Z",
+              "httpStatus": 200,
+              "finalUrl": "https://replit.com/terms-of-service",
+              "notes": "URL candidata; verificar con sources:verify"
+            },
+            {
+              "documentId": "privacy-policy",
+              "documentType": "Privacy Policy",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "free",
+                "paid_individual",
+                "team"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://replit.com/site/privacy",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T17:50:38.549Z",
+              "httpStatus": 200,
+              "finalUrl": "https://replit.com/privacy-policy",
+              "notes": "URL candidata; verificar con sources:verify"
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "needsManualSourceReview": true,
+        "notes": ""
+      }
+    },
+    {
+      "providerId": "databricks",
+      "providerName": "Databricks",
+      "officialDomains": [
+        "databricks.com"
+      ],
+      "products": [
+        {
+          "productId": "mosaic-ai",
+          "productName": "Mosaic AI",
+          "tiers": [
+            "Standard",
+            "Premium",
+            "Enterprise"
+          ],
+          "documents": [
+            {
+              "documentId": "terms-of-service",
+              "documentType": "Terms of Service",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "paid_individual",
+                "enterprise"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://www.databricks.com/legal/terms-of-service",
+              "sourceStatus": "failed_fetch",
+              "lastCheckedAt": "2026-06-14T17:47:10.852Z",
+              "httpStatus": 404,
+              "finalUrl": "https://www.databricks.com/legal/terms-of-service",
+              "notes": "HTTP 404: la URL no existe; requiere ubicar la URL oficial correcta del documento."
+            },
+            {
+              "documentId": "privacy-notice",
+              "documentType": "Privacy Policy",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "paid_individual",
+                "enterprise"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://www.databricks.com/legal/privacynotice",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T17:50:39.154Z",
+              "httpStatus": 200,
+              "finalUrl": "https://www.databricks.com/legal/privacynotice",
+              "notes": "URL candidata; verificar con sources:verify"
+            },
+            {
+              "documentId": "aup",
+              "documentType": "Acceptable Use Policy",
+              "contractingMode": "all",
+              "appliesToModes": [
+                "paid_individual",
+                "enterprise"
+              ],
+              "sourceScope": "general",
+              "sourceUrl": "https://www.databricks.com/legal/acceptable-use-policy",
+              "sourceStatus": "verified",
+              "lastCheckedAt": "2026-06-14T17:50:39.340Z",
+              "httpStatus": 200,
+              "finalUrl": "https://www.databricks.com/legal/acceptable-use-policy",
+              "notes": "URL candidata; verificar con sources:verify"
+            }
+          ]
+        }
+      ],
+      "metadata": {
+        "needsManualSourceReview": true,
+        "notes": ""
+      }
+    }
+  ]
+}

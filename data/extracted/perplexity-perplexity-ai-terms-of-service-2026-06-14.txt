@@ -1,0 +1,10 @@
+www.perplexity.ai
+
+Performing security verification
+This website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.
+
+Verification successful. Waiting for www.perplexity.ai to respond
+
+Ray ID: a0bc3ec83a65f256
+
+Performance and Security by Cloudflare Privacy

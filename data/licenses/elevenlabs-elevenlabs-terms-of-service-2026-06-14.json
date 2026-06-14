@@ -1,0 +1,600 @@
+{
+  "id": "elevenlabs-elevenlabs-terms-of-service-2026-06-14",
+  "providerName": "ElevenLabs",
+  "productName": "ElevenLabs",
+  "productTier": "All",
+  "documentType": "Terms of Service",
+  "contractingMode": "all",
+  "appliesToModes": [
+    "free",
+    "paid_individual",
+    "enterprise"
+  ],
+  "sourceScope": "mixed",
+  "modeConfidence": "medium",
+  "modeRationale": "El documento parece general pero contiene secciones que diferencian modalidades (business, enterprise). Las diferencias deben revisarse cláusula por cláusula.",
+  "sourceUrl": "https://elevenlabs.io/terms-of-use",
+  "retrievedAt": "2026-06-14T17:50:26.372Z",
+  "rawTextPath": "data/extracted/elevenlabs-elevenlabs-terms-of-service-2026-06-14.txt",
+  "overall": {
+    "plainLanguageSummary": "El parser detectó posibles cláusulas en 17 de 22 categorías analizadas. El nivel de riesgo general estimado es \"high\". Este es un análisis preliminar y automático: la redacción puede no surgir con claridad del texto y requiere revisión legal humana.",
+    "legalSummary": "Sobre 22 categorías jurídicas relevadas, se identificaron pasajes vinculados en 17. La calificación de riesgo general (high) es preliminar y se apoya en coincidencias léxicas, no en interpretación jurídica. El alcance de cada cláusula no surge con claridad del texto analizado y requeriría revisión legal humana.",
+    "overallRiskLevel": "high"
+  },
+  "privacy": {
+    "posture": "moderate",
+    "rationale": "Perfil preliminar (no es conclusión jurídica). Hay tratamiento de datos con algunas salvaguardas, pero no todas; perfil intermedio. Requiere revisión legal humana. Señales: enterprise_dpa, deletion_control, broad_license.",
+    "signals": [
+      "enterprise_dpa",
+      "deletion_control",
+      "broad_license"
+    ],
+    "evidence": []
+  },
+  "categories": {
+    "privacy": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a cómo se procesan los datos personales del usuario. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a el tratamiento de datos personales del usuario y sus finalidades. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… For information about how we collect, use, share, and otherwise process information about you, please review our Privacy Policy .In addition, where you agree to these terms on behalf of an entity, you agree that the Data Processing Agreement …",
+          "locationHint": "coincidencia: \"privacy policy\" (~offset 7252)"
+        },
+        {
+          "quote": "… how we collect, use, share, retain, and destroy your audio recordings, please see the Voice Processing Notice in our Privacy Policy. You may request deletion of your User Voice Models created with your Input recordings through your account. (c) Rights …",
+          "locationHint": "coincidencia: \"privacy policy\" (~offset 10299)"
+        },
+        {
+          "quote": "… and Opt Out. You may request for us to delete your personal data as required under applicable law. Please see our Privacy Policy for more information. In addition, you may opt out of our use of your Content for training at any time by navigating to …",
+          "locationHint": "coincidencia: \"privacy policy\" (~offset 13960)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: privacy policy.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "training_use": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre si el proveedor podría usar tus conversaciones o archivos para entrenar sus modelos. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a el uso de inputs, outputs o archivos del usuario para entrenamiento o mejora de modelos resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… law. Please see our Privacy Policy for more information. In addition, you may opt out of our use of your Content for training at any time by navigating to the 'Data use' menu in the 'Terms and Privacy' section of your ElevenLabs account. Your …",
+          "locationHint": "coincidencia: \"training\" (~offset 14057)"
+        },
+        {
+          "quote": "… 'Data use' menu in the 'Terms and Privacy' section of your ElevenLabs account. Your Content will no longer be used to improve our Services (including the Models) once the request has been processed by our team, except as may be necessary to provide the …",
+          "locationHint": "coincidencia: \"improve our services\" (~offset 14217)"
+        },
+        {
+          "quote": "… and display, and use your Content to provide the Services (including the trust and safety features therein), to improve the Services, and to develop new services and products. For avoidance of doubt, to the extent that your Content includes your …",
+          "locationHint": "coincidencia: \"improve the service\" (~offset 11326)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: training, improve our services, improve the service.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "input_ip": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a quién es dueño del contenido que ingresás (tus prompts y archivos). La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a la titularidad de los inputs aportados por el usuario. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… your account. (c) Rights to your Content. (i) Except as expressly set forth herein, as between you and ElevenLabs, you retain all rights in and to your Input. (ii) For the avoidance of doubt, Output may be generated by, but does not include, …",
+          "locationHint": "coincidencia: \"you retain\" (~offset 10526)"
+        },
+        {
+          "quote": "… Models and LLMs, collectively, the “ Models ”). Except as expressly set forth herein, as between you and ElevenLabs, you retain all rights in and to your Output. (d) License to Your Content. You hereby grant to ElevenLabs a license to use, …",
+          "locationHint": "coincidencia: \"you retain\" (~offset 10973)"
+        },
+        {
+          "quote": "… publish, translate, create derivative works from, distribute, publicly or otherwise perform and display, and use your Content to provide the Services (including the trust and safety features therein), to improve the Services, and to develop new …",
+          "locationHint": "coincidencia: \"your content\" (~offset 11235)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: you retain, your content.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "output_ip": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a quién es dueño de lo que genera la IA a partir de tus pedidos. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a la asignación de titularidad sobre los outputs generados por el servicio. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… and information as input to our Services (\" Input \"). When you provide Input to the Services, you may receive audio output generated and returned by one or more Voice Models (defined below), or text output generated and returned by one or more LLMs …",
+          "locationHint": "coincidencia: \"output generated\" (~offset 8681)"
+        },
+        {
+          "quote": "… providers, as well as our and their respective successors and assigns. Due to the nature of machine learning, the Output generated by you using the Services may not be unique across users, as the Services may produce the same or similar Output for …",
+          "locationHint": "coincidencia: \"output generated\" (~offset 33457)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: output generated.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "license_grant": {
+      "status": "found",
+      "riskLevel": "high",
+      "plainLanguageSummary": "El documento parece referirse a qué permisos le das al proveedor sobre tu contenido. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a la licencia conferida al proveedor sobre los contenidos del usuario. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… ElevenLabs, you retain all rights in and to your Output. (d) License to Your Content. You hereby grant to ElevenLabs a license to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, publicly or otherwise perform …",
+          "locationHint": "coincidencia: \"license to use\" (~offset 11080)"
+        },
+        {
+          "quote": "… in the world), and • sub-licensable, through multiple tiers (which means we can make it available to others). (e) License to User Voice Models. To the extent you own or acquire any intellectual property rights in or to any User Voice Models, you …",
+          "locationHint": "coincidencia: \"license to use\" (~offset 12319)"
+        },
+        {
+          "quote": "… you own or acquire any intellectual property rights in or to any User Voice Models, you hereby grant to ElevenLabs a license to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, publicly or otherwise perform …",
+          "locationHint": "coincidencia: \"license to use\" (~offset 12480)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: license to use.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "data_retention": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre cuánto tiempo se conserva tu información. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a los plazos y condiciones de retención de datos del usuario resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… of the voice you provide to us subject to subsection 4(d) below. For more information on how we collect, use, share, retain, and destroy your audio recordings, please see the Voice Processing Notice in our Privacy Policy. You may request …",
+          "locationHint": "coincidencia: \"retain\" (~offset 10210)"
+        },
+        {
+          "quote": "… account. (c) Rights to your Content. (i) Except as expressly set forth herein, as between you and ElevenLabs, you retain all rights in and to your Input. (ii) For the avoidance of doubt, Output may be generated by, but does not include, …",
+          "locationHint": "coincidencia: \"retain\" (~offset 10530)"
+        },
+        {
+          "quote": "… and LLMs, collectively, the “ Models ”). Except as expressly set forth herein, as between you and ElevenLabs, you retain all rights in and to your Output. (d) License to Your Content. You hereby grant to ElevenLabs a license to use, …",
+          "locationHint": "coincidencia: \"retain\" (~offset 10977)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: retain.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "data_deletion": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a si y cómo podés pedir que borren tu información. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a los mecanismos de supresión o eliminación de datos del usuario. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… retain, and destroy your audio recordings, please see the Voice Processing Notice in our Privacy Policy. You may request deletion of your User Voice Models created with your Input recordings through your account. (c) Rights to your Content. (i) …",
+          "locationHint": "coincidencia: \"request deletion\" (~offset 10323)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: request deletion.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "confidentiality": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre si el proveedor se compromete a mantener tu información en reserva. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a las obligaciones de confidencialidad aplicables al proveedor resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… upon, such Services, or Services based on the Feedback. You understand that ElevenLabs may treat any Feedback as nonconfidential. 6. Subscription Services; Payment (a) Subscriptions. To access and use certain Services, you may be required to …",
+          "locationHint": "coincidencia: \"confidential\" (~offset 18053)"
+        },
+        {
+          "quote": "… and ElevenLabs agree that all materials and documents exchanged during the arbitration proceedings shall be kept confidential and shall not be shared with anyone except the parties’ attorneys, accountants, or authorized representatives, and …",
+          "locationHint": "coincidencia: \"confidential\" (~offset 39838)"
+        },
+        {
+          "quote": "… condition that they agree to keep all materials and documents exchanged during the arbitration proceedings strictly confidential. (c) Opting Out of Arbitration. You have the right to opt out of binding arbitration within 30 days of the date you …",
+          "locationHint": "coincidencia: \"confidential\" (~offset 40106)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: confidential.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "security": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre qué medidas de seguridad dice tomar el proveedor. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a las medidas técnicas y organizativas de seguridad declaradas resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… credentials. You will promptly update any information contained in your account if it changes. You must maintain the security of your account, as applicable, and promptly notify us if you discover or suspect that someone has accessed your …",
+          "locationHint": "coincidencia: \"security\" (~offset 8140)"
+        },
+        {
+          "quote": "… not reduce the remaining validity of purchased Prepaid Credits, except as required by law or for fraud prevention, security, or legal compliance. (x) Effect of Account Termination. Upon suspension or termination of your Account for any reason, …",
+          "locationHint": "coincidencia: \"security\" (~offset 23974)"
+        },
+        {
+          "quote": "… claims and disputes that arose between you and us before the effective date of these Terms, or any privacy or data security claims, (collectively, “ Disputes ”, and each a “ Dispute ”), you and ElevenLabs agree to attempt to first resolve the …",
+          "locationHint": "coincidencia: \"security\" (~offset 35796)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: security.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "security_duty": {
+      "status": "not_found",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "No se encontró una cláusula clara sobre si el proveedor asume un compromiso concreto de seguridad en el texto analizado. La ausencia de coincidencias no garantiza que el tema no esté tratado.",
+      "legalSummary": "No surge del texto analizado una cláusula expresa sobre la existencia de un deber de seguridad exigible al proveedor. La ausencia de coincidencias léxicas no permite concluir su inexistencia.",
+      "evidence": [],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. No se hallaron coincidencias léxicas relevantes.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "warranties": {
+      "status": "found",
+      "riskLevel": "high",
+      "plainLanguageSummary": "El documento parece referirse a qué garantiza (o no garantiza) el proveedor sobre el servicio. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las garantías otorgadas y los disclaimers de garantía. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… or materials provided therein or therewith (including the Third-Party Content and Third-Party Services) are provided “as is” and “as available” without warranties of any kind, either express or implied. ElevenLabs disclaims all warranties with …",
+          "locationHint": "coincidencia: \"as is\" (~offset 31982)"
+        },
+        {
+          "quote": "… to any such applicable warranty would be the sole responsibility of ElevenLabs. However, ElevenLabs has disclaimed all warranties of any kind with respect to the Mobile App, and therefore, there are no warranties applicable to the Mobile App. (v) Product …",
+          "locationHint": "coincidencia: \"warranties of any kind\" (~offset 54906)"
+        },
+        {
+          "quote": "… express or implied. ElevenLabs disclaims all warranties with respect to the foregoing, including implied warranties of merchantability, fitness for a particular purpose, title, and non-infringement. In addition, ElevenLabs does not represent or warrant …",
+          "locationHint": "coincidencia: \"merchantability\" (~offset 32166)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: as is, warranties of any kind, merchantability.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "liability_limitation": {
+      "status": "found",
+      "riskLevel": "high",
+      "plainLanguageSummary": "El documento parece referirse a hasta dónde responde el proveedor si algo sale mal. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a el régimen de exclusión o limitación de responsabilidad. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… users that are not you shall not be considered Output for you, and you shall have no right or title over it. 11. Limitation of Liability (a) To the fullest extent permitted by applicable law, ElevenLabs will not be liable to you under any theory of …",
+          "locationHint": "coincidencia: \"limitation of liability\" (~offset 33878)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: limitation of liability, not be liable.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "indemnity": {
+      "status": "found",
+      "riskLevel": "high",
+      "plainLanguageSummary": "El documento parece referirse a si tenés que defender o pagar al proveedor ante reclamos de terceros. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las obligaciones de indemnidad a cargo del usuario. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… necessary to access and use the Services. 9. Indemnification To the fullest extent permitted by applicable law, you will indemnify, defend (at our option), and hold harmless ElevenLabs and our officers, directors, partners, licensors, employees and …",
+          "locationHint": "coincidencia: \"you will indemnify\" (~offset 30563)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: you will indemnify, indemnification.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "governing_law": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a qué ley rige el contrato. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a la ley aplicable al contrato. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… joint or consolidated claims under any circumstances, except as expressly set forth in this provision. 13. Governing Law Any Claims will be governed by and construed and enforced in accordance with the laws of the State of New York, except …",
+          "locationHint": "coincidencia: \"governing law\" (~offset 46849)"
+        },
+        {
+          "quote": "… HIPAA BAA. (i) Data Deletion and Opt Out. You may request for us to delete your personal data as required under applicable law. Please see our Privacy Policy for more information. In addition, you may opt out of our use of your Content for …",
+          "locationHint": "coincidencia: \"applicable law\" (~offset 13929)"
+        },
+        {
+          "quote": "… or refuse to post any Content at any time and for any reason with or without notice, including for any violations of applicable law or these Terms; (ii) terminate or suspend your access to all or part of the Services, temporarily or permanently, if …",
+          "locationHint": "coincidencia: \"applicable law\" (~offset 14856)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: governing law, laws of the state, applicable law.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "jurisdiction": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a qué tribunales resolverían un conflicto. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a la jurisdicción y el foro competente. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… to arbitration pursuant to Section 12, then the state and federal courts located in New York City, New York, will have exclusive jurisdiction. You and ElevenLabs waive any objection to venue in any such courts. If your local law requires that consumer contracts …",
+          "locationHint": "coincidencia: \"exclusive jurisdiction\" (~offset 47361)"
+        },
+        {
+          "quote": "… claim or request for relief, shall be severed from the arbitration and may be litigated in the state or federal courts located in the State of New York. All other Disputes shall be arbitrated or litigated in small claims court. This Section does not …",
+          "locationHint": "coincidencia: \"courts located in\" (~offset 44110)"
+        },
+        {
+          "quote": "… courts. If your local law requires that consumer contracts be interpreted subject to local law and enforced in the courts of that jurisdiction, this section may not apply to you only to the extent that local law conflicts with this …",
+          "locationHint": "coincidencia: \"courts of\" (~offset 47560)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: exclusive jurisdiction, courts located in, venue, courts of.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "arbitration": {
+      "status": "found",
+      "riskLevel": "high",
+      "plainLanguageSummary": "El documento parece referirse a si tenés que resolver disputas por arbitraje y si renunciás a demandas colectivas. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a el sometimiento a arbitraje y la renuncia a acciones colectivas. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… and (ii) the amount paid by you to use our Services in the 12 months preceding the claim. 12. Dispute Resolution; Binding Arbitration Please read this Section 12 carefully because it requires you and ElevenLabs to arbitrate certain disputes and claims …",
+          "locationHint": "coincidencia: \"binding arbitration\" (~offset 34612)"
+        },
+        {
+          "quote": "… within 30 days after you or ElevenLabs receives the applicable notice, then either party may submit the Dispute to binding arbitration as set forth below. The statute of limitations and any filing fee deadlines shall be tolled for thirty (30) days from …",
+          "locationHint": "coincidencia: \"binding arbitration\" (~offset 36530)"
+        },
+        {
+          "quote": "… applicable notice so that the parties can engage in this informal dispute-resolution process. (b) Disputes Subject to Binding Arbitration; Exceptions. Except for individual disputes that qualify for small claims court and any disputes exclusively related to …",
+          "locationHint": "coincidencia: \"binding arbitration\" (~offset 36841)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: binding arbitration.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "unilateral_changes": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a si el proveedor puede cambiar las reglas cuando quiera. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las facultades de modificación unilateral de los términos. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… between these Terms and the Supplemental Terms, the Supplemental Terms will control for that conflict. We may make changes to these Terms. The “Last Updated” date above indicates when these Terms were last changed. If we make future changes, we may provide …",
+          "locationHint": "coincidencia: \"changes to these terms\" (~offset 4069)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: changes to these terms.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "plan_differences": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a si las reglas cambian según el plan que tengas (gratis, pago, empresa). La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las diferencias de régimen entre planes gratuitos, pagos y enterprise/business/team. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… our business clients provide to us; • Our ElevenReader Terms , which apply to your use of ElevenReader; • Our Enterprise Pilot Terms , which apply to your use of our Pilot Services; and • Any other terms and conditions disclosed within the …",
+          "locationHint": "coincidencia: \"enterprise\" (~offset 3612)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: enterprise.",
+      "appliesToModes": [
+        "business",
+        "enterprise"
+      ],
+      "modeSpecificity": "mode_specific",
+      "modeEvidence": [
+        {
+          "quote": "… our business clients provide to us; • Our ElevenReader Terms , which apply to your use of ElevenReader; • Our Enterprise Pilot Terms , which apply to your use of our Pilot Services; and • Any other terms and conditions disclosed within the …",
+          "locationHint": "coincidencia: \"enterprise\" (~offset 3612)"
+        }
+      ]
+    },
+    "minors": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a qué dice el documento sobre el uso por menores de edad. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a el tratamiento del uso del servicio por menores de edad. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… Terms, you must immediately stop using our Services. 1. Eligibility and Use Restrictions (a) Age. If you are under 18 years of age (or the age of legal majority where you live), you may not use our Services (b) Authorization. If you register, …",
+          "locationHint": "coincidencia: \"18 years\" (~offset 4739)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: 18 years.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "prohibited_content": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a qué usos del servicio están prohibidos. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las restricciones de uso y las categorías de contenido prohibido. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… Supplemental Terms \"), including: • Our Service-Specific Terms , which apply to your use of certain Services; • Our Prohibited Use Policy , which applies to your use of all of our Services; • The Voice Library Addendum , which applies your use …",
+          "locationHint": "coincidencia: \"prohibited\" (~offset 2891)"
+        },
+        {
+          "quote": "… commercial purposes, but in either case, your access and use of the Services and any Output must still comply with the Prohibited Use Policy. Use of the Services by Government Entities (as defined in the Prohibited Use Policy) is subject to the …",
+          "locationHint": "coincidencia: \"prohibited\" (~offset 6050)"
+        },
+        {
+          "quote": "… Use of the Services by Government Entities (as defined in the Prohibited Use Policy) is subject to the terms of the Prohibited Use Policy. If using the Services for non-commercial purposes, a personal e-mail address must be used. To the extent …",
+          "locationHint": "coincidencia: \"prohibited\" (~offset 6189)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: prohibited.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "commercial_use": {
+      "status": "found",
+      "riskLevel": "low",
+      "plainLanguageSummary": "El documento parece referirse a si podés usar el servicio con fines comerciales. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a la habilitación o restricción del uso comercial del servicio. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… if you access or use our Services free of charge (such a user, a “ Free User ”), you may only use the Services for non-commercial purposes; (ii) if you access or use our Services through a paid subscription plan (such a user, a “ Paid User ”), you may use …",
+          "locationHint": "coincidencia: \"commercial purposes\" (~offset 5777)"
+        },
+        {
+          "quote": "… or use our Services through a paid subscription plan (such a user, a “ Paid User ”), you may use the Services for commercial purposes, but in either case, your access and use of the Services and any Output must still comply with the Prohibited Use …",
+          "locationHint": "coincidencia: \"commercial purposes\" (~offset 5931)"
+        },
+        {
+          "quote": "… in the Prohibited Use Policy) is subject to the terms of the Prohibited Use Policy. If using the Services for non-commercial purposes, a personal e-mail address must be used. To the extent you register for the Services using a business entity’s email …",
+          "locationHint": "coincidencia: \"commercial purposes\" (~offset 6242)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: commercial purposes.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "api_references": {
+      "status": "found",
+      "riskLevel": "low",
+      "plainLanguageSummary": "El documento parece referirse a si el documento menciona el uso de APIs y sus condiciones. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las condiciones aplicables al uso de APIs. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… (including mobile applications) and products accessible via the Website or our application programming interfaces (APIs), or otherwise made available to you by us (together with the Website, the “ Services ”). For the avoidance of doubt, …",
+          "locationHint": "coincidencia: \"api\" (~offset 1013)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: api.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    }
+  },
+  "metadata": {
+    "createdAt": "2026-06-14T17:50:26.996Z",
+    "parserVersion": "0.2.0",
+    "isMock": false,
+    "reviewStatus": "unreviewed",
+    "retrievedAt": "2026-06-14T17:50:26.372Z",
+    "fetcherVersion": "0.1.0",
+    "contentHash": "sha256:e6ae56cca1e61d3a8ceb48626868f35d7052d3d216aa7f3d5421ac1f2ced7da7",
+    "sourceVerified": true,
+    "sourceStatus": "verified",
+    "extractionMethod": "html-to-text",
+    "canonicalUrl": "https://elevenlabs.io/terms-of-use",
+    "finalUrl": "https://elevenlabs.io/terms-of-use",
+    "fetchedPath": "data/fetched/elevenlabs-elevenlabs-terms-of-service-2026-06-14.html",
+    "extractedTextPath": "data/extracted/elevenlabs-elevenlabs-terms-of-service-2026-06-14.txt",
+    "extractedChars": 59045
+  }
+}

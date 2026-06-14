@@ -1,0 +1,646 @@
+{
+  "id": "github-copilot-terms-of-service-2026-06-14",
+  "providerName": "GitHub",
+  "productName": "GitHub Copilot",
+  "productTier": "All",
+  "documentType": "Terms of Service",
+  "contractingMode": "all",
+  "appliesToModes": [
+    "free",
+    "paid_individual",
+    "business",
+    "enterprise"
+  ],
+  "sourceScope": "mixed",
+  "modeConfidence": "medium",
+  "modeRationale": "El documento parece general pero contiene secciones que diferencian modalidades (free, paid_individual, business, open_source). Las diferencias deben revisarse cláusula por cláusula.",
+  "sourceUrl": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+  "retrievedAt": "2026-06-14T17:50:36.929Z",
+  "rawTextPath": "data/extracted/github-copilot-terms-of-service-2026-06-14.txt",
+  "overall": {
+    "plainLanguageSummary": "El parser detectó posibles cláusulas en 19 de 22 categorías analizadas. El nivel de riesgo general estimado es \"high\". Este es un análisis preliminar y automático: la redacción puede no surgir con claridad del texto y requiere revisión legal humana.",
+    "legalSummary": "Sobre 22 categorías jurídicas relevadas, se identificaron pasajes vinculados en 19. La calificación de riesgo general (high) es preliminar y se apoya en coincidencias léxicas, no en interpretación jurídica. El alcance de cada cláusula no surge con claridad del texto analizado y requeriría revisión legal humana.",
+    "overallRiskLevel": "high"
+  },
+  "privacy": {
+    "posture": "weak",
+    "rationale": "Perfil preliminar (no es conclusión jurídica). La redacción sugiere usos amplios de datos y/o controles poco claros de retención o eliminación. Requiere revisión legal humana. Señales: broad_training_use, deletion_control, confidentiality_commitment, broad_license.",
+    "signals": [
+      "broad_training_use",
+      "deletion_control",
+      "confidentiality_commitment",
+      "broad_license"
+    ],
+    "evidence": [
+      {
+        "quote": "… AI features, including how your data may be used for development and improvement of the artificial intelligence and machine learning models, and the controls available to you. K. Beta Previews These are some of the additional terms that apply to GitHub's …",
+        "locationHint": "coincidencia: \"machine learning models\" (~offset 1786)"
+      }
+    ]
+  },
+  "categories": {
+    "privacy": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a cómo se procesan los datos personales del usuario. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a el tratamiento de datos personales del usuario y sus finalidades. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… API to download data or Content from GitHub for spamming purposes, including for the purposes of selling GitHub users' personal information, such as to recruiters, headhunters, and job boards. All use of the GitHub API is subject to these Terms of Service …",
+          "locationHint": "coincidencia: \"personal information\" (~offset 24802)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: personal information.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "business",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "training_use": {
+      "status": "found",
+      "riskLevel": "high",
+      "plainLanguageSummary": "El documento parece referirse a si el proveedor podría usar tus conversaciones o archivos para entrenar sus modelos. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a el uso de inputs, outputs o archivos del usuario para entrenamiento o mejora de modelos. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… AI features, including how your data may be used for development and improvement of the artificial intelligence and machine learning models, and the controls available to you. K. Beta Previews These are some of the additional terms that apply to GitHub's …",
+          "locationHint": "coincidencia: \"machine learning models\" (~offset 1786)"
+        },
+        {
+          "quote": "… by training AI Features, and for the purpose of training, developing, and improving artificial intelligence and machine learning models and technologies of our Affiliates. This license includes the right to do things like copy it to our database and make …",
+          "locationHint": "coincidencia: \"machine learning models\" (~offset 15089)"
+        },
+        {
+          "quote": "… or video. For the avoidance of doubt, use of Your Content to develop, train, and improve artificial intelligence and machine learning models and technologies of GitHub and our Affiliates is within the scope of this license and does not constitute a sale or …",
+          "locationHint": "coincidencia: \"machine learning models\" (~offset 15547)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: machine learning models.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "business",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "input_ip": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a quién es dueño del contenido que ingresás (tus prompts y archivos). La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a la titularidad de los inputs aportados por el usuario. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… Account. You are responsible for keeping your Account secure. 1. Account Controls • Users. Subject to these Terms, you retain ultimate administrative control over your Personal Account and the Content within it. • Organizations. The \"owner\" of …",
+          "locationHint": "coincidencia: \"you retain\" (~offset 7498)"
+        },
+        {
+          "quote": "… it's commonly referred to by the shorthand \"inbound=outbound\". We're just making it explicit. 7. Moral Rights You retain all moral rights to Your Content that you upload, publish, or submit to any part of the Service, including the rights …",
+          "locationHint": "coincidencia: \"you retain\" (~offset 17136)"
+        },
+        {
+          "quote": "… in Section E. Content displayed on GitHub Mobile may be subject to app store terms. 3. Ownership and License Grants You own Your Content. If you post Content you did not create, you are responsible for ensuring you have the right to post it and for …",
+          "locationHint": "coincidencia: \"you own your\" (~offset 14243)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: you retain, you own your.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "business",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "output_ip": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre quién es dueño de lo que genera la IA a partir de tus pedidos. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a la asignación de titularidad sobre los outputs generados por el servicio resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… means any feature of GitHub or our Affiliates that uses machine learning or artificial intelligence to generate Output, including GitHub Copilot, Copilot Autofix, and any other feature identified as using machine learning or artificial …",
+          "locationHint": "coincidencia: \"output\" (~offset 4342)"
+        },
+        {
+          "quote": "… provided to an AI Feature, including prompts, attachments, code in your workspace, and conversation history. • \"Output\" means responses and suggestions, including code or other material, generated by an AI Feature. • The “Service” refers …",
+          "locationHint": "coincidencia: \"output\" (~offset 5428)"
+        },
+        {
+          "quote": "… AI Features and Section J.3 does not apply to you. 2. Ownership GitHub does not claim ownership of your Input or Output. Output may contain material that resembles code or content in the model's training data or that is subject to …",
+          "locationHint": "coincidencia: \"output\" (~offset 26163)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: output.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "business",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "license_grant": {
+      "status": "found",
+      "riskLevel": "high",
+      "plainLanguageSummary": "El documento parece referirse a qué permisos le das al proveedor sobre tu contenido. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a la licencia conferida al proveedor sobre los contenidos del usuario. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… Service in repositories they control). By making a repository public, you grant other Users a nonexclusive, worldwide license to use, display, perform and reproduce (by forking) Your Content through the Service as permitted by GitHub's functionality. …",
+          "locationHint": "coincidencia: \"license to use\" (~offset 16197)"
+        },
+        {
+          "quote": "… feedback for our products or services (collectively, “Feedback”), you acknowledge and agree that GitHub will have a royalty-free, fully paid-up, worldwide, transferable, sub-licensable, irrevocable and perpetual license to implement, use, modify, …",
+          "locationHint": "coincidencia: \"royalty-free\" (~offset 31762)"
+        },
+        {
+          "quote": "… and share the content you post. You still have control over your content, and responsibility for it, and the rights you grant us are limited to those we need to provide the service. We have the right to remove content or close Accounts if we …",
+          "locationHint": "coincidencia: \"you grant\" (~offset 13539)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: license to use, royalty-free, worldwide license, you grant.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "business",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "data_retention": {
+      "status": "unclear",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "Hay señales ambiguas sobre cuánto tiempo se conserva tu información. No queda claro a partir del texto analizado; conviene una revisión legal humana.",
+      "legalSummary": "La redacción relativa a los plazos y condiciones de retención de datos del usuario resulta ambigua. No surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… You are responsible for keeping your Account secure. 1. Account Controls • Users. Subject to these Terms, you retain ultimate administrative control over your Personal Account and the Content within it. • Organizations. The \"owner\" of …",
+          "locationHint": "coincidencia: \"retain\" (~offset 7502)"
+        },
+        {
+          "quote": "… it's commonly referred to by the shorthand \"inbound=outbound\". We're just making it explicit. 7. Moral Rights You retain all moral rights to Your Content that you upload, publish, or submit to any part of the Service, including the rights …",
+          "locationHint": "coincidencia: \"retain\" (~offset 17140)"
+        },
+        {
+          "quote": "… have allowed. 1. GitHub's Rights to Content GitHub and our licensors, vendors, agents, and/or our content providers retain ownership of all intellectual property rights of any kind related to the Website and Service. We reserve all rights …",
+          "locationHint": "coincidencia: \"retain\" (~offset 23263)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Solo se hallaron señales débiles o ambiguas: retain.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "business",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "data_deletion": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a si y cómo podés pedir que borren tu información. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a los mecanismos de supresión o eliminación de datos del usuario. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… to comply with our legal obligations, resolve disputes, and enforce our agreements, but barring legal requirements, we will delete your full profile and the Content of your repositories within 90 days of cancellation or termination (though some …",
+          "locationHint": "coincidencia: \"we will delete\" (~offset 36365)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: we will delete.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "business",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "confidentiality": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a si el proveedor se compromete a mantener tu información en reserva. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las obligaciones de confidencialidad aplicables al proveedor. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… repositories from unauthorized use, access, or disclosure in the same manner that we would use to protect our own confidential information of a similar nature and in no event with less than a reasonable degree of care. 3. Access You control access to the …",
+          "locationHint": "coincidencia: \"confidential information\" (~offset 20260)"
+        },
+        {
+          "quote": "… Beta Previews Short version: Beta Previews may not be supported or may change at any time. You may receive confidential information through those programs that must remain confidential while the program is private. We'd love your feedback to make our …",
+          "locationHint": "coincidencia: \"confidential information\" (~offset 28973)"
+        },
+        {
+          "quote": "… Beta Preview information we give you, such as information about a private Beta Preview, will be considered GitHub’s confidential information (collectively, “Confidential Information”), regardless of whether it is marked or identified as such. You agree to only …",
+          "locationHint": "coincidencia: \"confidential information\" (~offset 29867)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: confidential information.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "business",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "security": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a qué medidas de seguridad dice tomar el proveedor. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las medidas técnicas y organizativas de seguridad declaradas. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… not be supported and may be changed at any time without notice. In addition, Beta Previews are not subject to the same security measures and auditing to which the Service has been and is subject. By using a Beta Preview, you use it at your own risk. 2. …",
+          "locationHint": "coincidencia: \"security measures\" (~offset 29299)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: security measures.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "business",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "security_duty": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a si el proveedor asume un compromiso concreto de seguridad. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a la existencia de un deber de seguridad exigible al proveedor. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… terms that apply to GitHub's features that are still in development. L. Payment You are responsible for payment. We are responsible for billing you accurately. M. Cancellation and Termination You may cancel this agreement and close your Account at any …",
+          "locationHint": "coincidencia: \"we are responsible for\" (~offset 2009)"
+        },
+        {
+          "quote": "… and documentation. L. Payment Short version: You are responsible for any fees associated with your use of GitHub. We are responsible for communicating those fees to you clearly and accurately, and letting you know well in advance if those prices …",
+          "locationHint": "coincidencia: \"we are responsible for\" (~offset 32091)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: we are responsible for.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "business",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "warranties": {
+      "status": "found",
+      "riskLevel": "high",
+      "plainLanguageSummary": "El documento parece referirse a qué garantiza (o no garantiza) el proveedor sobre el servicio. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las garantías otorgadas y los disclaimers de garantía. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… to stay in touch with our users. We do not provide phone support. O. Disclaimer of Warranties We provide our service as is, and we make no promises or guarantees about this service. Please read this section carefully; you should understand …",
+          "locationHint": "coincidencia: \"as is\" (~offset 2346)"
+        },
+        {
+          "quote": "… messages. We do not offer telephone support. O. Disclaimer of Warranties Short version: We provide our service as is, and we make no promises or guarantees about this service. Please read this section carefully; you should understand …",
+          "locationHint": "coincidencia: \"as is\" (~offset 38734)"
+        },
+        {
+          "quote": "… read this section carefully; you should understand what to expect. GitHub provides the Website and the Service “as is” and “as available,” without warranty of any kind. Without limiting this, we expressly disclaim all warranties, whether …",
+          "locationHint": "coincidencia: \"as is\" (~offset 38919)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: as is.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "business",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "liability_limitation": {
+      "status": "found",
+      "riskLevel": "high",
+      "plainLanguageSummary": "El documento parece referirse a hasta dónde responde el proveedor si algo sale mal. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a el régimen de exclusión o limitación de responsabilidad. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… or guarantees about this service. Please read this section carefully; you should understand what to expect. P. Limitation of Liability We will not be liable for damages or losses arising from your use or inability to use the service or otherwise arising …",
+          "locationHint": "coincidencia: \"limitation of liability\" (~offset 2488)"
+        },
+        {
+          "quote": "… from your downloading and/or use of files, information, content or other material obtained from the Service. P. Limitation of Liability Short version: We will not be liable for damages or losses arising from your use or inability to use the service or …",
+          "locationHint": "coincidencia: \"limitation of liability\" (~offset 39840)"
+        },
+        {
+          "quote": "… Account). • You are responsible for maintaining the security of your Account and password. GitHub cannot and will not be liable for any loss or damage from your failure to comply with this security obligation. • You will promptly notify GitHub by …",
+          "locationHint": "coincidencia: \"not be liable\" (~offset 11326)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: limitation of liability, not be liable.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "business",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "indemnity": {
+      "status": "found",
+      "riskLevel": "high",
+      "plainLanguageSummary": "El documento parece referirse a si tenés que defender o pagar al proveedor ante reclamos de terceros. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las obligaciones de indemnidad a cargo del usuario. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… arising under this agreement. Please read this section carefully; it limits our obligations to you. Q. Release and Indemnification You are fully responsible for your use of the service. R. Changes to these Terms of Service We may modify this …",
+          "locationHint": "coincidencia: \"indemnification\" (~offset 2738)"
+        },
+        {
+          "quote": "… We will have no liability for any failure or delay due to matters beyond our reasonable control. Q. Release and Indemnification Short version: You are responsible for your use of the service. If you harm someone else or get into a dispute with …",
+          "locationHint": "coincidencia: \"indemnification\" (~offset 41189)"
+        },
+        {
+          "quote": "… and unknown, arising out of or in any way connected with such disputes. You agree to indemnify us, defend us, and hold us harmless from and against any and all claims, liabilities, and expenses, including attorneys’ fees, arising out of your use of …",
+          "locationHint": "coincidencia: \"hold us harmless\" (~offset 41655)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: indemnification, hold us harmless.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "business",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "governing_law": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a qué ley rige el contrato. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a la ley aplicable al contrato. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… discontinue, temporarily or permanently, the Website (or any part of it) with or without notice. S. Miscellaneous 1. Governing Law Except to the extent applicable law provides otherwise, this Agreement between you and GitHub and any access to or use …",
+          "locationHint": "coincidencia: \"governing law\" (~offset 43563)"
+        },
+        {
+          "quote": "… to or use of the Website or the Service are governed by the federal laws of the United States of America and the laws of the State of California, without regard to conflict of law provisions. You and GitHub agree to submit to the exclusive …",
+          "locationHint": "coincidencia: \"laws of the state\" (~offset 43800)"
+        },
+        {
+          "quote": "… and other limitations. In short, be excellent to each other. Your use of the Website and Service must not violate any applicable laws, including copyright or trademark laws, export control or sanctions laws, or other laws in your jurisdiction. You are …",
+          "locationHint": "coincidencia: \"applicable law\" (~offset 12925)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: governing law, laws of the state, applicable law.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "business",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "jurisdiction": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a qué tribunales resolverían un conflicto. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a la jurisdicción y el foro competente. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… laws of the State of California, without regard to conflict of law provisions. You and GitHub agree to submit to the exclusive jurisdiction and venue of the courts located in the City and County of San Francisco, California. However, any claim for injunctive …",
+          "locationHint": "coincidencia: \"exclusive jurisdiction\" (~offset 43917)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: exclusive jurisdiction, courts located in, venue.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "business",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "arbitration": {
+      "status": "not_found",
+      "riskLevel": "unknown",
+      "plainLanguageSummary": "No se encontró una cláusula clara sobre si tenés que resolver disputas por arbitraje y si renunciás a demandas colectivas en el texto analizado. La ausencia de coincidencias no garantiza que el tema no esté tratado.",
+      "legalSummary": "No surge del texto analizado una cláusula expresa sobre el sometimiento a arbitraje y la renuncia a acciones colectivas. La ausencia de coincidencias léxicas no permite concluir su inexistencia.",
+      "evidence": [],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. No se hallaron coincidencias léxicas relevantes.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "business",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "unilateral_changes": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a si el proveedor puede cambiar las reglas cuando quiera. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las facultades de modificación unilateral de los términos. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… and Indemnification You are fully responsible for your use of the service. R. Changes to these Terms of Service We may modify this agreement, but we will give you 30 days' notice of material changes. S. Miscellaneous Please see this section for …",
+          "locationHint": "coincidencia: \"we may modify\" (~offset 2846)"
+        },
+        {
+          "quote": "… to our terms, but some changes aren't that important — we don't want to bother you every time we fix a typo. So while we may modify this agreement at any time, we will notify users of any material changes and give you time to adjust to them. We …",
+          "locationHint": "coincidencia: \"we may modify\" (~offset 42509)"
+        },
+        {
+          "quote": "… releases GitHub of all liability); and (3) provides to you all reasonable assistance, at your expense. R. Changes to These Terms Short version: We want our users to be informed of important changes to our terms, but some changes aren't that …",
+          "locationHint": "coincidencia: \"changes to these terms\" (~offset 42298)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: we may modify, changes to these terms.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "business",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "plan_differences": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a si las reglas cambian según el plan que tengas (gratis, pago, empresa). La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las diferencias de régimen entre planes gratuitos, pagos y enterprise/business/team. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… end of a payment term. 2. Upgrades, Downgrades, and Changes • We will immediately bill you when you upgrade from the free plan to any paying plan. • If you change from a monthly billing plan to a yearly billing plan, GitHub will bill you for a …",
+          "locationHint": "coincidencia: \"free plan\" (~offset 32580)"
+        },
+        {
+          "quote": "… to GitHub Terms of Service applies to you, and you agree to its provisions. If you have signed up for GitHub Enterprise Cloud, the Enterprise Cloud Addendum applies to you, and you agree to its provisions. C. Acceptable Use Short …",
+          "locationHint": "coincidencia: \"enterprise\" (~offset 12356)"
+        },
+        {
+          "quote": "… contact us through the GitHub Support portal . You are responsible for providing us with a valid means of payment for paid Accounts. Free Accounts are not required to provide payment information. M. Cancellation and Termination Short version: You …",
+          "locationHint": "coincidencia: \"for paid accounts\" (~offset 35576)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: free plan, enterprise, for paid accounts.",
+      "appliesToModes": [
+        "free",
+        "paid_individual"
+      ],
+      "modeSpecificity": "mode_specific",
+      "modeEvidence": [
+        {
+          "quote": "… contact us through the GitHub Support portal . You are responsible for providing us with a valid means of payment for paid Accounts. Free Accounts are not required to provide payment information. M. Cancellation and Termination Short version: You …",
+          "locationHint": "coincidencia: \"for paid accounts\" (~offset 35576)"
+        }
+      ]
+    },
+    "minors": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a qué dice el documento sobre el uso por menores de edad. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a el tratamiento del uso del servicio por menores de edad. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… our Service to children under 13, and we do not permit any Users under 13 on our Service. If we learn of any User under the age of 13, we will terminate that User’s Account immediately . If you are a resident of a country outside the United States, …",
+          "locationHint": "coincidencia: \"under the age of\" (~offset 9776)"
+        },
+        {
+          "quote": "… that User’s Account immediately . If you are a resident of a country outside the United States, your country’s minimum age may be older; in such a case, you are responsible for complying with your country’s laws. • Your login may only be …",
+          "locationHint": "coincidencia: \"minimum age\" (~offset 9926)"
+        },
+        {
+          "quote": "… of the Account; or that directs the use of the Account in the performance of its functions. A User must be at least 13 years of age. Special terms may apply for business or government Accounts (See Section B(5): Additional Terms …",
+          "locationHint": "coincidencia: \"13 years\" (~offset 5968)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: under the age of, minimum age, children under, 13 years.",
+      "appliesToModes": [
+        "business"
+      ],
+      "modeSpecificity": "mode_specific",
+      "modeEvidence": [
+        {
+          "quote": "… of the Account; or that directs the use of the Account in the performance of its functions. A User must be at least 13 years of age. Special terms may apply for business or government Accounts (See Section B(5): Additional Terms …",
+          "locationHint": "coincidencia: \"13 years\" (~offset 5968)"
+        }
+      ]
+    },
+    "prohibited_content": {
+      "status": "found",
+      "riskLevel": "medium",
+      "plainLanguageSummary": "El documento parece referirse a qué usos del servicio están prohibidos. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las restricciones de uso y las categorías de contenido prohibido. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… pursuant to operation of law, provided GitHub has been given reasonable advance written notice to object, unless prohibited by law. 3. Feedback We’re always trying to improve our products and services, and your feedback as a Beta Preview …",
+          "locationHint": "coincidencia: \"prohibited\" (~offset 31350)"
+        },
+        {
+          "quote": "… controls; a human must create your Account; you must be 13 or over; you must provide a valid email address; and you may not have more than one free Account. You alone are responsible for your Account and anything that happens while you are …",
+          "locationHint": "coincidencia: \"you may not\" (~offset 7226)"
+        },
+        {
+          "quote": "… people. A paid Organization may only provide access to as many Personal Accounts as your subscription allows. • You may not use GitHub in violation of export control or sanctions laws of the United States or any other applicable jurisdiction. …",
+          "locationHint": "coincidencia: \"you may not\" (~offset 10239)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: prohibited, you may not.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "business",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "commercial_use": {
+      "status": "found",
+      "riskLevel": "low",
+      "plainLanguageSummary": "El documento parece referirse a si podés usar el servicio con fines comerciales. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a la habilitación o restricción del uso comercial del servicio. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… fully paid-up, worldwide, transferable, sub-licensable, irrevocable and perpetual license to implement, use, modify, commercially exploit and/or incorporate the Feedback into our products, services, and documentation. L. Payment Short version: You are …",
+          "locationHint": "coincidencia: \"commercially exploit\" (~offset 31893)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: commercially exploit.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "business",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    },
+    "api_references": {
+      "status": "found",
+      "riskLevel": "low",
+      "plainLanguageSummary": "El documento parece referirse a si el documento menciona el uso de APIs y sus condiciones. La redacción sugiere que existe una cláusula relacionada, pero hay que revisar esta parte con más detalle.",
+      "legalSummary": "Se identifican pasajes vinculados a las condiciones aplicables al uso de APIs. La cláusula podría configurar disposiciones relevantes; su alcance no surge con claridad del texto analizado y requeriría revisión legal humana.",
+      "evidence": [
+        {
+          "quote": "… copyrights on GitHub. G. Intellectual Property Notice This describes GitHub's rights in the website and service. H. API Terms These are the rules for using GitHub's APIs, whether you are using the API for development or data collection. I. …",
+          "locationHint": "coincidencia: \"api\" (~offset 1357)"
+        },
+        {
+          "quote": "… Agreement is licensed under this Creative Commons Zero license . For details, see our site-policy repository . H. API Terms Short version: You agree to these Terms of Service, plus this Section H, when using any of GitHub's APIs …",
+          "locationHint": "coincidencia: \"api\" (~offset 24053)"
+        },
+        {
+          "quote": "… plus this Section H, when using any of GitHub's APIs (Application Programming Interface), including use of the API through a third party product that accesses GitHub. Abuse or excessively frequent requests to GitHub via the API may …",
+          "locationHint": "coincidencia: \"api\" (~offset 24227)"
+        }
+      ],
+      "notes": "Análisis generado por parser determinístico (coincidencia de palabras clave). Requiere revisión humana. Términos detectados: api.",
+      "appliesToModes": [
+        "free",
+        "paid_individual",
+        "business",
+        "enterprise"
+      ],
+      "modeSpecificity": "general",
+      "modeEvidence": []
+    }
+  },
+  "metadata": {
+    "createdAt": "2026-06-14T17:50:37.287Z",
+    "parserVersion": "0.2.0",
+    "isMock": false,
+    "reviewStatus": "unreviewed",
+    "retrievedAt": "2026-06-14T17:50:36.929Z",
+    "fetcherVersion": "0.1.0",
+    "contentHash": "sha256:c6bd08c798f4698db86b2929d18ed5451b96ca12961fe2c53f91a4f240f385d4",
+    "sourceVerified": true,
+    "sourceStatus": "verified",
+    "extractionMethod": "html-to-text",
+    "canonicalUrl": null,
+    "finalUrl": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+    "fetchedPath": "data/fetched/github-copilot-terms-of-service-2026-06-14.html",
+    "extractedTextPath": "data/extracted/github-copilot-terms-of-service-2026-06-14.txt",
+    "extractedChars": 46028
+  }
+}
