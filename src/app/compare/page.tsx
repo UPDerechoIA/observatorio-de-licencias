@@ -2,7 +2,6 @@ import Link from "next/link";
 import { loadAllLicenseAnalyses } from "@/lib/storage";
 import { ComparisonMatrix } from "@/components/ComparisonMatrix";
 
-export const dynamic = "force-dynamic";
 export const metadata = { title: "Comparar — UP-Law-AILO" };
 
 export default async function ComparePage() {

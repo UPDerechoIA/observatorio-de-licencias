@@ -1,6 +1,10 @@
 import Link from "next/link";
 import { ModeToggle } from "./ModeToggle";
 
+// En el sitio estático de GitHub Pages no hay servidor: la carga web (/upload)
+// no se incluye en ese build. La ingesta ahí es 100% local por CLI.
+const isStaticExport = process.env.NEXT_PUBLIC_STATIC_EXPORT === "true";
+
 /** Cabecera con navegación principal y el toggle global de lenguaje. */
 export function Header() {
   return (
@@ -27,12 +31,14 @@ export function Header() {
               {l.label}
             </Link>
           ))}
-          <Link
-            href="/upload"
-            className="rounded-md bg-gold-500 px-3 py-1 font-medium text-slate-900 hover:bg-gold-600"
-          >
-            + Cargar licencia
-          </Link>
+          {!isStaticExport && (
+            <Link
+              href="/upload"
+              className="rounded-md bg-gold-500 px-3 py-1 font-medium text-slate-900 hover:bg-gold-600"
+            >
+              + Cargar licencia
+            </Link>
+          )}
           <ModeToggle />
         </nav>
       </div>

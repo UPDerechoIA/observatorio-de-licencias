@@ -1,7 +1,6 @@
 import { loadAllLicenseAnalyses } from "@/lib/storage";
 import { AnalysisTable } from "@/components/AnalysisTable";
 
-export const dynamic = "force-dynamic";
 export const metadata = { title: "Tabla de análisis — UP-Law-AILO" };
 
 export default async function AnalysesPage() {
