@@ -2,17 +2,17 @@
 export const metadata = { title: "Criterio de riesgo — UP-Law-AILO" };
 
 const RISK: { nivel: string; texto: string }[] = [
-  { nivel: "Riesgo bajo", texto: "Cláusulas de baja criticidad o informativas. Sin señales fuertes de transferencia de derechos, limitación de remedios o restricciones procesales." },
-  { nivel: "Riesgo medio", texto: "Cláusulas relevantes sobre privacidad, uso o conservación de datos, jurisdicción o cambios de términos. Requiere revisión legal." },
-  { nivel: "Riesgo alto", texto: "Cláusulas que podrían afectar derechos del usuario, propiedad intelectual, responsabilidad, indemnidad, arbitraje o posición procesal. No es conclusión definitiva." },
-  { nivel: "Riesgo desconocido", texto: "Evidencia insuficiente o redacción ambigua. Requiere revisión manual del documento fuente." },
+  { nivel: "Bajo", texto: "Cláusulas de baja criticidad o informativas. Sin señales fuertes de transferencia de derechos, limitación de remedios o restricciones procesales." },
+  { nivel: "Medio", texto: "Cláusulas relevantes sobre privacidad, uso o conservación de datos, jurisdicción o cambios de términos. Requiere revisión legal." },
+  { nivel: "Alto", texto: "Cláusulas que podrían afectar derechos del usuario, propiedad intelectual, responsabilidad, indemnidad, arbitraje o posición procesal. No es conclusión definitiva." },
+  { nivel: "Desconocido", texto: "Evidencia insuficiente o redacción ambigua. Requiere revisión manual del documento fuente." },
 ];
 
 const PRIVACY: { nivel: string; texto: string }[] = [
-  { nivel: "Privacidad fuerte", texto: "Compromisos relevantes de protección: límites al entrenamiento, confidencialidad, controles de retención, DPA o condiciones enterprise." },
-  { nivel: "Privacidad moderada", texto: "Regula el tratamiento de datos con algunas salvaguardas, pero no alcanza para una protección fuerte." },
-  { nivel: "Privacidad débil", texto: "Señales de uso amplio de datos, retención poco clara, licencias amplias o falta de controles." },
-  { nivel: "Privacidad desconocida", texto: "Evidencia insuficiente para asignar una postura." },
+  { nivel: "Fuerte", texto: "Compromisos relevantes de protección: límites al entrenamiento, confidencialidad, controles de retención, DPA o condiciones enterprise." },
+  { nivel: "Moderada", texto: "Regula el tratamiento de datos con algunas salvaguardas, pero no alcanza para una protección fuerte." },
+  { nivel: "Débil", texto: "Señales de uso amplio de datos, retención poco clara, licencias amplias o falta de controles." },
+  { nivel: "Desconocida", texto: "Evidencia insuficiente para asignar una postura." },
 ];
 
 export default function CriteriaPage() {
