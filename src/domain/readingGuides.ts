@@ -10,7 +10,7 @@
  */
 
 import type { LicenseAnalysis } from "@/lib/schema";
-import { CATEGORY_BY_KEY } from "@/lib/categories";
+import { CATEGORY_BY_KEY, CATEGORIES } from "@/lib/categories";
 import { SCENARIO_BY_ID, EVALUABLE_SCENARIOS, type LegalUseScenario } from "./legalUseScenarios";
 
 export type ReadingPriority = "high" | "medium" | "low" | "insufficient";
@@ -165,6 +165,43 @@ export function getClausesForReadingGuide(guide: ReadingGuide, analyses: License
     }
     return { key, label: cat?.label ?? key, concern: cat?.legalConcern ?? "", documentsWithEvidence: docs };
   });
+}
+
+// --- Dossier: lectura de un documento ---
+
+/** Escenarios para los que este documento es relevante (tiene cláusulas presentes). */
+export function getScenariosForDocument(a: LicenseAnalysis): { id: string; title: string }[] {
+  return EVALUABLE_SCENARIOS.filter((s) =>
+    s.priorityCategories.some((k) => {
+      const st = a.categories[k]?.status;
+      return st === "found" || st === "unclear";
+    }),
+  ).map((s) => ({ id: s.id, title: s.title }));
+}
+
+export interface ClauseReadingPriority {
+  key: string;
+  label: string;
+  priority: ReadingPriority;
+}
+
+/**
+ * Prioridad de LECTURA de las cláusulas presentes en el documento (qué leer
+ * primero), en orden del catálogo. No es riesgo: ordena la lectura.
+ */
+export function getDocumentReadingPriorities(a: LicenseAnalysis): ClauseReadingPriority[] {
+  const out: ClauseReadingPriority[] = [];
+  for (const cat of CATEGORIES) {
+    const c = a.categories[cat.key];
+    if (!c) continue;
+    let priority: ReadingPriority;
+    if (c.status === "found" && c.evidence.length > 0) priority = "high";
+    else if (c.status === "found" || c.status === "unclear") priority = "medium";
+    else continue; // not_found: no se prioriza para lectura
+    out.push({ key: cat.key, label: cat.label, priority });
+  }
+  const rank: Record<ReadingPriority, number> = { high: 0, medium: 1, low: 2, insufficient: 3 };
+  return out.sort((x, y) => rank[x.priority] - rank[y.priority]);
 }
 
 /** Evidencia textual para una categoría del escenario. */

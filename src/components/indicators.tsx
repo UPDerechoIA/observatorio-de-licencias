@@ -138,7 +138,7 @@ export function PrivacyIndicator({ analysis }: { analysis: LicenseAnalysis }) {
         <Dot tone={POSTURE_TONE[a.privacy.posture]} />
         {POSTURE_WORD[a.privacy.posture]}
       </Line>
-      <Line label="Fundamento">{a.privacy.rationale}</Line>
+      <Line label="Fundamento">{a.privacy.rationale.replace(/\.?\s*Requiere\s+revisión\s+(legal\s+)?humana\.?/gi, ".").trim()}</Line>
       <Line label="Señales">
         {a.privacy.signals.length > 0
           ? a.privacy.signals.map((s) => SIGNAL_LABEL[s] ?? s).join(" · ")
@@ -156,17 +156,16 @@ export function RiskIndicator({ analysis }: { analysis: LicenseAnalysis }) {
   const a = analysis;
   const drivers = topRiskCategories(a, labelOf);
   return (
-    <Block title="Riesgo contractual preliminar">
+    <Block title="Prioridad contractual preliminar">
       <Line label="Nivel">
         <Dot tone={RISK_TONE[a.overall.overallRiskLevel]} />
         {RISK_WORD[a.overall.overallRiskLevel]}
       </Line>
       <Line label="Fundamento">{riskRationale(a, labelOf)}</Line>
       <Line label="Señales principales">
-        {drivers.length > 0 ? drivers.map((d) => d.label).join(" · ") : "Sin categorías de riesgo elevado detectadas."}
+        {drivers.length > 0 ? drivers.map((d) => d.label).join(" · ") : "Sin cláusulas de criticidad elevada detectadas."}
       </Line>
       <Line label="Base">Parser determinístico con evidencia textual. No es conclusión jurídica.</Line>
-      <Line label="Revisión">{REVIEW_LABELS[a.metadata.reviewStatus] ?? a.metadata.reviewStatus}</Line>
     </Block>
   );
 }
