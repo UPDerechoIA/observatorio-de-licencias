@@ -2,22 +2,13 @@ import Link from "next/link";
 import { loadAllLicenseAnalyses } from "@/lib/storage";
 import { computeMetrics } from "@/lib/derive";
 import { HOME_SCENARIO_CARDS } from "@/domain/legalUseScenarios";
-import { SCENARIO_ICON, ACADEMIC_ICON, CardIcon } from "@/components/icons";
+import { SCENARIO_ICON, CardIcon } from "@/components/icons";
 
 const SECONDARY_LINKS: { href: string; label: string }[] = [
-  { href: "/analyses", label: "Evidencia documental" },
+  { href: "/analyses", label: "Corpus documental" },
   { href: "/providers", label: "Proveedores" },
-  { href: "/compare", label: "Matriz comparativa" },
-  { href: "/differences", label: "Diferencias por modalidad" },
-  { href: "/criteria", label: "Criterio" },
-];
-
-// Capa 2: comparaciones académicas (software tradicional como punto de comparación).
-const ACADEMIC_CARDS: { href: string; title: string }[] = [
-  { href: "/compare", title: "IA vs software tradicional" },
-  { href: "/providers", title: "Software cotidiano del abogado" },
-  { href: "/providers", title: "Correo, productividad y redes sociales" },
-  { href: "/providers", title: "Ecosistemas móviles: Android y Apple" },
+  { href: "/criteria", label: "Criterio de lectura" },
+  { href: "/acerca", label: "Acerca del proyecto" },
 ];
 
 export default async function HomePage() {
@@ -26,17 +17,17 @@ export default async function HomePage() {
 
   return (
     <div className="mx-auto max-w-4xl space-y-10 py-4">
-      {/* A. Hero */}
+      {/* Hero */}
       <header className="space-y-3">
         <h1 className="font-serif text-3xl font-bold text-slate-900">UP-Law-AILO</h1>
         <p className="text-base leading-relaxed text-slate-600">
-          Observatorio jurídico-académico para comparar condiciones de uso, privacidad y riesgos
-          contractuales de herramientas de IA y software cotidiano.
+          Observatorio jurídico-académico para leer y auditar condiciones legales de herramientas de IA y
+          software cotidiano.
         </p>
-        <h2 className="pt-2 font-serif text-xl font-semibold text-slate-900">¿Qué uso querés evaluar?</h2>
+        <h2 className="pt-2 font-serif text-xl font-semibold text-slate-900">¿Qué necesitás leer?</h2>
       </header>
 
-      {/* B. Escenarios de uso jurídico (capa principal) */}
+      {/* Escenarios → guías de lectura */}
       <section>
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
           {HOME_SCENARIO_CARDS.map((s) => (
@@ -50,7 +41,7 @@ export default async function HomePage() {
                 <h3 className="font-medium text-slate-900">{s.title}</h3>
                 <p className="mt-1 text-sm leading-relaxed text-slate-600">{s.short}</p>
                 <span className="mt-3 inline-block text-sm font-medium text-sky-700">
-                  Evaluar escenario <span className="transition-transform group-hover:translate-x-0.5">→</span>
+                  Abrir guía de lectura <span className="transition-transform group-hover:translate-x-0.5">→</span>
                 </span>
               </div>
             </Link>
@@ -61,42 +52,43 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* C. Comparaciones académicas (capa secundaria, visualmente subordinada) */}
-      <section>
-        <h2 className="text-xs font-semibold uppercase tracking-wider text-slate-500">Comparaciones académicas</h2>
-        <p className="mt-1 max-w-3xl text-sm leading-relaxed text-slate-600">
-          Además de proveedores de IA, el observatorio incorpora software tradicional usado por abogados
-          —correo, productividad, redes sociales y ecosistemas móviles— como punto de comparación. Permite
-          distinguir qué riesgos son propios de la IA y cuáles ya existen en el software cotidiano.
+      {/* Corpus documental (acceso secundario) */}
+      <section className="rounded-lg border border-slate-200 bg-white p-4">
+        <h2 className="font-medium text-slate-900">Ir al corpus documental</h2>
+        <p className="mt-1 text-sm leading-relaxed text-slate-600">
+          Explorá los documentos fuente organizados por grupo, proveedor, producto y modalidad. Incluye IA y
+          software cotidiano usado por abogados como corpus de referencia.
         </p>
-        <div className="mt-3 flex flex-wrap gap-2">
-          {ACADEMIC_CARDS.map((c) => {
-            const Icon = ACADEMIC_ICON[c.title];
-            return (
-              <Link
-                key={c.title}
-                href={c.href}
-                className="inline-flex items-center gap-2 rounded-md border border-slate-200 bg-white px-3 py-1.5 text-sm text-slate-700 hover:bg-slate-50"
-              >
-                {Icon && <Icon className="h-4 w-4 text-slate-400" strokeWidth={1.75} aria-hidden="true" />}
-                {c.title}
-              </Link>
-            );
-          })}
-        </div>
+        <Link href="/analyses" className="mt-2 inline-block text-sm font-medium text-sky-700 hover:underline">
+          Abrir corpus documental →
+        </Link>
       </section>
 
-      {/* D. Propósito académico (breve) */}
-      <p className="text-sm leading-relaxed text-slate-600">
-        Proyecto académico para fortalecer el vínculo entre derecho y software, orientado a abogados y
-        estudiantes de derecho en América Latina. <Link href="/acerca" className="text-sky-700 hover:underline">Acerca del proyecto →</Link>
-      </p>
+      {/* Propósito académico */}
+      <section>
+        <h2 className="text-xs font-semibold uppercase tracking-wider text-slate-500">Propósito académico</h2>
+        <p className="mt-1 text-sm leading-relaxed text-slate-600">
+          UP-Law-AILO busca fortalecer el vínculo entre derecho y software. Organiza documentos públicos
+          —términos de uso, políticas de privacidad, políticas de producto y condiciones contractuales— para
+          facilitar lectura jurídica, trazabilidad y discusión académica. No constituye asesoramiento legal.
+          {" "}
+          <Link href="/acerca" className="text-sky-700 hover:underline">Acerca del proyecto →</Link>
+        </p>
+      </section>
 
-      {/* E. Advertencia breve (el disclaimer único vive en el footer del layout) */}
+      {/* Accesos secundarios */}
+      <nav className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-slate-500">
+        {SECONDARY_LINKS.map((l, i) => (
+          <span key={l.href} className="flex items-center gap-4">
+            {i > 0 && <span className="text-slate-300">·</span>}
+            <Link href={l.href} className="hover:text-slate-800 hover:underline">{l.label}</Link>
+          </span>
+        ))}
+      </nav>
 
-      {/* F. Cobertura actual (una línea) */}
+      {/* Cobertura (una línea, secundaria) */}
       <p className="border-t border-slate-200 pt-4 text-sm text-slate-500">
-        Cobertura actual: {m.providers} proveedores · {m.total} documentos · IA y software tradicional · fuentes públicas
+        Corpus actual: {m.providers} proveedores · {m.total} documentos · IA y software cotidiano · fuentes públicas
       </p>
     </div>
   );

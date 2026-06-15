@@ -269,23 +269,26 @@ preliminar de privacidad** por modalidad: `strong` · `moderate` · `weak` · `u
 
 Se muestra como **"perfil preliminar"**, con señales y evidencia, y siempre sujeto a revisión legal.
 
-## Diseño centrado en comparación
+## Lectura jurídica guiada
 
-La comparación es el **principio organizador** del producto, no una vista más. La experiencia no
-se basa en **filtros** (deliberadamente ausentes): se elige una comparación significativa y se la
-recorre.
+Por decisión de producto, UP-Law-AILO **dejó de organizarse como comparación/matriz**. El eje son los
+**escenarios jurídicos** y un **corpus documental**: el abogado lee los documentos y cláusulas relevantes,
+con evidencia textual y trazabilidad. No hay filtros, matrices, rankings ni "ganadores".
 
-- **`/compare`** abre en un **selector de presets** (no en una matriz). Los presets se generan de
-  los datos reales (escenarios jurídicos vía el motor `evaluateScenario`, "IA vs software tradicional",
-  "Redes sociales", etc.). Tras elegir uno: **selección guiada** de 2 a 4 unidades comparativas
-  (proveedor·producto), **tabla compacta** por eje jurídico (datos y privacidad, entrenamiento,
-  confidencialidad y seguridad, propiedad intelectual, responsabilidad, jurisdicción) con celdas
-  breves (estado · cautela · nº de evidencias) y **evidencia bajo demanda**.
-- La **matriz documental completa** sigue disponible como **modo experto** (botón "Abrir modo
-  experto"), sin filtros: solo agrupación.
-- El modelo vive en `src/domain/comparison.ts` (`buildComparisonUnits`, `buildComparisonPresets`,
-  `compareUnits`, `findDifferentialFindings`, `getEvidenceForComparison`). Determinístico, sin LLM,
-  export-safe. *(Rediseño transversal en etapas; `/compare` es la primera.)*
+- **Escenario → guía de lectura** (`/escenarios/[id]`): para un escenario (datos personales, información
+  confidencial, etc.) responde *qué documentos leer*, ordenados por **prioridad de lectura** (qué leer
+  primero según las cláusulas presentes, **no** un puntaje de riesgo), y *qué cláusulas revisar* por eje
+  jurídico, con evidencia textual y enlace al dossier. Modelo en `src/domain/readingGuides.ts`
+  (`getReadingGuide`, `getDocumentsForReadingGuide`, `prioritizeDocumentsForReading`,
+  `getClausesForReadingGuide`), reusando el motor `evaluateScenario`. Determinístico, sin LLM, export-safe.
+- **Corpus documental** (`/analyses`): biblioteca jerárquica (grupo → proveedor → producto → documento)
+  navegable por acordeones, **sin filtros ni buscador**. Incluye IA y software cotidiano como corpus de
+  referencia (no "IA vs software tradicional").
+- Las vistas `/compare` y `/differences` quedaron **retiradas** (página de aviso con enlaces a Escenarios y
+  Corpus). La comparación abierta se retiró de la UI; el motor `evaluateScenario` permanece como base de las
+  guías.
+
+*(Pivote transversal en etapas; etapa 1: escenarios-como-guía, corpus sin filtros, comparación retirada.)*
 
 ## Decisión por escenario de uso
 

@@ -1,42 +1,113 @@
+import Link from "next/link";
 import { loadAllLicenseAnalyses } from "@/lib/storage";
-import { computeMetrics } from "@/lib/derive";
-import { AnalysisTable } from "@/components/AnalysisTable";
+import type { LicenseAnalysis } from "@/lib/schema";
+import { MODE_LABELS } from "@/lib/contractingModes";
+import { COMPARISON_GROUP_LABEL } from "@/lib/analysisMeta";
 
-export const metadata = { title: "Tabla de análisis — UP-Law-AILO" };
+export const metadata = { title: "Corpus documental — UP-Law-AILO" };
 
-export default async function AnalysesPage() {
+const GROUP_ORDER = ["ai", "traditional_software", "social_platform", "mobile_ecosystem"];
+
+interface ProductNode {
+  productName: string;
+  documents: LicenseAnalysis[];
+}
+interface ProviderNode {
+  providerName: string;
+  products: ProductNode[];
+}
+
+function buildHierarchy(analyses: LicenseAnalysis[]) {
+  const groups = new Map<string, Map<string, Map<string, LicenseAnalysis[]>>>();
+  for (const a of analyses) {
+    const g = groups.get(a.comparisonGroup) ?? new Map();
+    groups.set(a.comparisonGroup, g);
+    const p = g.get(a.providerName) ?? new Map();
+    g.set(a.providerName, p);
+    const docs = p.get(a.productName) ?? [];
+    p.set(a.productName, docs);
+    docs.push(a);
+  }
+  return [...groups.entries()]
+    .sort((a, b) => GROUP_ORDER.indexOf(a[0]) - GROUP_ORDER.indexOf(b[0]))
+    .map(([group, provs]) => ({
+      group,
+      providers: [...provs.entries()]
+        .sort((a, b) => a[0].localeCompare(b[0]))
+        .map<ProviderNode>(([providerName, prods]) => ({
+          providerName,
+          products: [...prods.entries()]
+            .sort((a, b) => a[0].localeCompare(b[0]))
+            .map<ProductNode>(([productName, documents]) => ({ productName, documents })),
+        })),
+    }));
+}
+
+export default async function CorpusPage() {
   const analyses = await loadAllLicenseAnalyses();
-  const m = computeMetrics(analyses);
-
-  const metrics: { label: string; value: number }[] = [
-    { label: "Análisis", value: m.total },
-    { label: "Proveedores", value: m.providers },
-    { label: "Fuentes verificadas", value: m.verifiedSources },
-    { label: "Sin revisión legal", value: m.unreviewed },
-    { label: "Modalidades", value: m.modesDetected },
-  ];
+  const hierarchy = buildHierarchy(analyses);
 
   return (
-    <div className="space-y-5">
-      <header className="flex flex-col gap-4 border-b border-slate-200 pb-4 lg:flex-row lg:items-end lg:justify-between">
-        <div className="max-w-2xl">
-          <h1 className="text-2xl font-bold text-slate-900">Evidencia documental</h1>
-          <p className="mt-1 text-sm leading-relaxed text-slate-600">
-            Registro probatorio de due diligence. Cada fila es el análisis preliminar de un documento,
-            con su modalidad de contratación, perfil de privacidad, riesgo contractual y trazabilidad de fuente.
-          </p>
-        </div>
-        <dl className="grid grid-cols-3 gap-px overflow-hidden rounded-md border border-slate-200 bg-slate-200 sm:grid-cols-5 lg:w-auto">
-          {metrics.map((c) => (
-            <div key={c.label} className="bg-white px-4 py-2.5">
-              <dd className="font-serif text-2xl font-semibold leading-none text-slate-900">{c.value}</dd>
-              <dt className="mt-1 text-xs uppercase tracking-wide text-slate-500">{c.label}</dt>
-            </div>
-          ))}
-        </dl>
+    <div className="mx-auto max-w-4xl space-y-6 py-4">
+      <header>
+        <h1 className="font-serif text-2xl font-bold text-slate-900">Corpus documental</h1>
+        <p className="mt-1 text-sm leading-relaxed text-slate-600">
+          Documentos públicos utilizados para la lectura jurídica del observatorio, organizados por grupo,
+          proveedor, producto y documento. Abrí cada nivel para navegar; cada documento enlaza a su dossier.
+        </p>
       </header>
 
-      <AnalysisTable analyses={analyses} />
+      <div className="space-y-3">
+        {hierarchy.map((g) => (
+          <details key={g.group} open className="rounded-md border border-slate-200 bg-white">
+            <summary className="cursor-pointer px-4 py-2.5 font-serif text-base font-semibold text-slate-900">
+              {COMPARISON_GROUP_LABEL[g.group] ?? g.group}
+            </summary>
+            <div className="border-t border-slate-100 px-2 pb-2">
+              {g.providers.map((prov) => (
+                <details key={prov.providerName} className="border-b border-slate-100 last:border-0">
+                  <summary className="cursor-pointer px-2 py-2 text-sm font-medium text-slate-800">
+                    {prov.providerName}
+                    <span className="ml-2 text-xs font-normal text-slate-400">
+                      {prov.products.reduce((n, p) => n + p.documents.length, 0)} doc.
+                    </span>
+                  </summary>
+                  <div className="pl-3">
+                    {prov.products.map((prod) => (
+                      <div key={prod.productName} className="py-1">
+                        <div className="px-2 text-xs uppercase tracking-wide text-slate-400">{prod.productName}</div>
+                        <ul>
+                          {prod.documents
+                            .slice()
+                            .sort((a, b) => a.documentType.localeCompare(b.documentType))
+                            .map((d) => (
+                              <li key={d.id} className="flex flex-wrap items-baseline justify-between gap-2 px-2 py-1.5 text-sm">
+                                <span className="text-slate-700">
+                                  {d.documentType}
+                                  <span className="ml-2 text-xs text-slate-400">
+                                    {MODE_LABELS[d.contractingMode]} · {(d.metadata.retrievedAt ?? d.retrievedAt).slice(0, 10)}
+                                  </span>
+                                </span>
+                                <Link href={`/analysis/${d.id}`} className="whitespace-nowrap text-xs text-sky-700 hover:underline">
+                                  Abrir dossier →
+                                </Link>
+                              </li>
+                            ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                </details>
+              ))}
+            </div>
+          </details>
+        ))}
+      </div>
+
+      <p className="text-xs leading-relaxed text-slate-500">
+        El corpus incluye IA y software cotidiano usado por abogados (correo, productividad, redes sociales y
+        ecosistemas móviles) como corpus de referencia. Documentos públicos; no constituye asesoramiento legal.
+      </p>
     </div>
   );
 }

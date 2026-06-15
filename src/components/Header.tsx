@@ -21,10 +21,10 @@ export function Header() {
           {[
             { href: "/", label: "Inicio" },
             { href: "/escenarios", label: "Escenarios" },
-            { href: "/analyses", label: "Evidencia" },
+            { href: "/analyses", label: "Corpus documental" },
             { href: "/providers", label: "Proveedores" },
-            { href: "/compare", label: "Comparar" },
             { href: "/criteria", label: "Criterio" },
+            { href: "/acerca", label: "Acerca" },
           ].map((l) => (
             <Link key={l.href} href={l.href} className="rounded-md px-2 py-1 text-slate-200 hover:bg-white/10 hover:text-white">
               {l.label}
