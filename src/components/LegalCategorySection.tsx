@@ -16,6 +16,20 @@ const STATUS_DOT: Record<CategoryFinding["status"], string> = {
   not_found: "text-slate-400",
   unclear: "text-amber-600",
 };
+/**
+ * Quita el boilerplate de revisión que el parser repite en cada cláusula
+ * ("…requeriría revisión legal humana", "Requiere revisión humana."). El aviso
+ * general aparece una sola vez en el dossier; no se repite por cláusula. No muta
+ * los datos: solo limpia el texto al mostrarlo.
+ */
+function stripReviewBoilerplate(s: string): string {
+  return s
+    .replace(/\s*(y|;|,)?\s*(requiere|requeriría)\s+revisión\s+(legal\s+)?humana\.?/gi, "")
+    .replace(/\s+\./g, ".")
+    .replace(/\.\s*\.+/g, ".")
+    .trim();
+}
+
 const RISK_WORD: Record<RiskLevel, string> = { low: "bajo", medium: "medio", high: "alto", unknown: "desconocido" };
 const RISK_DOT: Record<RiskLevel, string> = { low: "text-emerald-600", medium: "text-amber-600", high: "text-red-600", unknown: "text-slate-400" };
 
@@ -61,7 +75,7 @@ export function LegalCategorySection({ label, finding }: { label: string; findin
           )}
           <div>
             <span className="text-xs uppercase tracking-wide text-slate-400">Resumen</span>
-            <p className="text-slate-700">{finding.legalSummary}</p>
+            <p className="text-slate-700">{stripReviewBoilerplate(finding.legalSummary)}</p>
           </div>
           <div>
             <span className="text-xs uppercase tracking-wide text-slate-400">Evidencia textual disponible</span>
@@ -69,8 +83,7 @@ export function LegalCategorySection({ label, finding }: { label: string; findin
               <EvidencePanel evidence={finding.evidence} />
             </div>
           </div>
-          {finding.notes && <p className="text-xs italic text-slate-500">Notas: {finding.notes}</p>}
-          <p className="text-xs text-slate-400">Sin revisión legal humana.</p>
+          {finding.notes && <p className="text-xs italic text-slate-500">Notas: {stripReviewBoilerplate(finding.notes)}</p>}
         </div>
       )}
     </div>
