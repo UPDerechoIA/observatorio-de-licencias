@@ -1,0 +1,63 @@
+{
+  "bundleId": "google-android-legal-bundle-2026-06-15",
+  "providerName": "Google",
+  "productName": "Android",
+  "softwareCategory": "mobile_operating_system",
+  "comparisonGroup": "mobile_ecosystem",
+  "comparativeBaseline": true,
+  "bundleStatus": "partially_resolved",
+  "retrievedAt": "2026-06-15",
+  "summary": "El régimen de Android combina los Términos de Servicio y la Política de Privacidad generales de Google (referenciados) con los Términos de Servicio de Google Play (distribución de apps). No surge un ToS independiente del sistema operativo Android distinto de los Términos de Google; el alcance de las capas de dispositivo y de Google Play Services queda sin determinar.",
+  "documents": [
+    {
+      "documentRole": "base_terms",
+      "documentType": "Google Terms of Service",
+      "sourceUrl": "https://policies.google.com/terms",
+      "status": "referenced_canonical_document",
+      "relationship": "applies_by_official_reference",
+      "canonicalAnalysisId": "google-gemini-terms-of-service-2026-06-14",
+      "appliesToModes": [],
+      "evidenceQuote": "These terms apply to… Google services like Android, Google Chrome, and the other services that link to these terms.",
+      "notes": "Los Términos de Servicio generales de Google rigen el uso de Android. Se referencia el análisis canónico (mismo URL); no se duplica."
+    },
+    {
+      "documentRole": "base_privacy",
+      "documentType": "Google Privacy Policy",
+      "sourceUrl": "https://policies.google.com/privacy",
+      "status": "referenced_canonical_document",
+      "relationship": "applies_by_official_reference",
+      "canonicalAnalysisId": "google-gemini-privacy-policy-2026-06-14",
+      "appliesToModes": [],
+      "evidenceQuote": "This Privacy Policy applies to all of the services offered by Google LLC and its affiliates.",
+      "notes": "Se referencia el análisis canónico de privacidad de Google."
+    },
+    {
+      "documentRole": "product_terms",
+      "documentType": "Google Play Terms of Service",
+      "sourceUrl": "https://play.google.com/about/play-terms/",
+      "status": "verified_product_specific",
+      "relationship": "product_specific",
+      "canonicalAnalysisId": null,
+      "appliesToModes": [],
+      "evidenceQuote": "Condiciones del Servicio de Google Play (página oficial, ~27k caracteres).",
+      "notes": "Términos de la tienda de aplicaciones del ecosistema Android. Documento real y sustantivo, geolocalizado por idioma; se registra como fuente sin análisis léxico (parser en inglés)."
+    }
+  ],
+  "unresolved": [
+    {
+      "documentType": "Términos de Servicio propios del sistema operativo Android",
+      "reason": "No surge un ToS independiente del sistema operativo Android distinto de los Términos de Servicio generales de Google.",
+      "status": "unclear_scope"
+    },
+    {
+      "documentType": "Términos de Google Play Services / Google Mobile Services (GMS)",
+      "reason": "No se localizó un documento de términos independiente y específico para Google Play Services / GMS en esta pasada de fuentes oficiales.",
+      "status": "not_found_after_official_search"
+    },
+    {
+      "documentType": "Términos de dispositivo (Pixel / fabricante)",
+      "reason": "El alcance de los términos de dispositivo depende del fabricante; no aplica de forma uniforme al SO Android.",
+      "status": "unclear_scope"
+    }
+  ]
+}

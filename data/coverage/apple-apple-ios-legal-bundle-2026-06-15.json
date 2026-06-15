@@ -1,0 +1,42 @@
+{
+  "bundleId": "apple-apple-ios-legal-bundle-2026-06-15",
+  "providerName": "Apple",
+  "productName": "Apple devices / iOS",
+  "softwareCategory": "mobile_device_ecosystem",
+  "comparisonGroup": "mobile_ecosystem",
+  "comparativeBaseline": true,
+  "bundleStatus": "partially_resolved",
+  "retrievedAt": "2026-06-15",
+  "summary": "Se ingirió el documento de Términos de Servicios de Medios de Apple (Apple Media Services Terms). La Política de Privacidad de Apple NO pudo extraerse: su cuerpo no renderiza al navegador headless (carga diferida por JavaScript); solo se obtiene navegación del sitio + una introducción. Queda como pendiente técnico preciso, sin generar un análisis vacío.",
+  "documents": [
+    {
+      "documentRole": "product_terms",
+      "documentType": "Apple Media Services Terms",
+      "sourceUrl": "https://www.apple.com/legal/internet-services/itunes/",
+      "status": "verified_product_specific",
+      "relationship": "product_specific",
+      "canonicalAnalysisId": "apple-apple-ios-media-services-terms-2026-06-15",
+      "appliesToModes": [],
+      "evidenceQuote": "Apple Media Services Terms (descargado e ingerido, ~53k caracteres).",
+      "notes": "Documento real ingerido como análisis canónico."
+    },
+    {
+      "documentRole": "base_privacy",
+      "documentType": "Apple Privacy Policy",
+      "sourceUrl": "https://www.apple.com/legal/privacy/",
+      "status": "unsupported_format",
+      "relationship": "product_specific",
+      "canonicalAnalysisId": null,
+      "appliesToModes": [],
+      "evidenceQuote": "Apple Privacy Policy — Updated July 30, 2025. (Solo se extrae navegación + introducción; el cuerpo no renderiza.)",
+      "notes": "Pendiente técnico: la página oficial es una SPA con carga diferida; el navegador headless obtiene ~3168 chars que son mayormente navegación del sitio. No se genera análisis para no fabricar contenido."
+    }
+  ],
+  "unresolved": [
+    {
+      "documentType": "Texto completo de la Política de Privacidad de Apple",
+      "reason": "La página oficial (apple.com/legal/privacy) no rinde el cuerpo de la política al navegador headless: carga diferida por JavaScript. Requiere una técnica de extracción con espera de render / lectura del payload oficial.",
+      "status": "unsupported_format"
+    }
+  ]
+}

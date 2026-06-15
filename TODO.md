@@ -79,7 +79,8 @@ de aceptación actuales.
 ## Comparaciones académicas y software tradicional
 - [ ] Ampliar el grupo de comparación (WhatsApp, Slack, Zoom, Dropbox, Google Drive).
 - [ ] Ingerir Gmail y Android (hoy verificados pero pendientes: el GET a policies.google.com no rinde texto).
-- [ ] Reintentar Apple Privacy Policy con navegador (hoy `unsupported_format`: SPA / muro de consentimiento).
+- [ ] Extraer la Política de Privacidad de Apple: la página es una SPA con carga diferida; ni el headless rinde el cuerpo (solo nav + intro, ~3168 chars). Probar espera de render / lectura del payload JSON embebido. Ver `docs/source-resolution-report.md`.
+- [ ] Análisis léxico de Workspace/Google Play en inglés (hoy se registran como fuente del paquete pero vienen geolocalizados en español; forzar `?hl=en&gl=US` antes de ingerir).
 - [ ] Profundizar jurisdicción y transferencia internacional de datos como categoría.
 - [ ] Enfoque latinoamericano más explícito (contratación por adhesión, asimetrías proveedor global / usuario local).
 - [ ] Fichas pedagógicas por categoría jurídica.

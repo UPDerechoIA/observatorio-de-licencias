@@ -1,8 +1,10 @@
 import { loadAllLicenseAnalyses } from "@/lib/storage";
 import { providerSummaries } from "@/lib/derive";
 import { loadRegistry } from "@/lib/sources";
+import { loadAllLegalBundles } from "@/lib/coverage";
 import { COMPARISON_GROUP_LABEL, SOFTWARE_CATEGORY_LABEL } from "@/lib/analysisMeta";
 import { ProviderOverview } from "@/components/ProviderOverview";
+import { LegalBundlePanel } from "@/components/LegalBundlePanel";
 
 export const metadata = { title: "Proveedores — UP-Law-AILO" };
 
@@ -41,6 +43,7 @@ export default async function ProvidersPage() {
     /* sin registro */
   }
   const refGroups = [...refByGroup.entries()];
+  const bundles = await loadAllLegalBundles();
 
   return (
     <div className="space-y-6">
@@ -89,6 +92,23 @@ export default async function ProvidersPage() {
             El software tradicional se registra con sus fuentes oficiales y queda pendiente de verificación e
             ingesta (no se infiere su contenido). Sirve para distinguir qué riesgos son propios de la IA.
           </p>
+        </section>
+      )}
+
+      {bundles.length > 0 && (
+        <section className="space-y-3">
+          <h2 className="text-xs font-semibold uppercase tracking-wider text-slate-500">Paquetes jurídicos</h2>
+          <p className="max-w-3xl text-sm leading-relaxed text-slate-600">
+            Algunos productos no se rigen por un único documento. Gmail, por ejemplo, no se presenta como un
+            ToS independiente: su paquete jurídico combina documentos base de Google (referenciados),
+            políticas específicas de Gmail y posibles términos de Workspace según modalidad. Las condiciones de
+            una modalidad no se trasladan a otra.
+          </p>
+          <div className="space-y-3">
+            {bundles.map((b) => (
+              <LegalBundlePanel key={b.bundleId} bundle={b} />
+            ))}
+          </div>
         </section>
       )}
     </div>
