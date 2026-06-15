@@ -4,7 +4,12 @@ import { loadRegistry, flattenDocuments } from "@/lib/sources";
 import { providerKey } from "@/lib/derive";
 import { ProviderDossier, type PendingDoc } from "@/components/ProviderDossier";
 
-export const dynamic = "force-dynamic";
+// Pre-genera una página por cada proveedor con análisis (export estático).
+export async function generateStaticParams() {
+  const all = await loadAllLicenseAnalyses();
+  const ids = Array.from(new Set(all.map((a) => providerKey(a))));
+  return ids.map((providerId) => ({ providerId }));
+}
 
 export default async function ProviderPage({ params }: { params: Promise<{ providerId: string }> }) {
   const { providerId } = await params;

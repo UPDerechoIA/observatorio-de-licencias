@@ -3,7 +3,6 @@ import { loadRegistry, flattenDocuments } from "@/lib/sources";
 import { providerSummaries } from "@/lib/derive";
 import { ProviderOverview } from "@/components/ProviderOverview";
 
-export const dynamic = "force-dynamic";
 export const metadata = { title: "Proveedores — UP-Law-AILO" };
 
 export default async function ProvidersPage() {

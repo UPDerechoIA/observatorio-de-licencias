@@ -1,8 +1,11 @@
 # UP-Law-AILO
 
 [![CI](https://github.com/upderecho/observatorio-de-licencias/actions/workflows/ci.yml/badge.svg)](https://github.com/upderecho/observatorio-de-licencias/actions/workflows/ci.yml)
+[![Deploy to GitHub Pages](https://github.com/upderecho/observatorio-de-licencias/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/upderecho/observatorio-de-licencias/actions/workflows/deploy-pages.yml)
 
 **Observatorio simple de licencias de proveedores de IA.**
+
+🌐 **Sitio publicado (solo lectura):** https://upderecho.github.io/observatorio-de-licencias/
 
 UP-Law-AILO permite cargar manualmente el texto de una licencia, EULA, términos de
 uso o política de privacidad de un proveedor de IA, parsearlo **una sola vez** con
@@ -140,6 +143,23 @@ GitHub Actions corre en cada push y pull request a `main`
 4. `npm run build` — compila la app de Next.js.
 
 Si cualquier paso falla, la corrida queda en rojo.
+
+## Despliegue en GitHub Pages
+
+En cada push a `main`, el workflow `.github/workflows/deploy-pages.yml` genera un
+**export estático** del visor y lo publica en
+**https://upderecho.github.io/observatorio-de-licencias/**.
+
+- El export se construye con `bash scripts/build-static.sh`, que activa
+  `output: 'export'` (vía `NEXT_PUBLIC_STATIC_EXPORT=true` en `next.config.mjs`)
+  y pre-genera una página por cada análisis y proveedor.
+- El sitio publicado es **solo lectura**: la página `/upload` (carga web) **no** se
+  incluye, porque escribir a disco requiere servidor. La ingesta sigue siendo
+  100% local por CLI (ver arriba). Para actualizar el sitio: ingerís localmente,
+  commiteás los JSON nuevos y pusheás → Pages se reconstruye solo.
+- Probar el export localmente: `bash scripts/build-static.sh` genera `./out`. Para
+  previsualizarlo hay que servirlo **bajo** la subruta `/observatorio-de-licencias/`
+  (si lo abrís en la raíz, los assets dan 404 por el `basePath`).
 
 ---
 

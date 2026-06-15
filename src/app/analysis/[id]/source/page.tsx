@@ -1,8 +1,12 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { loadLicenseAnalysis, loadAnalysisText } from "@/lib/storage";
+import { loadLicenseAnalysis, loadAnalysisText, loadAllLicenseAnalyses } from "@/lib/storage";
 
-export const dynamic = "force-dynamic";
+// Pre-genera el visor de texto fuente para cada análisis (export estático).
+export async function generateStaticParams() {
+  const all = await loadAllLicenseAnalyses();
+  return all.map((a) => ({ id: a.id }));
+}
 
 /**
  * Visor de texto fuente extraído. Renderiza SIEMPRE como texto plano dentro de

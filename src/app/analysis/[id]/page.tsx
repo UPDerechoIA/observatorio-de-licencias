@@ -1,13 +1,17 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { loadLicenseAnalysis } from "@/lib/storage";
+import { loadLicenseAnalysis, loadAllLicenseAnalyses } from "@/lib/storage";
 import { CATEGORIES } from "@/lib/categories";
 import { LegalDossierHeader } from "@/components/LegalDossierHeader";
 import { ModeIndicator, PrivacyIndicator, RiskIndicator, SourceIndicator, ReviewIndicator } from "@/components/indicators";
 import { ModeText } from "@/components/ModeToggle";
 import { LegalCategorySection } from "@/components/LegalCategorySection";
 
-export const dynamic = "force-dynamic";
+// Pre-genera una página por cada análisis en data/licenses (export estático).
+export async function generateStaticParams() {
+  const all = await loadAllLicenseAnalyses();
+  return all.map((a) => ({ id: a.id }));
+}
 
 export default async function AnalysisPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;

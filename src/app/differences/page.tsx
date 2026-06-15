@@ -5,7 +5,6 @@ import type { ContractingMode } from "@/lib/contractingModes";
 import { MODE_LABELS } from "@/lib/analysisMeta";
 import { RiskCompact, PrivacyCompact, ReviewCompact } from "@/components/indicators";
 
-export const dynamic = "force-dynamic";
 export const metadata = { title: "Diferencias por modalidad — UP-Law-AILO" };
 
 const CANONICAL: ContractingMode[] = ["free", "paid_individual", "team", "business", "enterprise", "api"];

@@ -4,9 +4,6 @@ import { loadRegistry, flattenDocuments } from "@/lib/sources";
 import { computeMetrics } from "@/lib/derive";
 import { DashboardSummary } from "@/components/DashboardSummary";
 
-// La home lee el filesystem en cada request (la fuente de verdad es el disco).
-export const dynamic = "force-dynamic";
-
 const ACCESOS: { href: string; title: string; desc: string }[] = [
   { href: "/analyses", title: "Tabla de análisis", desc: "Registro documental filtrable y ordenable." },
   { href: "/providers", title: "Proveedores", desc: "Expediente por proveedor, organizado por modalidad." },
