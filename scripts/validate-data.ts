@@ -10,6 +10,7 @@ import path from "node:path";
 import { LICENSES_DIR, PROVIDERS_JSON } from "../src/lib/paths";
 import { LicenseAnalysisSchema } from "../src/lib/schema";
 import { ProviderRegistrySchema } from "../src/lib/sources";
+import { LegalBundleSchema } from "../src/lib/coverage";
 
 async function main() {
   let failures = 0;
@@ -43,7 +44,25 @@ async function main() {
     }
   }
 
-  console.log(`\n${ok} análisis válidos, ${failures} con errores.`);
+  // 3) Paquetes jurídicos (data/coverage)
+  let bundleOk = 0;
+  const coverageDir = path.join(process.cwd(), "data", "coverage");
+  let bundleFiles: string[] = [];
+  try {
+    bundleFiles = (await fs.readdir(coverageDir)).filter((f) => f.endsWith(".json"));
+  } catch {
+    /* sin coverage */
+  }
+  for (const file of bundleFiles) {
+    const result = LegalBundleSchema.safeParse(JSON.parse(await fs.readFile(path.join(coverageDir, file), "utf8")));
+    if (result.success) bundleOk++;
+    else {
+      failures++;
+      console.error(`✗ coverage/${file}:`, result.error.issues.map((i) => `${i.path.join(".")}: ${i.message}`).join("; "));
+    }
+  }
+
+  console.log(`\n${ok} análisis válidos, ${bundleOk} paquetes jurídicos válidos, ${failures} con errores.`);
   if (failures > 0) process.exit(1);
 }
 
