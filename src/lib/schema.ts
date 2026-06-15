@@ -62,6 +62,20 @@ export const ModeSpecificitySchema = z.enum(["general", "mode_specific", "unclea
 /** Perfil preliminar de privacidad (preferido sobre una "nota" escolar). */
 export const PrivacyPostureSchema = z.enum(["strong", "moderate", "weak", "unknown"]);
 
+// --- Dirección jurídica de una cláusula (actor / destinatario / función) ------
+// Permite distinguir un uso de datos por el PROVEEDOR de una RESTRICCIÓN impuesta
+// al USUARIO, evitando falsos positivos por mera coincidencia de palabras clave.
+export const ClauseActorSchema = z.enum(["provider", "user", "third_party", "unclear"]);
+export const ObligationTargetSchema = z.enum(["provider", "user", "unclear"]);
+export const ClauseFunctionSchema = z.enum([
+  "provider_data_use",
+  "user_restriction",
+  "prohibited_use",
+  "privacy_policy",
+  "ip_license",
+  "unclear",
+]);
+
 export const EvidenceSchema = z.object({
   /** Fragmento textual citado del documento fuente. */
   quote: z.string(),
@@ -79,6 +93,10 @@ export const CategoryFindingSchema = z.object({
   appliesToModes: z.array(ContractingModeSchema).default([]),
   modeSpecificity: ModeSpecificitySchema.default("general"),
   modeEvidence: z.array(EvidenceSchema).default([]),
+  // --- Dirección jurídica (default "unclear" para compat con archivos previos) ---
+  actor: ClauseActorSchema.default("unclear"),
+  obligationTarget: ObligationTargetSchema.default("unclear"),
+  clauseFunction: ClauseFunctionSchema.default("unclear"),
 });
 
 /** Perfil preliminar de privacidad por modalidad (separado del riesgo general). */
@@ -174,6 +192,9 @@ export type ModeConfidence = z.infer<typeof ModeConfidenceSchema>;
 export type ModeSpecificity = z.infer<typeof ModeSpecificitySchema>;
 export type PrivacyPosture = z.infer<typeof PrivacyPostureSchema>;
 export type PrivacyProfile = z.infer<typeof PrivacyProfileSchema>;
+export type ClauseActor = z.infer<typeof ClauseActorSchema>;
+export type ObligationTarget = z.infer<typeof ObligationTargetSchema>;
+export type ClauseFunction = z.infer<typeof ClauseFunctionSchema>;
 
 /**
  * Schema de la entrada del formulario de carga. Lo que el usuario envía antes

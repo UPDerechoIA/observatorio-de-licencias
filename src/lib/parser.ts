@@ -9,9 +9,10 @@
  * mientras su implementación interna pasa, en el futuro, a un parser con LLM.
  */
 
-import { CATEGORIES, type CategoryConfig } from "./categories";
+import { CATEGORIES, CATEGORY_BY_KEY, type CategoryConfig } from "./categories";
 import type {
   CategoryFinding,
+  ClauseFunction,
   Evidence,
   LicenseAnalysis,
   ModeConfidence,
@@ -22,6 +23,7 @@ import type {
   SoftwareCategory,
   ComparisonGroup,
 } from "./schema";
+import { classifyClause, splitSentences } from "./clauseDirection";
 import { STRONG_MODE_PHRASES, DIFFERENTIATION_CUE, type ContractingMode } from "./contractingModes";
 import type { RiskLevel } from "./types";
 
@@ -140,7 +142,14 @@ function notesFor(status: CategoryFinding["status"], matched: string[]): string 
 /** Hallazgo base (sin anotación de modalidad, que se agrega luego). */
 type BaseFinding = Omit<CategoryFinding, "appliesToModes" | "modeSpecificity" | "modeEvidence">;
 
-/** Analiza una sola categoría sobre el texto. */
+/** Dirección jurídica neutra (categorías no sensibles a la dirección). */
+const NEUTRAL_DIRECTION = {
+  actor: "unclear",
+  obligationTarget: "unclear",
+  clauseFunction: "unclear",
+} as const;
+
+/** Analiza una sola categoría sobre el texto (clasificación léxica neutra). */
 function analyzeCategory(cat: CategoryConfig, original: string, lower: string): BaseFinding {
   const strong = collectEvidence(original, lower, cat.strongKeywords);
 
@@ -151,6 +160,7 @@ function analyzeCategory(cat: CategoryConfig, original: string, lower: string): 
       legalSummary: legalSummary(cat, "found"),
       evidence: strong.evidence,
       notes: notesFor("found", strong.matched),
+      ...NEUTRAL_DIRECTION,
     };
   }
 
@@ -162,6 +172,7 @@ function analyzeCategory(cat: CategoryConfig, original: string, lower: string): 
       legalSummary: legalSummary(cat, "unclear"),
       evidence: ambiguous.evidence,
       notes: notesFor("unclear", ambiguous.matched),
+      ...NEUTRAL_DIRECTION,
     };
   }
 
@@ -171,6 +182,119 @@ function analyzeCategory(cat: CategoryConfig, original: string, lower: string): 
     legalSummary: legalSummary(cat, "not_found"),
     evidence: [],
     notes: notesFor("not_found", []),
+    ...NEUTRAL_DIRECTION,
+  };
+}
+
+/** Evidencia construida a partir de una oración completa. */
+function sentenceEvidence(sentence: string, keyword: string): Evidence {
+  return {
+    quote: trimQuote(sentence),
+    locationHint: keyword ? `coincidencia dirigida: "${keyword}"` : "cláusula reclasificada por dirección",
+  };
+}
+
+function dedupeEvidence(list: Evidence[]): Evidence[] {
+  const seen = new Set<string>();
+  const out: Evidence[] = [];
+  for (const e of list) {
+    if (seen.has(e.quote)) continue;
+    seen.add(e.quote);
+    out.push(e);
+  }
+  return out;
+}
+
+/**
+ * Analiza una categoría SENSIBLE A LA DIRECCIÓN (privacidad del proveedor o uso
+ * de datos para entrenamiento por el proveedor). Solo cuenta como hallazgo del
+ * proveedor cuando la oración tiene esa dirección (`providerFunction`). Las
+ * cláusulas que en realidad RESTRINGEN al usuario se devuelven aparte para
+ * reclasificarse como uso prohibido, en lugar de inflar esta categoría.
+ */
+function analyzeDirectionalCategory(
+  cat: CategoryConfig,
+  original: string,
+  providerFunction: Extract<ClauseFunction, "provider_data_use" | "privacy_policy">,
+): { finding: BaseFinding; restriction: Evidence[] } {
+  const sentences = splitSentences(original);
+  const strongEvidence: Evidence[] = [];
+  const ambiguousEvidence: Evidence[] = [];
+  const matchedStrong: string[] = [];
+  const matchedAmbiguous: string[] = [];
+  const restriction: Evidence[] = [];
+  let sawRestriction = false;
+
+  for (const s of sentences) {
+    const low = s.toLowerCase();
+    const strongHit = cat.strongKeywords.find((k) => low.includes(k.toLowerCase()));
+    const ambiguousHit = cat.ambiguousKeywords.find((k) => low.includes(k.toLowerCase()));
+    if (!strongHit && !ambiguousHit) continue;
+
+    const dir = classifyClause(s);
+    if (dir.clauseFunction === providerFunction) {
+      if (strongHit) {
+        if (strongEvidence.length < MAX_EVIDENCE_PER_CATEGORY) strongEvidence.push(sentenceEvidence(s, strongHit));
+        matchedStrong.push(strongHit);
+      } else if (ambiguousHit) {
+        if (ambiguousEvidence.length < MAX_EVIDENCE_PER_CATEGORY) ambiguousEvidence.push(sentenceEvidence(s, ambiguousHit));
+        matchedAmbiguous.push(ambiguousHit);
+      }
+    } else if (dir.clauseFunction === "prohibited_use" || dir.clauseFunction === "user_restriction") {
+      sawRestriction = true;
+      if (restriction.length < MAX_EVIDENCE_PER_CATEGORY) restriction.push(sentenceEvidence(s, strongHit ?? ambiguousHit ?? ""));
+    }
+  }
+
+  const restrictionNote = sawRestriction
+    ? " Se hallaron además cláusulas que imponen una restricción al usuario (p. ej. prohibición de entrenar, scrapear o destilar, o de violar la privacidad de terceros); se reclasifican como uso prohibido y no constituyen un uso de datos por el proveedor."
+    : "";
+
+  if (matchedStrong.length > 0) {
+    return {
+      finding: {
+        status: "found",
+        riskLevel: cat.riskWhenFound,
+        legalSummary: legalSummary(cat, "found"),
+        evidence: strongEvidence,
+        notes: notesFor("found", Array.from(new Set(matchedStrong))) + restrictionNote,
+        actor: "provider",
+        obligationTarget: "provider",
+        clauseFunction: providerFunction,
+      },
+      restriction,
+    };
+  }
+
+  if (matchedAmbiguous.length > 0) {
+    return {
+      finding: {
+        status: "unclear",
+        riskLevel: "unknown",
+        legalSummary: legalSummary(cat, "unclear"),
+        evidence: ambiguousEvidence,
+        notes: notesFor("unclear", Array.from(new Set(matchedAmbiguous))) + restrictionNote,
+        actor: "provider",
+        obligationTarget: "provider",
+        clauseFunction: providerFunction,
+      },
+      restriction,
+    };
+  }
+
+  // No hay cláusula del proveedor; si solo había restricciones al usuario, se dice.
+  return {
+    finding: {
+      status: "not_found",
+      riskLevel: "unknown",
+      legalSummary: sawRestriction
+        ? `No surge del texto un uso por el proveedor vinculado a ${cat.legalConcern}.${restrictionNote}`
+        : legalSummary(cat, "not_found"),
+      evidence: [],
+      notes: notesFor("not_found", []) + restrictionNote,
+      ...NEUTRAL_DIRECTION,
+    },
+    restriction,
   };
 }
 
@@ -471,9 +595,45 @@ export function parseLicense(params: ParseLicenseParams): LicenseAnalysis {
           : [contractingMode];
 
   const categories: Record<string, CategoryFinding> = {};
+  const userRestrictions: Evidence[] = [];
   for (const cat of CATEGORIES) {
-    const base = analyzeCategory(cat, original, lower);
+    let base: BaseFinding;
+    if (cat.key === "training_use") {
+      const r = analyzeDirectionalCategory(cat, original, "provider_data_use");
+      base = r.finding;
+      userRestrictions.push(...r.restriction);
+    } else if (cat.key === "privacy") {
+      const r = analyzeDirectionalCategory(cat, original, "privacy_policy");
+      base = r.finding;
+      userRestrictions.push(...r.restriction);
+    } else {
+      base = analyzeCategory(cat, original, lower);
+    }
     categories[cat.key] = annotateCategoryModes(base, docAppliesTo);
+  }
+
+  // Reclasificación visible: las cláusulas que restringen al usuario (detectadas
+  // al filtrar privacidad/entrenamiento) se asientan en "Contenido prohibido /
+  // usos restringidos", para que el hallazgo no desaparezca, sino que cambie de
+  // categoría con la dirección jurídica correcta.
+  if (userRestrictions.length > 0) {
+    const pcKey = "prohibited_content";
+    const pc = categories[pcKey];
+    const pcCat = CATEGORY_BY_KEY[pcKey];
+    const merged = dedupeEvidence([...pc.evidence, ...userRestrictions]).slice(0, MAX_EVIDENCE_PER_CATEGORY);
+    const note =
+      "Incluye cláusulas que imponen restricciones al usuario (p. ej. prohibición de entrenar, scrapear o destilar modelos, o de violar la privacidad de terceros), reclasificadas desde categorías de privacidad/entrenamiento por su dirección jurídica (obligación a cargo del usuario).";
+    categories[pcKey] = {
+      ...pc,
+      status: "found",
+      riskLevel: pc.status === "found" ? pc.riskLevel : pcCat.riskWhenFound,
+      legalSummary: pc.status === "found" ? pc.legalSummary : legalSummary(pcCat, "found"),
+      evidence: merged,
+      notes: `${pc.notes} ${note}`,
+      actor: "user",
+      obligationTarget: "user",
+      clauseFunction: "prohibited_use",
+    };
   }
 
   const detected = detectModeSections(original);
