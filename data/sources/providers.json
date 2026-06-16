@@ -304,7 +304,7 @@
               "notes": "[headless] contenido idéntico a google-gemini-privacy-policy-2026-06-15 (la URL probablemente apunta a una página índice, no al documento); requiere revisión manual"
             }
           ],
-          "productNiche": "everyday_software"
+          "productNiche": "office_productivity"
         },
         {
           "productId": "android",
@@ -342,7 +342,7 @@
               "notes": "[headless] contenido idéntico a google-gemini-privacy-policy-2026-06-15 (la URL probablemente apunta a una página índice, no al documento); requiere revisión manual"
             }
           ],
-          "productNiche": "everyday_software"
+          "productNiche": "mobile_ecosystem"
         }
       ],
       "metadata": {
@@ -450,7 +450,7 @@
               "notes": "Declaración de privacidad de Microsoft. Revisar manualmente."
             }
           ],
-          "productNiche": "everyday_software"
+          "productNiche": "office_productivity"
         }
       ],
       "metadata": {
@@ -707,7 +707,7 @@
               "notes": "Cloudflare con re-verificación persistente: ni GET, ni headless, ni stealth lo superan. Requiere captura manual (ingest:manual)."
             }
           ],
-          "productNiche": "search_assistant"
+          "productNiche": "search_answer_engine"
         }
       ],
       "metadata": {
@@ -1033,7 +1033,7 @@
               "notes": "URL candidata; verificar con sources:verify"
             }
           ],
-          "productNiche": "voice_generation"
+          "productNiche": "audio_voice_generation"
         }
       ],
       "metadata": {
@@ -1098,7 +1098,7 @@
               "notes": "URL candidata; verificar con sources:verify"
             }
           ],
-          "productNiche": "ml_platform"
+          "productNiche": "model_platform"
         }
       ],
       "metadata": {
@@ -1181,7 +1181,7 @@
               "notes": "URL candidata; verificar con sources:verify"
             }
           ],
-          "productNiche": "ml_platform"
+          "productNiche": "cloud_ai_platform"
         }
       ],
       "metadata": {
@@ -1246,7 +1246,7 @@
               "notes": "Términos de watsonx en acuerdos de cliente (CSA); no se ubicó una URL pública única"
             }
           ],
-          "productNiche": "ml_platform"
+          "productNiche": "cloud_ai_platform"
         }
       ],
       "metadata": {
@@ -1398,7 +1398,7 @@
               "notes": "URL candidata; verificar con sources:verify"
             }
           ],
-          "productNiche": "code_assistant"
+          "productNiche": "coding_assistant"
         }
       ],
       "metadata": {
@@ -1463,7 +1463,7 @@
               "notes": "URL candidata; verificar con sources:verify"
             }
           ],
-          "productNiche": "code_assistant"
+          "productNiche": "coding_assistant"
         }
       ],
       "metadata": {
@@ -1542,7 +1542,7 @@
               "notes": "URL candidata; verificar con sources:verify"
             }
           ],
-          "productNiche": "ml_platform"
+          "productNiche": "cloud_ai_platform"
         }
       ],
       "metadata": {
@@ -1598,7 +1598,7 @@
               "notes": "Software tradicional de referencia. Pendiente de verificación e ingesta."
             }
           ],
-          "productNiche": "everyday_software"
+          "productNiche": "social_platform"
         }
       ],
       "metadata": {
@@ -1655,7 +1655,7 @@
               "notes": "Software tradicional de referencia. Pendiente de verificación e ingesta."
             }
           ],
-          "productNiche": "everyday_software"
+          "productNiche": "social_platform"
         }
       ],
       "metadata": {
@@ -1708,7 +1708,7 @@
               "notes": "Términos de servicios de Apple. Los términos de iOS/dispositivo no surgen de un documento único claro: alcance dudoso, requiere revisión manual."
             }
           ],
-          "productNiche": "everyday_software"
+          "productNiche": "mobile_ecosystem"
         }
       ],
       "metadata": {

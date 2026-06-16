@@ -57,7 +57,7 @@ export default async function ProvidersPage() {
         providerName: prov.providerName,
         region: prov.providerRegion,
         type: prov.providerType,
-        niches: Array.from(new Set(prov.products.map((p) => p.productNiche))),
+        products: prov.products.map((p) => ({ productName: p.productName, niche: p.productNiche })),
         dossierId: routeByName.get(prov.providerName) ?? null,
         officialUrl: firstSourceUrl ?? (prov.officialDomains[0] ? `https://${prov.officialDomains[0]}` : null),
         needsReview: prov.metadata.needsManualSourceReview === true,
@@ -83,9 +83,9 @@ export default async function ProvidersPage() {
         <section className="space-y-2">
           <h2 className="text-xs font-semibold uppercase tracking-wider text-slate-500">Proveedores y proyectos por región</h2>
           <p className="max-w-3xl text-sm leading-relaxed text-slate-600">
-            Región, tipo de proveedor y nicho funcional de cada proveedor o proyecto del registro. La distinción
-            importa: no todos se ofrecen bajo la misma lógica contractual —algunos son servicios comerciales, otros
-            proyectos académicos, soberanos o abiertos, que pueden no tener ToS o Privacy equivalentes—.
+            Para cada herramienta: qué tipo es, qué hace en lenguaje claro y qué debería mirar un abogado. Se indica
+            además la región y si es un proveedor comercial o un proyecto académico/soberano —no todos se ofrecen bajo
+            la misma lógica contractual, y algunos pueden no tener ToS o Privacy equivalentes—.
           </p>
           <RegionalProviders rows={regionalRows} />
         </section>

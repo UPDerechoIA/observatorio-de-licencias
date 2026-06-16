@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { loadLicenseAnalysis, loadAllLicenseAnalyses } from "@/lib/storage";
+import { loadRegistry } from "@/lib/sources";
+import { productNicheInfo } from "@/domain/taxonomies/productNiches";
 import { CATEGORIES } from "@/lib/categories";
 import { MODE_LABELS } from "@/lib/contractingModes";
 import { ModeIndicator, PrivacyIndicator, RiskIndicator, SourceIndicator } from "@/components/indicators";
@@ -41,6 +43,17 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
 
   const date = (analysis.metadata.retrievedAt ?? analysis.retrievedAt).slice(0, 10);
   const domain = host(analysis.sourceUrl);
+
+  // Nicho funcional del producto (desde el registro), para explicar qué hace.
+  let niche: string | null = null;
+  try {
+    const reg = await loadRegistry();
+    const prov = reg.providers.find((p) => p.providerName === analysis.providerName);
+    niche = prov?.products.find((pr) => pr.productName === analysis.productName)?.productNiche ?? null;
+  } catch {
+    niche = null;
+  }
+  const nicheInfo = niche ? productNicheInfo(niche) : null;
   const scenarios = getScenariosForDocument(analysis);
   const priorities = getDocumentReadingPriorities(analysis);
   const topClauses = priorities.slice(0, 5);
@@ -62,6 +75,19 @@ export default async function DossierPage({ params }: { params: Promise<{ id: st
           Documento fuente obtenido el {date}{domain ? <> desde {domain}</> : null}.
         </p>
       </header>
+
+      {nicheInfo && (
+        <section className="rounded border border-slate-200 bg-white p-3 text-sm">
+          <div className="flex flex-wrap items-baseline gap-2">
+            <span className="text-xs font-semibold uppercase tracking-wider text-slate-500">Tipo de herramienta</span>
+            <span className="rounded bg-slate-100 px-1.5 py-0.5 text-xs font-medium text-slate-700">{nicheInfo.label}</span>
+          </div>
+          <p className="mt-1 text-slate-700">{nicheInfo.plainDescription}</p>
+          <p className="mt-1 text-xs text-slate-500">
+            <span className="font-medium text-slate-600">Para el abogado:</span> {nicheInfo.legalReadingHint}
+          </p>
+        </section>
+      )}
 
       <p className="text-sm leading-relaxed text-slate-500">
         Lectura preliminar basada en documentos públicos y evidencia textual. No constituye asesoramiento legal.
