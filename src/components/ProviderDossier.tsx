@@ -4,7 +4,7 @@ import type { ContractingMode } from "@/lib/contractingModes";
 import { MODE_LABELS, SOURCE_STATUS_LABELS } from "@/lib/analysisMeta";
 import { providerRegionLabel } from "@/domain/taxonomies/providerRegions";
 import { providerTypeLabel } from "@/domain/taxonomies/providerTypes";
-import { productNicheLabel } from "@/domain/taxonomies/productNiches";
+import { productNicheInfo } from "@/domain/taxonomies/productNiches";
 import { RiskCompact, PrivacyCompact, SourceCompact, ReviewCompact } from "./indicators";
 
 const SPECIFIC_MODES: ContractingMode[] = ["free", "paid_individual", "team", "business", "enterprise", "api"];
@@ -50,8 +50,26 @@ export function ProviderDossier({
         {taxonomy && (
           <p className="mt-1 text-sm text-slate-600">
             {providerRegionLabel(taxonomy.region)} · {providerTypeLabel(taxonomy.type)}
-            {taxonomy.niches.length > 0 && <> · {taxonomy.niches.map((n) => productNicheLabel(n)).join(", ")}</>}
           </p>
+        )}
+        {taxonomy && taxonomy.niches.length > 0 && (
+          <div className="mt-3 max-w-3xl space-y-2">
+            {taxonomy.niches.map((n) => {
+              const info = productNicheInfo(n);
+              return (
+                <div key={n} className="rounded border border-slate-200 bg-white p-3 text-sm">
+                  <div className="flex flex-wrap items-baseline gap-2">
+                    <span className="text-xs font-semibold uppercase tracking-wider text-slate-500">Tipo de herramienta</span>
+                    <span className="rounded bg-slate-100 px-1.5 py-0.5 text-xs font-medium text-slate-700">{info.label}</span>
+                  </div>
+                  <p className="mt-1 text-slate-700">{info.plainDescription}</p>
+                  <p className="mt-1 text-xs text-slate-500">
+                    <span className="font-medium text-slate-600">Para el abogado:</span> {info.legalReadingHint}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
         )}
         <dl className="mt-2 space-y-1 text-sm">
           <div className="flex gap-2">

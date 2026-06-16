@@ -327,7 +327,11 @@ arrays centrales (fuente única de verdad), de los que se derivan el tipo TypeSc
 - **`providerType`** (`src/domain/taxonomies/providerTypes.ts`) — `commercial_provider` · `academic_project` ·
   `sovereign_ai_project` · `open_source_project` · `research_lab` · `unknown`. También a nivel proveedor.
 - **`productNiche`** (`src/domain/taxonomies/productNiches.ts`) — nicho funcional a **nivel producto**
-  (`general_llm`, `image_generation`, `voice_generation`, `code_assistant`, `ml_platform`, `everyday_software`, …).
+  (`general_llm`, `video_generation`, `image_generation`, `audio_voice_generation`, `coding_assistant`,
+  `search_answer_engine`, `office_productivity`, `social_platform`, `mobile_ecosystem`, `model_platform`,
+  `cloud_ai_platform`). Cada nicho lleva, además del `label`, una `plainDescription` (qué hace, en lenguaje
+  claro) y un `legalReadingHint` (qué debería mirar un abogado). La UI muestra esos textos en `/providers` y en
+  los dossiers; nunca el id crudo.
 
 **Proveedor comercial vs. proyecto académico/soberano.** La distinción es jurídicamente relevante: **no todos
 los modelos se ofrecen bajo la misma lógica contractual**. Un proveedor comercial (Maritaca, Lelapa, Mistral,

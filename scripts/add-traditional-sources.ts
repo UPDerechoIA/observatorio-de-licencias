@@ -45,8 +45,8 @@ async function main() {
       console.log(`  = ${providerId}/${product.productId} ya existe; se omite`);
       return;
     }
-    // Software tradicional de referencia -> nicho "everyday_software" por defecto.
-    prov.products.push({ productNiche: "everyday_software", ...product } as Product);
+    // Nicho por defecto "unknown"; el nicho real se cura en el registro.
+    prov.products.push({ productNiche: "unknown", ...product } as Product);
     console.log(`  + ${providerId}/${product.productId} (${product.softwareCategory})`);
   };
 
