@@ -16,10 +16,20 @@ import {
   type ReadingPriority,
 } from "@/domain/readingGuides";
 import { PageContainer } from "@/components/PageContainer";
+import type { Metadata } from "next";
 
 export async function generateStaticParams() {
   const all = await loadAllLicenseAnalyses();
   return all.map((a) => ({ id: a.id }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
+  const { id } = await params;
+  const a = await loadLicenseAnalysis(id);
+  if (!a) return {};
+  const title = `${a.providerName} · ${a.productName} — ${a.documentType}`;
+  const description = `Análisis preliminar de ${a.documentType} de ${a.providerName} (${a.productName}): privacidad, propiedad intelectual, responsabilidad, jurisdicción y más, con evidencia textual. No es asesoramiento legal.`;
+  return { title, description, openGraph: { title, description }, twitter: { title, description } };
 }
 
 const PRIORITY_TONE: Record<ReadingPriority, string> = {
