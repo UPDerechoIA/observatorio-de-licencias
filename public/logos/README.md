@@ -1,20 +1,30 @@
 # Logos de proveedores
 
-Los archivos de logo van aquí como `public/logos/<providerId>.svg` (SVG preferido).
-El `providerId` es el id del proveedor en `data/sources/providers.json` (y el que
-deriva la app vía `providerKey`). Si no existe el archivo, la interfaz muestra un
-monograma con las iniciales del proveedor.
+Archivos `public/logos/<providerId>.<ext>` (svg/png/webp). El `providerId` es el id
+del proveedor en `data/sources/providers.json`. Si no existe el archivo, la interfaz
+muestra un **monograma** con las iniciales del proveedor.
 
-## Reglas
+## Cómo se obtienen
 
-- **No recolorear** los SVG: se muestran tal cual (los logos tienen color de marca).
-- Para una ruta distinta a la convención, declarar `logoPath` en el proveedor del
-  registro (`data/sources/providers.json`).
+Se descargan con `npm run logos:fetch` (`scripts/fetch-logos.mjs`) desde la
+`logo.downloadUrl` declarada por proveedor en el registro. Mismo patrón honesto que
+la ingesta: el archivo se escribe **solo si** la respuesta es 2xx, el `Content-Type`
+es imagen y el **host final** ∈ `logo.officialHosts`. Los SVG se **sanitizan** (sin
+`<script>` ni atributos `on*`). **No se recolorea** nada: el logo va tal cual lo
+exige la guía de marca. Sin requests externos en runtime: los archivos quedan
+commiteados y el sitio los sirve offline.
+
+La fuente, atribución y licencia de cada logo se conservan en el bloque `logo` del
+proveedor en `data/sources/providers.json` (`sourceUrl`, `attribution`, `license`)
+para trazabilidad.
 
 ## Aviso legal
 
-Los logos son **marcas de sus respectivos titulares** y se incluyen aquí con fines
-de **identificación nominativa** (referencia académica), no de respaldo ni
-afiliación. **No** están cubiertos por la licencia BSD del código de este
-repositorio (igual que los contenidos de `data/`). Si sos titular de una marca y
-querés que se retire o reemplace su logo, abrí un issue.
+Los logos son **marcas de sus respectivos titulares**. Se incluyen con fines de
+**identificación nominativa** (referencia académica), conforme a la guía de marca de
+cada proveedor, **sin implicar respaldo ni afiliación** y **sin recolorear**. Se
+obtuvieron de fuentes oficiales (en esta versión, mayormente Wikimedia Commons, cuyo
+host final es `upload.wikimedia.org`; ver la licencia de cada archivo en su página de
+Commons). **No** están cubiertos por la licencia BSD del código de este repositorio
+(igual que los contenidos de `data/`). Si sos titular de una marca y querés que se
+retire o reemplace su logo, abrí un issue.

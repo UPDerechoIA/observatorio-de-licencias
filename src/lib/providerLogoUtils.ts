@@ -22,11 +22,16 @@ export function initials(name: string): string {
 
 /**
  * Resuelve el `src` del logo (con basePath) o `undefined` si corresponde el
- * monograma. `logoPath` del registro tiene prioridad; si no, el archivo
- * convencional solo cuando existe en `available`.
+ * monograma. `logoPath` del registro tiene prioridad; si no, el archivo real
+ * presente en `available` (mapa providerId → ruta con su extensión real).
  */
-export function resolveLogoSrc(providerId: string, available: Set<string>, logoPath?: string): string | undefined {
+export function resolveLogoSrc(
+  providerId: string,
+  available: Map<string, string>,
+  logoPath?: string,
+): string | undefined {
   if (logoPath) return withBasePath(logoPath);
-  if (available.has(providerId)) return withBasePath(`logos/${providerId}.svg`);
+  const file = available.get(providerId);
+  if (file) return withBasePath(file);
   return undefined;
 }
