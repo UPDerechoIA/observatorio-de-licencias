@@ -86,7 +86,16 @@
         "notes": ""
       },
       "providerRegion": "north_america",
-      "providerType": "commercial_provider"
+      "providerType": "commercial_provider",
+      "logo": {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:OpenAI_Logo.svg",
+        "downloadUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/OpenAI_Logo.svg",
+        "officialHosts": [
+          "upload.wikimedia.org"
+        ],
+        "attribution": "Logo de OpenAI, marca de su titular (vía Wikimedia Commons)",
+        "license": "Marca registrada; uso nominativo. Archivo vía Wikimedia Commons — ver licencia en la página del archivo."
+      }
     },
     {
       "providerId": "anthropic",
@@ -191,7 +200,16 @@
         "notes": ""
       },
       "providerRegion": "north_america",
-      "providerType": "commercial_provider"
+      "providerType": "commercial_provider",
+      "logo": {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anthropic_logo.svg",
+        "downloadUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Anthropic_logo.svg",
+        "officialHosts": [
+          "upload.wikimedia.org"
+        ],
+        "attribution": "Logo de Anthropic, marca de su titular (vía Wikimedia Commons)",
+        "license": "Marca registrada; uso nominativo. Archivo vía Wikimedia Commons — ver licencia en la página del archivo."
+      }
     },
     {
       "providerId": "google",
@@ -350,7 +368,16 @@
         "notes": ""
       },
       "providerRegion": "north_america",
-      "providerType": "commercial_provider"
+      "providerType": "commercial_provider",
+      "logo": {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Google_2015_logo.svg",
+        "downloadUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Google_2015_logo.svg",
+        "officialHosts": [
+          "upload.wikimedia.org"
+        ],
+        "attribution": "Logo de Google, marca de su titular (vía Wikimedia Commons)",
+        "license": "Marca registrada; uso nominativo. Archivo vía Wikimedia Commons — ver licencia en la página del archivo."
+      }
     },
     {
       "providerId": "microsoft",
@@ -458,7 +485,16 @@
         "notes": ""
       },
       "providerRegion": "north_america",
-      "providerType": "commercial_provider"
+      "providerType": "commercial_provider",
+      "logo": {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Microsoft_logo_(2012).svg",
+        "downloadUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Microsoft_logo_(2012).svg",
+        "officialHosts": [
+          "upload.wikimedia.org"
+        ],
+        "attribution": "Logo de Microsoft, marca de su titular (vía Wikimedia Commons)",
+        "license": "Marca registrada; uso nominativo. Archivo vía Wikimedia Commons — ver licencia en la página del archivo."
+      }
     },
     {
       "providerId": "meta",
@@ -520,7 +556,16 @@
         "notes": "Términos de Meta AI dispersos entre dominios; requiere revisión manual"
       },
       "providerRegion": "north_america",
-      "providerType": "open_source_project"
+      "providerType": "open_source_project",
+      "logo": {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meta_Platforms_Inc._logo.svg",
+        "downloadUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Meta_Platforms_Inc._logo.svg",
+        "officialHosts": [
+          "upload.wikimedia.org"
+        ],
+        "attribution": "Logo de Meta, marca de su titular (vía Wikimedia Commons)",
+        "license": "Marca registrada; uso nominativo. Archivo vía Wikimedia Commons — ver licencia en la página del archivo."
+      }
     },
     {
       "providerId": "mistral",
@@ -585,7 +630,16 @@
         "notes": ""
       },
       "providerRegion": "europe",
-      "providerType": "commercial_provider"
+      "providerType": "commercial_provider",
+      "logo": {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mistral_AI_logo_(2025%E2%80%93).svg",
+        "downloadUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mistral_AI_logo_(2025%E2%80%93).svg",
+        "officialHosts": [
+          "upload.wikimedia.org"
+        ],
+        "attribution": "Logo de Mistral AI, marca de su titular (vía Wikimedia Commons)",
+        "license": "Marca registrada; uso nominativo. Archivo vía Wikimedia Commons — ver licencia en la página del archivo."
+      }
     },
     {
       "providerId": "xai",
@@ -650,7 +704,16 @@
         "notes": ""
       },
       "providerRegion": "north_america",
-      "providerType": "commercial_provider"
+      "providerType": "commercial_provider",
+      "logo": {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:XAI_Logo.svg",
+        "downloadUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/XAI_Logo.svg",
+        "officialHosts": [
+          "upload.wikimedia.org"
+        ],
+        "attribution": "Logo de xAI, marca de su titular (vía Wikimedia Commons)",
+        "license": "Marca registrada; uso nominativo. Archivo vía Wikimedia Commons — ver licencia en la página del archivo."
+      }
     },
     {
       "providerId": "perplexity",
@@ -715,7 +778,16 @@
         "notes": ""
       },
       "providerRegion": "north_america",
-      "providerType": "commercial_provider"
+      "providerType": "commercial_provider",
+      "logo": {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Perplexity_AI_logo.svg",
+        "downloadUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Perplexity_AI_logo.svg",
+        "officialHosts": [
+          "upload.wikimedia.org"
+        ],
+        "attribution": "Logo de Perplexity, marca de su titular (vía Wikimedia Commons)",
+        "license": "Marca registrada; uso nominativo. Archivo vía Wikimedia Commons — ver licencia en la página del archivo."
+      }
     },
     {
       "providerId": "cohere",
@@ -780,7 +852,16 @@
         "notes": ""
       },
       "providerRegion": "north_america",
-      "providerType": "commercial_provider"
+      "providerType": "commercial_provider",
+      "logo": {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cohere-Logo.png",
+        "downloadUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cohere-Logo.png",
+        "officialHosts": [
+          "upload.wikimedia.org"
+        ],
+        "attribution": "Logo de Cohere, marca de su titular (vía Wikimedia Commons)",
+        "license": "Marca registrada; uso nominativo. Archivo vía Wikimedia Commons — ver licencia en la página del archivo."
+      }
     },
     {
       "providerId": "stability",
@@ -843,7 +924,16 @@
         "notes": ""
       },
       "providerRegion": "europe",
-      "providerType": "commercial_provider"
+      "providerType": "commercial_provider",
+      "logo": {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stability_Ai_%E2%80%94_wordmark.png",
+        "downloadUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Stability_Ai_%E2%80%94_wordmark.png",
+        "officialHosts": [
+          "upload.wikimedia.org"
+        ],
+        "attribution": "Logo de Stability AI, marca de su titular (vía Wikimedia Commons)",
+        "license": "Marca registrada; uso nominativo. Archivo vía Wikimedia Commons — ver licencia en la página del archivo."
+      }
     },
     {
       "providerId": "midjourney",
@@ -907,7 +997,16 @@
         "notes": ""
       },
       "providerRegion": "north_america",
-      "providerType": "commercial_provider"
+      "providerType": "commercial_provider",
+      "logo": {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Midjourney_Emblem.svg",
+        "downloadUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Midjourney_Emblem.svg",
+        "officialHosts": [
+          "upload.wikimedia.org"
+        ],
+        "attribution": "Logo de Midjourney, marca de su titular (vía Wikimedia Commons)",
+        "license": "Marca registrada; uso nominativo. Archivo vía Wikimedia Commons — ver licencia en la página del archivo."
+      }
     },
     {
       "providerId": "runway",
@@ -974,7 +1073,16 @@
         "notes": ""
       },
       "providerRegion": "north_america",
-      "providerType": "commercial_provider"
+      "providerType": "commercial_provider",
+      "logo": {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:RunwayLogo.png",
+        "downloadUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/RunwayLogo.png",
+        "officialHosts": [
+          "upload.wikimedia.org"
+        ],
+        "attribution": "Logo de Runway, marca de su titular (vía Wikimedia Commons)",
+        "license": "Marca registrada; uso nominativo. Archivo vía Wikimedia Commons — ver licencia en la página del archivo."
+      }
     },
     {
       "providerId": "elevenlabs",
@@ -1041,7 +1149,16 @@
         "notes": ""
       },
       "providerRegion": "north_america",
-      "providerType": "commercial_provider"
+      "providerType": "commercial_provider",
+      "logo": {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:ElevenLabs_Logo_03.svg",
+        "downloadUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/ElevenLabs_Logo_03.svg",
+        "officialHosts": [
+          "upload.wikimedia.org"
+        ],
+        "attribution": "Logo de ElevenLabs, marca de su titular (vía Wikimedia Commons)",
+        "license": "Marca registrada; uso nominativo. Archivo vía Wikimedia Commons — ver licencia en la página del archivo."
+      }
     },
     {
       "providerId": "huggingface",
@@ -1106,7 +1223,16 @@
         "notes": ""
       },
       "providerRegion": "north_america",
-      "providerType": "commercial_provider"
+      "providerType": "commercial_provider",
+      "logo": {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hf-logo-with-title.svg",
+        "downloadUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Hf-logo-with-title.svg",
+        "officialHosts": [
+          "upload.wikimedia.org"
+        ],
+        "attribution": "Logo de Hugging Face, marca de su titular (vía Wikimedia Commons)",
+        "license": "Marca registrada; uso nominativo. Archivo vía Wikimedia Commons — ver licencia en la página del archivo."
+      }
     },
     {
       "providerId": "aws",
@@ -1189,7 +1315,16 @@
         "notes": ""
       },
       "providerRegion": "north_america",
-      "providerType": "commercial_provider"
+      "providerType": "commercial_provider",
+      "logo": {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amazon_Web_Services_Logo.svg",
+        "downloadUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Amazon_Web_Services_Logo.svg",
+        "officialHosts": [
+          "upload.wikimedia.org"
+        ],
+        "attribution": "Logo de Amazon Web Services, marca de su titular (vía Wikimedia Commons)",
+        "license": "Marca registrada; uso nominativo. Archivo vía Wikimedia Commons — ver licencia en la página del archivo."
+      }
     },
     {
       "providerId": "ibm",
@@ -1254,7 +1389,16 @@
         "notes": ""
       },
       "providerRegion": "north_america",
-      "providerType": "commercial_provider"
+      "providerType": "commercial_provider",
+      "logo": {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:IBM_logo.svg",
+        "downloadUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/IBM_logo.svg",
+        "officialHosts": [
+          "upload.wikimedia.org"
+        ],
+        "attribution": "Logo de IBM, marca de su titular (vía Wikimedia Commons)",
+        "license": "Marca registrada; uso nominativo. Archivo vía Wikimedia Commons — ver licencia en la página del archivo."
+      }
     },
     {
       "providerId": "adobe",
@@ -1320,7 +1464,16 @@
         "notes": ""
       },
       "providerRegion": "north_america",
-      "providerType": "commercial_provider"
+      "providerType": "commercial_provider",
+      "logo": {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adobe_Systems_logo_and_wordmark.svg",
+        "downloadUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Adobe_Systems_logo_and_wordmark.svg",
+        "officialHosts": [
+          "upload.wikimedia.org"
+        ],
+        "attribution": "Logo de Adobe, marca de su titular (vía Wikimedia Commons)",
+        "license": "Marca registrada; uso nominativo. Archivo vía Wikimedia Commons — ver licencia en la página del archivo."
+      }
     },
     {
       "providerId": "github",
@@ -1406,7 +1559,16 @@
         "notes": ""
       },
       "providerRegion": "north_america",
-      "providerType": "commercial_provider"
+      "providerType": "commercial_provider",
+      "logo": {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Octicons-mark-github.svg",
+        "downloadUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Octicons-mark-github.svg",
+        "officialHosts": [
+          "upload.wikimedia.org"
+        ],
+        "attribution": "Logo de GitHub, marca de su titular (vía Wikimedia Commons)",
+        "license": "Marca registrada; uso nominativo. Archivo vía Wikimedia Commons — ver licencia en la página del archivo."
+      }
     },
     {
       "providerId": "replit",
@@ -1471,7 +1633,16 @@
         "notes": ""
       },
       "providerRegion": "north_america",
-      "providerType": "commercial_provider"
+      "providerType": "commercial_provider",
+      "logo": {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:New_Replit_Logo.svg",
+        "downloadUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/New_Replit_Logo.svg",
+        "officialHosts": [
+          "upload.wikimedia.org"
+        ],
+        "attribution": "Logo de Replit, marca de su titular (vía Wikimedia Commons)",
+        "license": "Marca registrada; uso nominativo. Archivo vía Wikimedia Commons — ver licencia en la página del archivo."
+      }
     },
     {
       "providerId": "databricks",
@@ -1550,7 +1721,16 @@
         "notes": ""
       },
       "providerRegion": "north_america",
-      "providerType": "commercial_provider"
+      "providerType": "commercial_provider",
+      "logo": {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Databricks-logo.svg",
+        "downloadUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Databricks-logo.svg",
+        "officialHosts": [
+          "upload.wikimedia.org"
+        ],
+        "attribution": "Logo de Databricks, marca de su titular (vía Wikimedia Commons)",
+        "license": "Marca registrada; uso nominativo. Archivo vía Wikimedia Commons — ver licencia en la página del archivo."
+      }
     },
     {
       "providerId": "linkedin",
@@ -1606,7 +1786,16 @@
         "notes": "Red social profesional incorporada como punto de comparación académico."
       },
       "providerRegion": "north_america",
-      "providerType": "commercial_provider"
+      "providerType": "commercial_provider",
+      "logo": {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:LinkedIn_icon.svg",
+        "downloadUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/LinkedIn_icon.svg",
+        "officialHosts": [
+          "upload.wikimedia.org"
+        ],
+        "attribution": "Logo de LinkedIn, marca de su titular (vía Wikimedia Commons)",
+        "license": "Marca registrada; uso nominativo. Archivo vía Wikimedia Commons — ver licencia en la página del archivo."
+      }
     },
     {
       "providerId": "x",
@@ -1663,7 +1852,16 @@
         "notes": "Red social incorporada como punto de comparación académico."
       },
       "providerRegion": "north_america",
-      "providerType": "commercial_provider"
+      "providerType": "commercial_provider",
+      "logo": {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:X_logo_2023.svg",
+        "downloadUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/X_logo_2023.svg",
+        "officialHosts": [
+          "upload.wikimedia.org"
+        ],
+        "attribution": "Logo de X, marca de su titular (vía Wikimedia Commons)",
+        "license": "Marca registrada; uso nominativo. Archivo vía Wikimedia Commons — ver licencia en la página del archivo."
+      }
     },
     {
       "providerId": "apple",
@@ -1716,7 +1914,16 @@
         "notes": "Ecosistema móvil incorporado como punto de comparación académico."
       },
       "providerRegion": "north_america",
-      "providerType": "commercial_provider"
+      "providerType": "commercial_provider",
+      "logo": {
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apple_logo_black.svg",
+        "downloadUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Apple_logo_black.svg",
+        "officialHosts": [
+          "upload.wikimedia.org"
+        ],
+        "attribution": "Logo de Apple, marca de su titular (vía Wikimedia Commons)",
+        "license": "Marca registrada; uso nominativo. Archivo vía Wikimedia Commons — ver licencia en la página del archivo."
+      }
     },
     {
       "providerId": "maritaca",

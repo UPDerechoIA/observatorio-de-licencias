@@ -33,6 +33,9 @@
   --color-gold-600: #836634;
 
   --color-parchment: #f6f3ec;
+
+  /* Fondo del chip de logo (contenedor uniforme): blanco neutro sobre pergamino. */
+  --color-background-secondary: #ffffff;
 }
 
 :root {

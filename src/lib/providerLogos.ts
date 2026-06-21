@@ -14,13 +14,19 @@ import path from "node:path";
 export { resolveLogoSrc } from "./providerLogoUtils";
 
 const LOGOS_DIR = path.join(process.cwd(), "public", "logos");
+const LOGO_EXT = /\.(svg|png|webp)$/i;
 
-/** Conjunto de providerIds que tienen un logo en `public/logos/<id>.svg`. */
-export async function availableProviderLogos(): Promise<Set<string>> {
+/** Mapa providerId → ruta del logo (`logos/<id>.<ext>`) para los que existen. */
+export async function availableProviderLogos(): Promise<Map<string, string>> {
+  const map = new Map<string, string>();
   try {
     const files = await fs.readdir(LOGOS_DIR);
-    return new Set(files.filter((f) => f.endsWith(".svg")).map((f) => f.slice(0, -4)));
+    for (const f of files) {
+      if (!LOGO_EXT.test(f)) continue;
+      map.set(f.replace(LOGO_EXT, ""), `logos/${f}`);
+    }
   } catch {
-    return new Set();
+    // sin carpeta: todos caen a monograma.
   }
+  return map;
 }

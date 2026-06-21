@@ -45,11 +45,25 @@ export const ProductSchema = z.object({
   documents: z.array(SourceDocumentSchema).default([]),
 });
 
+/**
+ * Bloque OPCIONAL de logo oficial. Trazabilidad de la fuente y la guía de marca;
+ * el archivo se descarga con `scripts/fetch-logos.mjs` solo si el host final es
+ * oficial y el contenido es imagen. Sin bloque → monograma.
+ */
+export const LogoSchema = z.object({
+  sourceUrl: z.string(),
+  downloadUrl: z.string(),
+  officialHosts: z.array(z.string()).default([]),
+  attribution: z.string().default(""),
+  license: z.string().default(""),
+});
+
 export const ProviderSchema = z.object({
   providerId: z.string(),
   providerName: z.string(),
   /** Dominios oficiales aceptados como fuente primaria. */
   officialDomains: z.array(z.string()).default([]),
+  logo: LogoSchema.optional(),
   // --- Taxonomía regional y de tipo de proveedor (autoridad del registro) ---
   providerRegion: ProviderRegionSchema.default("unknown"),
   providerType: ProviderTypeSchema.default("unknown"),
@@ -71,6 +85,7 @@ export const ProviderRegistrySchema = z.object({
 });
 
 export type SourceDocument = z.infer<typeof SourceDocumentSchema>;
+export type Logo = z.infer<typeof LogoSchema>;
 export type Product = z.infer<typeof ProductSchema>;
 export type Provider = z.infer<typeof ProviderSchema>;
 export type ProviderRegistry = z.infer<typeof ProviderRegistrySchema>;
