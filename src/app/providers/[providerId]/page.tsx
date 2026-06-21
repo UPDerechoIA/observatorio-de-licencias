@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { loadAllLicenseAnalyses } from "@/lib/storage";
 import { loadRegistry, flattenDocuments } from "@/lib/sources";
@@ -13,6 +14,16 @@ export async function generateStaticParams() {
   const all = await loadAllLicenseAnalyses();
   const ids = Array.from(new Set(all.map((a) => providerKey(a))));
   return ids.map((providerId) => ({ providerId }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ providerId: string }> }): Promise<Metadata> {
+  const { providerId } = await params;
+  const all = await loadAllLicenseAnalyses();
+  const a = all.find((x) => providerKey(x) === providerId);
+  if (!a) return {};
+  const title = `${a.providerName} — condiciones legales`;
+  const description = `Etiquetado frontal y análisis de las condiciones legales de ${a.providerName}: advertencias, cautelas y tabla del clausulado, con evidencia textual. No es asesoramiento legal.`;
+  return { title, description, openGraph: { title, description }, twitter: { title, description } };
 }
 
 export default async function ProviderPage({ params }: { params: Promise<{ providerId: string }> }) {
